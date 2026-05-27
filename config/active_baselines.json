@@ -1,0 +1,296 @@
+{
+  "BIYA": {
+    "volume_sma_20": 21638859.85,
+    "previous_close": 1.3,
+    "vwap_last": 1.1861,
+    "bars_used": 20
+  },
+  "GOVX": {
+    "volume_sma_20": 14345153.75,
+    "previous_close": 3.64,
+    "vwap_last": 3.9097,
+    "bars_used": 20
+  },
+  "RYOJ": {
+    "volume_sma_20": 2660207.15,
+    "previous_close": 5.0,
+    "vwap_last": 5.5684,
+    "bars_used": 20
+  },
+  "MTVA": {
+    "volume_sma_20": 9740902.3,
+    "previous_close": 3.85,
+    "vwap_last": 3.9312,
+    "bars_used": 20
+  },
+  "AKTX": {
+    "volume_sma_20": 2041926.95,
+    "previous_close": 18.27,
+    "vwap_last": 12.8356,
+    "bars_used": 20
+  },
+  "VCIG": {
+    "volume_sma_20": 1715572.45,
+    "previous_close": 1.33,
+    "vwap_last": 1.2226,
+    "bars_used": 20
+  },
+  "HCWB": {
+    "volume_sma_20": 37608273.1,
+    "previous_close": 2.89,
+    "vwap_last": 3.08,
+    "bars_used": 20
+  },
+  "ARTL": {
+    "volume_sma_20": 1555553.35,
+    "previous_close": 1.19,
+    "vwap_last": 1.2761,
+    "bars_used": 20
+  },
+  "CODX": {
+    "volume_sma_20": 12541003.35,
+    "previous_close": 5.07,
+    "vwap_last": 4.3143,
+    "bars_used": 20
+  },
+  "QUCY": {
+    "volume_sma_20": 50873301.85,
+    "previous_close": 3.33,
+    "vwap_last": 3.5148,
+    "bars_used": 20
+  },
+  "TKLF": {
+    "volume_sma_20": 350876.15,
+    "previous_close": 1.95,
+    "vwap_last": 2.2446,
+    "bars_used": 20
+  },
+  "BATL": {
+    "volume_sma_20": 5041463.35,
+    "previous_close": 1.89,
+    "vwap_last": 1.8356,
+    "bars_used": 20
+  },
+  "AIIO": {
+    "volume_sma_20": 34068226.35,
+    "previous_close": 2.58,
+    "vwap_last": 2.7261,
+    "bars_used": 20
+  },
+  "FRGT": {
+    "volume_sma_20": 306651.25,
+    "previous_close": 3.95,
+    "vwap_last": 3.7214,
+    "bars_used": 20
+  },
+  "ZENA": {
+    "volume_sma_20": 3027053.1,
+    "previous_close": 1.37,
+    "vwap_last": 1.3399,
+    "bars_used": 20
+  },
+  "ASTI": {
+    "volume_sma_20": 1083415.95,
+    "previous_close": 5.36,
+    "vwap_last": 5.4777,
+    "bars_used": 20
+  },
+  "CPSH": {
+    "volume_sma_20": 689436.05,
+    "previous_close": 6.0,
+    "vwap_last": 5.9856,
+    "bars_used": 20
+  },
+  "BKKT": {
+    "volume_sma_20": 2078002.75,
+    "previous_close": 11.88,
+    "vwap_last": 12.2182,
+    "bars_used": 20
+  },
+  "AIB": {
+    "volume_sma_20": 625014.85,
+    "previous_close": 2.81,
+    "vwap_last": 2.7717,
+    "bars_used": 20
+  },
+  "ONCO": {
+    "volume_sma_20": 15596772.5,
+    "previous_close": 1.24,
+    "vwap_last": 1.1738,
+    "bars_used": 20
+  },
+  "MRLN": {
+    "volume_sma_20": 1491601.25,
+    "previous_close": 7.09,
+    "vwap_last": 7.0963,
+    "bars_used": 20
+  },
+  "JDZG": {
+    "volume_sma_20": 683910.35,
+    "previous_close": 3.7,
+    "vwap_last": 3.7104,
+    "bars_used": 20
+  },
+  "ARQQ": {
+    "volume_sma_20": 553917.95,
+    "previous_close": 17.49,
+    "vwap_last": 17.9648,
+    "bars_used": 20
+  },
+  "SNAL": {
+    "volume_sma_20": 19865342.5,
+    "previous_close": 1.1,
+    "vwap_last": 1.1769,
+    "bars_used": 20
+  },
+  "VIVO": {
+    "volume_sma_20": 1700943.85,
+    "previous_close": 4.67,
+    "vwap_last": 4.674,
+    "bars_used": 20
+  },
+  "FABC": {
+    "volume_sma_20": 6149849.45,
+    "previous_close": 6.09,
+    "vwap_last": 5.9146,
+    "bars_used": 20
+  },
+  "QMCO": {
+    "volume_sma_20": 671887.55,
+    "previous_close": 9.05,
+    "vwap_last": 9.6476,
+    "bars_used": 20
+  },
+  "OPTX": {
+    "volume_sma_20": 1356217.9,
+    "previous_close": 10.68,
+    "vwap_last": 10.5133,
+    "bars_used": 20
+  },
+  "GLND": {
+    "volume_sma_20": 2703581.5,
+    "previous_close": 2.73,
+    "vwap_last": 2.7268,
+    "bars_used": 20
+  },
+  "MOBX": {
+    "volume_sma_20": 9403001.2,
+    "previous_close": 2.14,
+    "vwap_last": 2.0801,
+    "bars_used": 20
+  },
+  "POAS": {
+    "volume_sma_20": 1768448.25,
+    "previous_close": 2.62,
+    "vwap_last": 2.5913,
+    "bars_used": 20
+  },
+  "SEGG": {
+    "volume_sma_20": 6354333.25,
+    "previous_close": 1.91,
+    "vwap_last": 1.9046,
+    "bars_used": 20
+  },
+  "AMST": {
+    "volume_sma_20": 9455662.85,
+    "previous_close": 2.1,
+    "vwap_last": 2.2082,
+    "bars_used": 20
+  },
+  "GITS": {
+    "volume_sma_20": 120906.15,
+    "previous_close": 1.79,
+    "vwap_last": 1.4416,
+    "bars_used": 20
+  },
+  "QNCX": {
+    "volume_sma_20": 2096884.3,
+    "previous_close": 1.1,
+    "vwap_last": 1.0936,
+    "bars_used": 20
+  },
+  "SHMD": {
+    "volume_sma_20": 1190479.05,
+    "previous_close": 7.49,
+    "vwap_last": 7.6761,
+    "bars_used": 20
+  },
+  "CYCU": {
+    "volume_sma_20": 2098827.95,
+    "previous_close": 1.01,
+    "vwap_last": 0.9724,
+    "bars_used": 20
+  },
+  "SNBR": {
+    "volume_sma_20": 3965792.5,
+    "previous_close": 1.71,
+    "vwap_last": 1.7165,
+    "bars_used": 20
+  },
+  "AUUD": {
+    "volume_sma_20": 9787234.55,
+    "previous_close": 1.49,
+    "vwap_last": 1.5424,
+    "bars_used": 20
+  },
+  "QCLS": {
+    "volume_sma_20": 629355.65,
+    "previous_close": 4.18,
+    "vwap_last": 4.3601,
+    "bars_used": 20
+  },
+  "TRT": {
+    "volume_sma_20": 1417933.2,
+    "previous_close": 13.82,
+    "vwap_last": 13.9624,
+    "bars_used": 20
+  },
+  "AIRS": {
+    "volume_sma_20": 1485002.9,
+    "previous_close": 5.33,
+    "vwap_last": 5.3178,
+    "bars_used": 20
+  },
+  "EZRA": {
+    "volume_sma_20": 1557821.15,
+    "previous_close": 4.0,
+    "vwap_last": 4.6216,
+    "bars_used": 20
+  },
+  "IPWR": {
+    "volume_sma_20": 645190.85,
+    "previous_close": 5.73,
+    "vwap_last": 6.1238,
+    "bars_used": 20
+  },
+  "INDO": {
+    "volume_sma_20": 673850.35,
+    "previous_close": 3.24,
+    "vwap_last": 3.1912,
+    "bars_used": 20
+  },
+  "QNTM": {
+    "volume_sma_20": 479293.95,
+    "previous_close": 9.24,
+    "vwap_last": 8.7346,
+    "bars_used": 20
+  },
+  "NUCL": {
+    "volume_sma_20": 405672.8,
+    "previous_close": 11.95,
+    "vwap_last": 12.003,
+    "bars_used": 20
+  },
+  "AEHL": {
+    "volume_sma_20": 27848430.9,
+    "previous_close": 1.51,
+    "vwap_last": 1.6794,
+    "bars_used": 20
+  },
+  "TRAW": {
+    "volume_sma_20": 6404105.05,
+    "previous_close": 1.49,
+    "vwap_last": 1.4509,
+    "bars_used": 20
+  }
+}
