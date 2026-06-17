@@ -11,6 +11,7 @@ from config.settings import (
     SIGNAL_SIZE_3_PLUS_STRATEGIES,
 )
 from execution.position_manager import submit_swing_entry
+from utils.market_data import fetch_latest_prices
 
 _log = logging.getLogger(__name__)
 
@@ -40,14 +41,16 @@ def load_confirmed_setups(path: str | Path = CONFIRMED_SETUPS_PATH) -> list[dict
 
 async def place_entry_orders(setups: list[dict]) -> list[dict]:
     submitted: list[dict] = []
+    latest_prices = await fetch_latest_prices(list(dict.fromkeys(setup["symbol"] for setup in setups)))
     for setup in setups:
-        shares = shares_for_setup(setup)
+        limit_price = float(latest_prices.get(setup["symbol"]) or setup.get("limit_price") or setup.get("close"))
+        refreshed_setup = {**setup, "limit_price": limit_price}
+        shares = shares_for_setup(refreshed_setup)
         if shares < 1:
             continue
-        limit_price = float(setup.get("limit_price") or setup.get("close"))
-        order_id = await submit_swing_entry(setup, shares, limit_price)
+        order_id = await submit_swing_entry(refreshed_setup, shares, limit_price)
         if order_id:
-            submitted.append({**setup, "shares": shares, "entry_order_id": order_id})
+            submitted.append({**refreshed_setup, "shares": shares, "entry_order_id": order_id})
     return submitted
 
 

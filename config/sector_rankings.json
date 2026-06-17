@@ -1,0 +1,52 @@
+[
+  {
+    "etf": "XLB",
+    "weekly_return": 0.03840850896198534,
+    "rank": 1
+  },
+  {
+    "etf": "XLF",
+    "weekly_return": 0.03602744948532216,
+    "rank": 2
+  },
+  {
+    "etf": "XLK",
+    "weekly_return": 0.031365823975217054,
+    "rank": 3
+  },
+  {
+    "etf": "XLU",
+    "weekly_return": 0.024556616643929184,
+    "rank": 4
+  },
+  {
+    "etf": "XLI",
+    "weekly_return": 0.024202733485193622,
+    "rank": 5
+  },
+  {
+    "etf": "XLY",
+    "weekly_return": 0.02235263657547242,
+    "rank": 6
+  },
+  {
+    "etf": "XLC",
+    "weekly_return": 0.007534983853605931,
+    "rank": 7
+  },
+  {
+    "etf": "XLRE",
+    "weekly_return": 0.0028908160996220273,
+    "rank": 8
+  },
+  {
+    "etf": "XLV",
+    "weekly_return": -0.010545383968428515,
+    "rank": 9
+  },
+  {
+    "etf": "XLE",
+    "weekly_return": -0.035372016030667384,
+    "rank": 10
+  }
+]

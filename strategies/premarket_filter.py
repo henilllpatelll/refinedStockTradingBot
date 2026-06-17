@@ -5,7 +5,9 @@ import logging
 from pathlib import Path
 
 import config
+from agents.news_analyst import latest_catalysts_by_symbol
 from config.settings import CONFIRMED_SETUPS_PATH, SWING_WATCHLIST_PATH
+from utils.market_data import fetch_premarket_gaps
 
 _log = logging.getLogger(__name__)
 
@@ -42,11 +44,16 @@ async def run_premarket_filter(
     news_by_symbol: dict[str, dict] | None = None,
     gap_by_symbol: dict[str, float] | None = None,
 ) -> list[dict]:
+    watchlist = load_watchlist()
+    if news_by_symbol is None:
+        news_by_symbol = latest_catalysts_by_symbol()
+    if gap_by_symbol is None:
+        gap_by_symbol = await fetch_premarket_gaps(list(dict.fromkeys(item["symbol"] for item in watchlist)))
     confirmed = [
         setup
         for setup in (
             confirm_setup(item, news_by_symbol, gap_by_symbol)
-            for item in load_watchlist()
+            for item in watchlist
         )
         if setup is not None
     ]

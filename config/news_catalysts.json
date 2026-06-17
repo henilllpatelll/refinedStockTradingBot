@@ -1,0 +1,1098 @@
+[
+  {
+    "symbol": "EXMP",
+    "catalyst_type": "contract_win",
+    "headline": "Example wins government contract",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:15:15.975275-04:00",
+    "source_url": null
+  },
+  {
+    "symbol": "ADTX",
+    "catalyst_type": "technical_breakout",
+    "headline": "Crude Oil Edges Higher; US Retail Sales Top Estimates",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.916788-04:00",
+    "source_url": "https://www.benzinga.com/markets/market-summary/26/06/53255362/crude-oil-edges-higher-us-retail-sales-top-estimates"
+  },
+  {
+    "symbol": "BRAI",
+    "catalyst_type": "technical_breakout",
+    "headline": "Crude Oil Edges Higher; US Retail Sales Top Estimates",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.916788-04:00",
+    "source_url": "https://www.benzinga.com/markets/market-summary/26/06/53255362/crude-oil-edges-higher-us-retail-sales-top-estimates"
+  },
+  {
+    "symbol": "ICCM",
+    "catalyst_type": "technical_breakout",
+    "headline": "Crude Oil Edges Higher; US Retail Sales Top Estimates",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.916788-04:00",
+    "source_url": "https://www.benzinga.com/markets/market-summary/26/06/53255362/crude-oil-edges-higher-us-retail-sales-top-estimates"
+  },
+  {
+    "symbol": "LILA",
+    "catalyst_type": "technical_breakout",
+    "headline": "Crude Oil Edges Higher; US Retail Sales Top Estimates",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.916788-04:00",
+    "source_url": "https://www.benzinga.com/markets/market-summary/26/06/53255362/crude-oil-edges-higher-us-retail-sales-top-estimates"
+  },
+  {
+    "symbol": "QURE",
+    "catalyst_type": "technical_breakout",
+    "headline": "Crude Oil Edges Higher; US Retail Sales Top Estimates",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.916788-04:00",
+    "source_url": "https://www.benzinga.com/markets/market-summary/26/06/53255362/crude-oil-edges-higher-us-retail-sales-top-estimates"
+  },
+  {
+    "symbol": "SLBT",
+    "catalyst_type": "technical_breakout",
+    "headline": "Crude Oil Edges Higher; US Retail Sales Top Estimates",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.916788-04:00",
+    "source_url": "https://www.benzinga.com/markets/market-summary/26/06/53255362/crude-oil-edges-higher-us-retail-sales-top-estimates"
+  },
+  {
+    "symbol": "HPE",
+    "catalyst_type": "technical_breakout",
+    "headline": "Here's How Much You Would Have Made Owning Hewlett Packard Stock In The Last 10 Years",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.918504-04:00",
+    "source_url": "https://www.benzinga.com/insights/news/26/06/53254620/heres-how-much-you-would-have-made-owning-hewlett-packard-stock-in-the-last-10-years"
+  },
+  {
+    "symbol": "IWM",
+    "catalyst_type": "contract_win",
+    "headline": "Why Is Momentus Stock Gaining Wednesday?",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:27.931321-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53254344/why-is-momentus-stock-gaining-wednesday"
+  },
+  {
+    "symbol": "MNTS",
+    "catalyst_type": "contract_win",
+    "headline": "Why Is Momentus Stock Gaining Wednesday?",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:27.931321-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53254344/why-is-momentus-stock-gaining-wednesday"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "contract_win",
+    "headline": "Why Is Momentus Stock Gaining Wednesday?",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:27.931321-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53254344/why-is-momentus-stock-gaining-wednesday"
+  },
+  {
+    "symbol": "AMZN",
+    "catalyst_type": "technical_breakout",
+    "headline": "Tiny Float, Huge Hype: SpaceX Hits $2.65 Trillion, But Morningstar Says It's Worth $780 Billion",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.943280-04:00",
+    "source_url": "https://www.benzinga.com/markets/prediction-markets/26/06/53254099/tiny-float-huge-hype-spacex-hits-2-65-trillion-but-morningstar-says-its-worth-780-billion"
+  },
+  {
+    "symbol": "SPCX",
+    "catalyst_type": "technical_breakout",
+    "headline": "Tiny Float, Huge Hype: SpaceX Hits $2.65 Trillion, But Morningstar Says It's Worth $780 Billion",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.943280-04:00",
+    "source_url": "https://www.benzinga.com/markets/prediction-markets/26/06/53254099/tiny-float-huge-hype-spacex-hits-2-65-trillion-but-morningstar-says-its-worth-780-billion"
+  },
+  {
+    "symbol": "DJT",
+    "catalyst_type": "technical_breakout",
+    "headline": "JP Morgan's David Kelly Says It's 'A Great Economy For Stocks' Amid AI-Led Bull Market Despite Inflation Risks",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.960139-04:00",
+    "source_url": "https://www.benzinga.com/markets/equities/26/06/53254039/jp-morgans-david-kelly-says-its-a-great-economy-for-stocks-amid-ai-led-bull-market-despite-inflation-risks"
+  },
+  {
+    "symbol": "JPM",
+    "catalyst_type": "technical_breakout",
+    "headline": "JP Morgan's David Kelly Says It's 'A Great Economy For Stocks' Amid AI-Led Bull Market Despite Inflation Risks",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.960139-04:00",
+    "source_url": "https://www.benzinga.com/markets/equities/26/06/53254039/jp-morgans-david-kelly-says-its-a-great-economy-for-stocks-amid-ai-led-bull-market-despite-inflation-risks"
+  },
+  {
+    "symbol": "SPCX",
+    "catalyst_type": "technical_breakout",
+    "headline": "JP Morgan's David Kelly Says It's 'A Great Economy For Stocks' Amid AI-Led Bull Market Despite Inflation Risks",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.960139-04:00",
+    "source_url": "https://www.benzinga.com/markets/equities/26/06/53254039/jp-morgans-david-kelly-says-its-a-great-economy-for-stocks-amid-ai-led-bull-market-despite-inflation-risks"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "JP Morgan's David Kelly Says It's 'A Great Economy For Stocks' Amid AI-Led Bull Market Despite Inflation Risks",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.960139-04:00",
+    "source_url": "https://www.benzinga.com/markets/equities/26/06/53254039/jp-morgans-david-kelly-says-its-a-great-economy-for-stocks-amid-ai-led-bull-market-despite-inflation-risks"
+  },
+  {
+    "symbol": "VOO",
+    "catalyst_type": "technical_breakout",
+    "headline": "JP Morgan's David Kelly Says It's 'A Great Economy For Stocks' Amid AI-Led Bull Market Despite Inflation Risks",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.960139-04:00",
+    "source_url": "https://www.benzinga.com/markets/equities/26/06/53254039/jp-morgans-david-kelly-says-its-a-great-economy-for-stocks-amid-ai-led-bull-market-despite-inflation-risks"
+  },
+  {
+    "symbol": "HOOD",
+    "catalyst_type": "technical_breakout",
+    "headline": "Argus Research Maintains Buy on Robinhood Markets, Raises Price Target to $110",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.972859-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53254006/argus-research-maintains-buy-on-robinhood-markets-raises-price-target-to-110"
+  },
+  {
+    "symbol": "RXT",
+    "catalyst_type": "sector_tailwind",
+    "headline": "RBC Capital Maintains Sector Perform on Rackspace Technology, Raises Price Target to $4",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:27.985614-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53253223/rbc-capital-maintains-sector-perform-on-rackspace-technology-raises-price-target-to-4"
+  },
+  {
+    "symbol": "AIQ",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why MANGOS ETFs May Be More Complicated Than FAANG Ever Was",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.998030-04:00",
+    "source_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53253215/why-mangos-etfs-may-be-more-complicated-than-faang-ever-was"
+  },
+  {
+    "symbol": "CHAT",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why MANGOS ETFs May Be More Complicated Than FAANG Ever Was",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.998030-04:00",
+    "source_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53253215/why-mangos-etfs-may-be-more-complicated-than-faang-ever-was"
+  },
+  {
+    "symbol": "GOOGL",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why MANGOS ETFs May Be More Complicated Than FAANG Ever Was",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.998030-04:00",
+    "source_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53253215/why-mangos-etfs-may-be-more-complicated-than-faang-ever-was"
+  },
+  {
+    "symbol": "META",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why MANGOS ETFs May Be More Complicated Than FAANG Ever Was",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.998030-04:00",
+    "source_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53253215/why-mangos-etfs-may-be-more-complicated-than-faang-ever-was"
+  },
+  {
+    "symbol": "NVDA",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why MANGOS ETFs May Be More Complicated Than FAANG Ever Was",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.998030-04:00",
+    "source_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53253215/why-mangos-etfs-may-be-more-complicated-than-faang-ever-was"
+  },
+  {
+    "symbol": "SPCX",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why MANGOS ETFs May Be More Complicated Than FAANG Ever Was",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:27.998030-04:00",
+    "source_url": "https://www.benzinga.com/etfs/specialty-etfs/26/06/53253215/why-mangos-etfs-may-be-more-complicated-than-faang-ever-was"
+  },
+  {
+    "symbol": "KEEL",
+    "catalyst_type": "technical_breakout",
+    "headline": "Keel Infrastructure Stock Is Climbing Wednesday: What's Driving The Action?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.015662-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53253188/keel-infrastructure-stock-is-climbing-wednesday-whats-driving-the-action"
+  },
+  {
+    "symbol": "MSFT",
+    "catalyst_type": "technical_breakout",
+    "headline": "Illinois Rep. Jonathan Jackson Sold Up to $50K Worth of Microsoft Stock",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.033113-04:00",
+    "source_url": "https://www.benzinga.com/insights/government/26/06/53252937/illinois-rep-jonathan-jackson-sold-up-to-50k-worth-of-microsoft-stock"
+  },
+  {
+    "symbol": "SPG",
+    "catalyst_type": "technical_breakout",
+    "headline": "Illinois Rep. Jonathan Jackson Sold Up to $50K Worth of Microsoft Stock",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.033113-04:00",
+    "source_url": "https://www.benzinga.com/insights/government/26/06/53252937/illinois-rep-jonathan-jackson-sold-up-to-50k-worth-of-microsoft-stock"
+  },
+  {
+    "symbol": "V",
+    "catalyst_type": "technical_breakout",
+    "headline": "Illinois Rep. Jonathan Jackson Sold Up to $50K Worth of Microsoft Stock",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.033113-04:00",
+    "source_url": "https://www.benzinga.com/insights/government/26/06/53252937/illinois-rep-jonathan-jackson-sold-up-to-50k-worth-of-microsoft-stock"
+  },
+  {
+    "symbol": "ABNB",
+    "catalyst_type": "technical_breakout",
+    "headline": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.050404-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai"
+  },
+  {
+    "symbol": "GOOG",
+    "catalyst_type": "technical_breakout",
+    "headline": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.050404-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai"
+  },
+  {
+    "symbol": "GOOGL",
+    "catalyst_type": "technical_breakout",
+    "headline": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.050404-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai"
+  },
+  {
+    "symbol": "META",
+    "catalyst_type": "technical_breakout",
+    "headline": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.050404-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai"
+  },
+  {
+    "symbol": "NVDA",
+    "catalyst_type": "technical_breakout",
+    "headline": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.050404-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai"
+  },
+  {
+    "symbol": "QCOM",
+    "catalyst_type": "technical_breakout",
+    "headline": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.050404-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai"
+  },
+  {
+    "symbol": "TSM",
+    "catalyst_type": "technical_breakout",
+    "headline": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.050404-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai"
+  },
+  {
+    "symbol": "UBER",
+    "catalyst_type": "technical_breakout",
+    "headline": "EXCLUSIVE: Google And Meta May Have The Most To Lose In The AI\u2011Agent Era, Says Founder Who Rejected OpenAI",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.050404-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53252394/google-meta-may-lose-in-ai%e2%80%91agent-era-says-founder-who-rejected-openai"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "'An Annotated Analysis Of A U.S. Draft Of The Iran Deal; Agreement Envisages Financial Relief For Opening The Strait Of Hormuz And Limits On Iran's Nuclear Program'- WSJ",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.065400-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53252118/an-annotated-analysis-of-a-u-s-draft-of-the-iran-deal-agreement-envisages-financial-relief-for-openi"
+  },
+  {
+    "symbol": "USO",
+    "catalyst_type": "technical_breakout",
+    "headline": "'An Annotated Analysis Of A U.S. Draft Of The Iran Deal; Agreement Envisages Financial Relief For Opening The Strait Of Hormuz And Limits On Iran's Nuclear Program'- WSJ",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.065400-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53252118/an-annotated-analysis-of-a-u-s-draft-of-the-iran-deal-agreement-envisages-financial-relief-for-openi"
+  },
+  {
+    "symbol": "RIVN",
+    "catalyst_type": "technical_breakout",
+    "headline": "What's Driving Rivian Shares Higher Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.079640-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53252035/whats-driving-rivian-shares-higher-wednesday"
+  },
+  {
+    "symbol": "SPCX",
+    "catalyst_type": "technical_breakout",
+    "headline": "What This $58M SpaceX Whale Options Trade Reveals",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.093841-04:00",
+    "source_url": "https://www.benzinga.com/Opinion/26/06/53251893/what-this-58m-spacex-whale-options-trade-reveals"
+  },
+  {
+    "symbol": "SNAP",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why Is Snap Stock Falling On Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.106991-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53251896/why-is-snap-stock-falling-on-wednesday"
+  },
+  {
+    "symbol": "QURE",
+    "catalyst_type": "technical_breakout",
+    "headline": "FDA Signals uniQure Huntington Gene Therapy Data Could Back Accelerated Approval",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.119978-04:00",
+    "source_url": "https://www.benzinga.com/news/health-care/26/06/53251736/fda-signals-uniqure-huntington-gene-therapy-data-could-back-accelerated-approval"
+  },
+  {
+    "symbol": "ASTS",
+    "catalyst_type": "technical_breakout",
+    "headline": "$100 Invested In AST SpaceMobile 5 Years Ago Would Be Worth This Much Today",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.133880-04:00",
+    "source_url": "https://www.benzinga.com/insights/news/26/06/53251668/100-invested-in-ast-spacemobile-5-years-ago-would-be-worth-this-much-today"
+  },
+  {
+    "symbol": "AMZN",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Was A Great Meeting On AI At G7 Summit; Anthropic Negotiations Going Fine",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.147576-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251512/president-trump-says-was-a-great-meeting-on-ai-at-g7-summit-anthropic-negotiations-going-fine"
+  },
+  {
+    "symbol": "GOOG",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Was A Great Meeting On AI At G7 Summit; Anthropic Negotiations Going Fine",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.147576-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251512/president-trump-says-was-a-great-meeting-on-ai-at-g7-summit-anthropic-negotiations-going-fine"
+  },
+  {
+    "symbol": "GOOGL",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Was A Great Meeting On AI At G7 Summit; Anthropic Negotiations Going Fine",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.147576-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251512/president-trump-says-was-a-great-meeting-on-ai-at-g7-summit-anthropic-negotiations-going-fine"
+  },
+  {
+    "symbol": "MSFT",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Was A Great Meeting On AI At G7 Summit; Anthropic Negotiations Going Fine",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.147576-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251512/president-trump-says-was-a-great-meeting-on-ai-at-g7-summit-anthropic-negotiations-going-fine"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Was A Great Meeting On AI At G7 Summit; Anthropic Negotiations Going Fine",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.147576-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251512/president-trump-says-was-a-great-meeting-on-ai-at-g7-summit-anthropic-negotiations-going-fine"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump On Iran Says MOU Is A Very Strong One;  Would Think They Would Do It, If They Don't Process Will Start Again; They Want To Make A Deal",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.162563-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251250/president-trump-on-iran-says-mou-is-a-very-strong-one-would-think-they-would-do-it-if-they-dont-proc"
+  },
+  {
+    "symbol": "USO",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump On Iran Says MOU Is A Very Strong One;  Would Think They Would Do It, If They Don't Process Will Start Again; They Want To Make A Deal",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.162563-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251250/president-trump-on-iran-says-mou-is-a-very-strong-one-would-think-they-would-do-it-if-they-dont-proc"
+  },
+  {
+    "symbol": "NFLX",
+    "catalyst_type": "technical_breakout",
+    "headline": "Stock Of The Day: Is This The Bottom For Netflix?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.179091-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53251173/stock-of-the-day-is-this-the-bottom-for-netflix"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Had Good Talks With Putin And Ukrainian President Zelenskiy; Looking At Sanctions On Russia",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.203626-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251087/president-trump-says-had-good-talks-with-putin-and-ukrainian-president-zelenskiy-looking-at-sanction"
+  },
+  {
+    "symbol": "VGK",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Had Good Talks With Putin And Ukrainian President Zelenskiy; Looking At Sanctions On Russia",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.203626-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251087/president-trump-says-had-good-talks-with-putin-and-ukrainian-president-zelenskiy-looking-at-sanction"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Iran Deal Is A Wall To A Nuclear Weapon",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.233017-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251040/president-trump-says-iran-deal-is-a-wall-to-a-nuclear-weapon"
+  },
+  {
+    "symbol": "USO",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Iran Deal Is A Wall To A Nuclear Weapon",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.233017-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53251040/president-trump-says-iran-deal-is-a-wall-to-a-nuclear-weapon"
+  },
+  {
+    "symbol": "AMZN",
+    "catalyst_type": "technical_breakout",
+    "headline": "Southwest Airlines Teams Up With Amazon Web Services To Modernize Its Technology Foundation And Evolve How The Airline Operates, Builds, And Is Able To Serve Its Customers; Co To Transition To A Cloud-based, AI-Enabled Architecture On AWS By 2028",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.295894-04:00",
+    "source_url": "https://www.benzinga.com/quote/LUV"
+  },
+  {
+    "symbol": "LUV",
+    "catalyst_type": "technical_breakout",
+    "headline": "Southwest Airlines Teams Up With Amazon Web Services To Modernize Its Technology Foundation And Evolve How The Airline Operates, Builds, And Is Able To Serve Its Customers; Co To Transition To A Cloud-based, AI-Enabled Architecture On AWS By 2028",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.295894-04:00",
+    "source_url": "https://www.benzinga.com/quote/LUV"
+  },
+  {
+    "symbol": "SPCX",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jim Cramer Says SpaceX Is Hitting Resistance At $208\u2014The Chart Suggests He's Right",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.333755-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/technicals/26/06/53250875/jim-cramer-says-spacex-is-hitting-resistance-at-208-the-chart-suggests-hes-right"
+  },
+  {
+    "symbol": "INDA",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Have Great Relationship With India's Modi; Very Close On India Trade Deal",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.383550-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53250805/president-trump-says-have-great-relationship-with-indias-modi-very-close-on-india-trade-deal"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Says Have Great Relationship With India's Modi; Very Close On India Trade Deal",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.383550-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53250805/president-trump-says-have-great-relationship-with-indias-modi-very-close-on-india-trade-deal"
+  },
+  {
+    "symbol": "INDA",
+    "catalyst_type": "technical_breakout",
+    "headline": "India PM Modi Says New Speed, Energy In Relations With U.S; Happy Our Teams Have Been Working Closely To Achieve Targets; Hope Peace Is Permanent In The Gulf; Keeping Strait Of Hormuz Open Vital For Global Economy",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.437544-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53250757/india-pm-modi-says-new-speed-energy-in-relations-with-u-s-happy-our-teams-have-been-working-closely"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "India PM Modi Says New Speed, Energy In Relations With U.S; Happy Our Teams Have Been Working Closely To Achieve Targets; Hope Peace Is Permanent In The Gulf; Keeping Strait Of Hormuz Open Vital For Global Economy",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.437544-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53250757/india-pm-modi-says-new-speed-energy-in-relations-with-u-s-happy-our-teams-have-been-working-closely"
+  },
+  {
+    "symbol": "AEHR",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "AMAT",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "ARQQ",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "BRAI",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "CLPT",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "CRDO",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "EOSE",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "FRMI",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "HQ",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "JBL",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "JLHL",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "LZB",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "MFI",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "NTLA",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "QURE",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "RARE",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "RXT",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "SHAZ",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "WNC",
+    "catalyst_type": "technical_breakout",
+    "headline": "Jabil Posts Upbeat Q3 Results, Joins Uniqure, Braiin And Other Big Stocks Moving Higher On Wednesday",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.479764-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250744/jabil-posts-upbeat-q3-results-joins-uniqure-braiin-and-other-big-stocks-moving-higher-on-wednesday"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Posts On Truth Social \"I will be doing a Press Conference in 45 minutes from France. I'll then be heading to Versailles for Dinner with French and other European Leaders, and then back home tonight! The trip was a Great Success but, mostly what people wanted to talk about, is the fact that Iran will not have a Nuclear Weapon, and that the Strait of Hormuz will immediately be opened! Great Numbers in all categories..\"",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.506266-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53250526/president-trump-posts-on-truth-social-i-will-be-doing-a-press-conference-in-45-minutes-from-france-i"
+  },
+  {
+    "symbol": "USO",
+    "catalyst_type": "technical_breakout",
+    "headline": "President Trump Posts On Truth Social \"I will be doing a Press Conference in 45 minutes from France. I'll then be heading to Versailles for Dinner with French and other European Leaders, and then back home tonight! The trip was a Great Success but, mostly what people wanted to talk about, is the fact that Iran will not have a Nuclear Weapon, and that the Strait of Hormuz will immediately be opened! Great Numbers in all categories..\"",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.506266-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53250526/president-trump-posts-on-truth-social-i-will-be-doing-a-press-conference-in-45-minutes-from-france-i"
+  },
+  {
+    "symbol": "AMC",
+    "catalyst_type": "technical_breakout",
+    "headline": "AMC Stock Edges Higher Wednesday: What's Going On?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.537403-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53250367/amc-stock-edges-higher-wednesday-whats-going-on"
+  },
+  {
+    "symbol": "AVGO",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why Is Broadcom Stock Gaining Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.571690-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53250337/why-is-broadcom-stock-gaining-wednesday"
+  },
+  {
+    "symbol": "CIBR",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why Is Broadcom Stock Gaining Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.571690-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53250337/why-is-broadcom-stock-gaining-wednesday"
+  },
+  {
+    "symbol": "GOOGL",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why Is Broadcom Stock Gaining Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.571690-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53250337/why-is-broadcom-stock-gaining-wednesday"
+  },
+  {
+    "symbol": "IGM",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why Is Broadcom Stock Gaining Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.571690-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53250337/why-is-broadcom-stock-gaining-wednesday"
+  },
+  {
+    "symbol": "TDIV",
+    "catalyst_type": "technical_breakout",
+    "headline": "Why Is Broadcom Stock Gaining Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.571690-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53250337/why-is-broadcom-stock-gaining-wednesday"
+  },
+  {
+    "symbol": "HCKT",
+    "catalyst_type": "technical_breakout",
+    "headline": "The Hackett Group Joins ServiceNow Partner Program As Consultation, Implementation Partner",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.607642-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53250203/the-hackett-group-joins-servicenow-partner-program-as-consultation-implementation-partner"
+  },
+  {
+    "symbol": "NOW",
+    "catalyst_type": "technical_breakout",
+    "headline": "The Hackett Group Joins ServiceNow Partner Program As Consultation, Implementation Partner",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.607642-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53250203/the-hackett-group-joins-servicenow-partner-program-as-consultation-implementation-partner"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "USA Pending Home Sales Index For May 76.8 Vs 74.0 Prior",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.640129-04:00",
+    "source_url": "https://www.benzinga.com/quote/SPY"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "USA Business Inventories (MoM) For April 0.5% Vs 0.5% Est.",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.670930-04:00",
+    "source_url": "https://www.benzinga.com/quote/SPY"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "USA Retail Inventories Ex Auto For April 0.6% Vs 0.6% Est.",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.702175-04:00",
+    "source_url": "https://www.benzinga.com/quote/SPY"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "USA Pending Home Sales (MoM) For May 3.8% Vs 0.8% Est.",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.736424-04:00",
+    "source_url": "https://www.benzinga.com/quote/SPY"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "macro_positive",
+    "headline": "Fed's Warsh Day: What History Says Comes Next To The S&P 500",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.760149-04:00",
+    "source_url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/06/53249878/fed-chair-warsh-debut-sp-500-historical-returns"
+  },
+  {
+    "symbol": "EOSE",
+    "catalyst_type": "technical_breakout",
+    "headline": "Eos Shares Climb On 750 MWh Supply Agreement With CAPAC Energy",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.784862-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53249663/eos-shares-climb-on-750-mwh-supply-agreement-with-capac-energy"
+  },
+  {
+    "symbol": "NIO",
+    "catalyst_type": "technical_breakout",
+    "headline": "NIO Stock Pauses Wednesday: What Traders Should Watch Next Amid Regulatory Tensions",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.809449-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53248482/nio-stock-pauses-wednesday-what-traders-should-watch-next-amid-regulatory-tensions"
+  },
+  {
+    "symbol": "INTC",
+    "catalyst_type": "technical_breakout",
+    "headline": "Reported June 16, 2026: 'Intel's New Manufacturing Tech Enters Initial Production' - Reuters News",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.825901-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53248468/reported-june-16-2026-intels-new-manufacturing-tech-enters-initial-production-reuters-news"
+  },
+  {
+    "symbol": "BB",
+    "catalyst_type": "macro_positive",
+    "headline": "What's Going On With BlackBerry Stock Wednesday?",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.853889-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53248161/whats-going-on-with-blackberry-stock-wednesday-3"
+  },
+  {
+    "symbol": "XLB",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLC",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLE",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLF",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLI",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLK",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLP",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLRE",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLU",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLV",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "XLY",
+    "catalyst_type": "sector_tailwind",
+    "headline": "Leading And Lagging Sectors For June 17, 2026",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:16:28.881807-04:00",
+    "source_url": "https://www.benzinga.com/insights/sector-etfs/26/06/53248050/leading-and-lagging-sectors-for-june-17-2026"
+  },
+  {
+    "symbol": "GOOG",
+    "catalyst_type": "technical_breakout",
+    "headline": "New Google Home Speaker, First Audio Device Built For Gemini, Available For Pre-Order And Hitting Shelves June 25 For $99.99",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.913732-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53248024/new-google-home-speaker-first-audio-device-built-for-gemini-available-for-pre-order-and-hitting-shel"
+  },
+  {
+    "symbol": "GOOGL",
+    "catalyst_type": "technical_breakout",
+    "headline": "New Google Home Speaker, First Audio Device Built For Gemini, Available For Pre-Order And Hitting Shelves June 25 For $99.99",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.913732-04:00",
+    "source_url": "https://www.benzinga.com/news/26/06/53248024/new-google-home-speaker-first-audio-device-built-for-gemini-available-for-pre-order-and-hitting-shel"
+  },
+  {
+    "symbol": "SOFI",
+    "catalyst_type": "technical_breakout",
+    "headline": "SoFi CEO Won't Stop Buying His Own Stock",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.937962-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/insider-trades/26/06/53248011/sofi-ceo-wont-stop-buying-his-own-stock"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "FDA Announces Renewal Of The Science Board To FDA By The Commissioner Of Food And Drugs",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.965944-04:00",
+    "source_url": "https://www.benzinga.com/general/biotech/26/06/53247421/fda-announces-renewal-of-the-science-board-to-fda-by-the-commissioner-of-food-and-drugs"
+  },
+  {
+    "symbol": "COIN",
+    "catalyst_type": "technical_breakout",
+    "headline": "Can SpaceX Save Solana? Tokenized SPCX Stocks Rack Up $100 Million In Trading Volume",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.992456-04:00",
+    "source_url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53247419/can-spacex-save-solana-tokenized-spcx-stocks-rack-up-100-million-in-trading-volume"
+  },
+  {
+    "symbol": "SOLUSD",
+    "catalyst_type": "technical_breakout",
+    "headline": "Can SpaceX Save Solana? Tokenized SPCX Stocks Rack Up $100 Million In Trading Volume",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.992456-04:00",
+    "source_url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53247419/can-spacex-save-solana-tokenized-spcx-stocks-rack-up-100-million-in-trading-volume"
+  },
+  {
+    "symbol": "SPCX",
+    "catalyst_type": "technical_breakout",
+    "headline": "Can SpaceX Save Solana? Tokenized SPCX Stocks Rack Up $100 Million In Trading Volume",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:28.992456-04:00",
+    "source_url": "https://www.benzinga.com/crypto/cryptocurrency/26/06/53247419/can-spacex-save-solana-tokenized-spcx-stocks-rack-up-100-million-in-trading-volume"
+  },
+  {
+    "symbol": "NOK",
+    "catalyst_type": "technical_breakout",
+    "headline": "What's Going On With Nokia Stock Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.020126-04:00",
+    "source_url": "https://www.benzinga.com/trading-ideas/movers/26/06/53247408/whats-going-on-with-nokia-stock-wednesday-4"
+  },
+  {
+    "symbol": "MRVL",
+    "catalyst_type": "technical_breakout",
+    "headline": "What Is Going On With Marvell Stock On Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.044808-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247336/what-is-going-on-with-marvell-stock-on-wednesday-2"
+  },
+  {
+    "symbol": "NVDA",
+    "catalyst_type": "technical_breakout",
+    "headline": "What Is Going On With Marvell Stock On Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.044808-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247336/what-is-going-on-with-marvell-stock-on-wednesday-2"
+  },
+  {
+    "symbol": "EWT",
+    "catalyst_type": "technical_breakout",
+    "headline": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.066164-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026"
+  },
+  {
+    "symbol": "EWY",
+    "catalyst_type": "technical_breakout",
+    "headline": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.066164-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026"
+  },
+  {
+    "symbol": "MU",
+    "catalyst_type": "technical_breakout",
+    "headline": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.066164-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026"
+  },
+  {
+    "symbol": "NVDA",
+    "catalyst_type": "technical_breakout",
+    "headline": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.066164-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026"
+  },
+  {
+    "symbol": "SNDK",
+    "catalyst_type": "technical_breakout",
+    "headline": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.066164-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026"
+  },
+  {
+    "symbol": "SPY",
+    "catalyst_type": "technical_breakout",
+    "headline": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.066164-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026"
+  },
+  {
+    "symbol": "WDC",
+    "catalyst_type": "technical_breakout",
+    "headline": "This Asian Country Is 1% The Size Of The US \u2014 And It Just Delivered 11x The S&P 500's Returns",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.066164-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53247325/south-korea-etf-ewy-112-percent-ai-memory-boom-2026"
+  },
+  {
+    "symbol": "AMD",
+    "catalyst_type": "technical_breakout",
+    "headline": "What's Going On With AMD Stock Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.086268-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53246451/whats-going-on-with-amd-stock-wednesday-5"
+  },
+  {
+    "symbol": "RXT",
+    "catalyst_type": "technical_breakout",
+    "headline": "What's Going On With AMD Stock Wednesday?",
+    "sentiment": "neutral",
+    "detected_at": "2026-06-17T12:16:29.086268-04:00",
+    "source_url": "https://www.benzinga.com/markets/tech/26/06/53246451/whats-going-on-with-amd-stock-wednesday-5"
+  },
+  {
+    "symbol": "EXMP",
+    "catalyst_type": "contract_win",
+    "headline": "Example wins government contract",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:17:15.099598-04:00",
+    "source_url": null
+  },
+  {
+    "symbol": "EXMP",
+    "catalyst_type": "contract_win",
+    "headline": "Example wins government contract",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:19:24.459037-04:00",
+    "source_url": null
+  },
+  {
+    "symbol": "EXMP",
+    "catalyst_type": "contract_win",
+    "headline": "Example wins government contract",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T12:49:17.553486-04:00",
+    "source_url": null
+  },
+  {
+    "symbol": "EXMP",
+    "catalyst_type": "contract_win",
+    "headline": "Example wins government contract",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T13:12:42.038990-04:00",
+    "source_url": null
+  },
+  {
+    "symbol": "EXMP",
+    "catalyst_type": "contract_win",
+    "headline": "Example wins government contract",
+    "sentiment": "positive",
+    "detected_at": "2026-06-17T13:33:24.289826-04:00",
+    "source_url": null
+  }
+]

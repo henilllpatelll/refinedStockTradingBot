@@ -1,0 +1,218 @@
+[
+  {
+    "symbol": "AVGO",
+    "strategy_id": "S2",
+    "strategy_name": "52-Week High",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      2,
+      5
+    ],
+    "close": 479.23,
+    "atr_14": 18.3979,
+    "details": {
+      "high_52w": 488.82,
+      "volume_ratio": 2.313
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "BB",
+    "strategy_id": "S2",
+    "strategy_name": "52-Week High",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      2,
+      5
+    ],
+    "close": 10.18,
+    "atr_14": 0.6956,
+    "details": {
+      "high_52w": 10.33,
+      "volume_ratio": 2.588
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "CRWV",
+    "strategy_id": "S5",
+    "strategy_name": "Pullback to EMA20",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      3,
+      8
+    ],
+    "close": 110.93,
+    "atr_14": 8.4645,
+    "details": {
+      "ema20": 111.111,
+      "ema50": 106.5331
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "FOXA",
+    "strategy_id": "S5",
+    "strategy_name": "Pullback to EMA20",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      3,
+      8
+    ],
+    "close": 64.28,
+    "atr_14": 1.8132,
+    "details": {
+      "ema20": 64.725,
+      "ema50": 63.6926
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "HIMS",
+    "strategy_id": "S5",
+    "strategy_name": "Pullback to EMA20",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      3,
+      8
+    ],
+    "close": 27.51,
+    "atr_14": 1.7944,
+    "details": {
+      "ema20": 25.6716,
+      "ema50": 25.1278
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "HOOD",
+    "strategy_id": "S5",
+    "strategy_name": "Pullback to EMA20",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      3,
+      8
+    ],
+    "close": 82.85,
+    "atr_14": 5.3218,
+    "details": {
+      "ema20": 81.1668,
+      "ema50": 80.3432
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "MRVL",
+    "strategy_id": "S2",
+    "strategy_name": "52-Week High",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      2,
+      5
+    ],
+    "close": 301.65,
+    "atr_14": 20.9773,
+    "details": {
+      "high_52w": 291.3,
+      "volume_ratio": 3.435
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "NVDA",
+    "strategy_id": "S5",
+    "strategy_name": "Pullback to EMA20",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      3,
+      8
+    ],
+    "close": 214.75,
+    "atr_14": 8.4274,
+    "details": {
+      "ema20": 215.7282,
+      "ema50": 206.455
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "NVTS",
+    "strategy_id": "S2",
+    "strategy_name": "52-Week High",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      2,
+      5
+    ],
+    "close": 30.84,
+    "atr_14": 3.5788,
+    "details": {
+      "high_52w": 33.82,
+      "volume_ratio": 3.063
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "RXRX",
+    "strategy_id": "S5",
+    "strategy_name": "Pullback to EMA20",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      3,
+      8
+    ],
+    "close": 3.47,
+    "atr_14": 0.2417,
+    "details": {
+      "ema20": 3.3165,
+      "ema50": 3.3678
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "SCHD",
+    "strategy_id": "S5",
+    "strategy_name": "Pullback to EMA20",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      3,
+      8
+    ],
+    "close": 32.37,
+    "atr_14": 0.3235,
+    "details": {
+      "ema20": 32.1349,
+      "ema50": 31.5969
+    },
+    "signal_count_for_symbol": 1
+  },
+  {
+    "symbol": "SLB",
+    "strategy_id": "S5",
+    "strategy_name": "Pullback to EMA20",
+    "catalyst_type": "technical_breakout",
+    "signal_strength": 1,
+    "hold_days": [
+      3,
+      8
+    ],
+    "close": 56.85,
+    "atr_14": 1.4945,
+    "details": {
+      "ema20": 55.8126,
+      "ema50": 54.0142
+    },
+    "signal_count_for_symbol": 1
+  }
+]

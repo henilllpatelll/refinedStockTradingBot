@@ -1,10 +1,18 @@
 from __future__ import annotations
 
+import json
 import logging
+from datetime import datetime
+from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import config
+from config.settings import NEWS_CATALYSTS_PATH, SWING_UNIVERSE_PATH
+from utils.finnhub import fetch_recent_upgrades
 
 _log = logging.getLogger(__name__)
+_ET = ZoneInfo("America/New_York")
+CATALYSTS_PATH = NEWS_CATALYSTS_PATH
 
 _BLOCK_KEYWORDS = {
     "secondary_offering": ("secondary offering", "registered direct", "share offering", "public offering"),
@@ -61,6 +69,87 @@ def classify_news(payload: dict) -> dict:
     }
 
 
+def load_catalysts(path: str | Path = CATALYSTS_PATH) -> list[dict]:
+    source = Path(path)
+    if not source.exists() or source.stat().st_size == 0:
+        return []
+    return json.loads(source.read_text())
+
+
+def save_catalysts(records: list[dict], path: str | Path = CATALYSTS_PATH) -> Path:
+    target = Path(path)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(json.dumps(records, indent=2))
+    return target
+
+
+def record_catalyst(result: dict, path: str | Path = CATALYSTS_PATH) -> None:
+    detected_at = datetime.now(_ET).isoformat()
+    records = load_catalysts(path)
+    payload = result.get("payload", {})
+    for symbol in result.get("symbols", []):
+        records.append(
+            {
+                "symbol": symbol,
+                "catalyst_type": result.get("catalyst_type", "technical_breakout"),
+                "headline": result.get("headline", ""),
+                "sentiment": result.get("sentiment", "neutral"),
+                "detected_at": detected_at,
+                "source_url": payload.get("url"),
+            }
+        )
+    save_catalysts(records, path)
+
+
+def latest_catalysts_by_symbol(path: str | Path = CATALYSTS_PATH) -> dict[str, dict]:
+    latest: dict[str, dict] = {}
+    for record in load_catalysts(path):
+        symbol = str(record.get("symbol", "")).upper()
+        if not symbol:
+            continue
+        previous = latest.get(symbol)
+        if previous is None or str(record.get("detected_at", "")) >= str(previous.get("detected_at", "")):
+            latest[symbol] = record
+    return latest
+
+
+def load_universe(path: str | Path = SWING_UNIVERSE_PATH) -> list[str]:
+    source = Path(path)
+    if not source.exists() or source.stat().st_size == 0:
+        return []
+    return json.loads(source.read_text())
+
+
+def append_catalyst_records(records: list[dict], path: str | Path = CATALYSTS_PATH) -> None:
+    if not records:
+        return
+    existing = load_catalysts(path)
+    existing.extend(records)
+    save_catalysts(existing, path)
+
+
+async def run_structured_upgrade_scan(days: int = 2) -> list[dict]:
+    symbols = load_universe()
+    if not symbols:
+        _log.warning("NewsAnalyst | universe empty; skipping Finnhub upgrade scan")
+        return []
+    try:
+        records = fetch_recent_upgrades(symbols, days=days)
+    except RuntimeError as exc:
+        _log.warning("NewsAnalyst | Finnhub upgrade scan skipped: %s", exc)
+        return []
+    except Exception as exc:
+        _log.error("NewsAnalyst | Finnhub upgrade scan failed: %s", exc)
+        return []
+
+    append_catalyst_records(records, CATALYSTS_PATH)
+    if records:
+        async with config._greenlight_lock:
+            config.greenlighted_tickers.update(record["symbol"] for record in records)
+    _log.info("NewsAnalyst | Finnhub upgrade scan found %d record(s)", len(records))
+    return records
+
+
 async def evaluate_news(payload: dict) -> dict:
     result = classify_news(payload)
     symbols = result["symbols"]
@@ -78,6 +167,7 @@ async def evaluate_news(payload: dict) -> dict:
     if result["greenlight"]:
         async with config._greenlight_lock:
             config.greenlighted_tickers.update(symbols)
+        record_catalyst(result, CATALYSTS_PATH)
         _log.info("NewsAnalyst | GREENLIGHT %s catalyst=%s", symbols, result["catalyst_type"])
 
     return result

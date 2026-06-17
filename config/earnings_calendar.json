@@ -1,0 +1,22 @@
+[
+  {
+    "symbol": "MU",
+    "date": "2026-06-24",
+    "hour": "amc",
+    "eps_estimate": 20.1026,
+    "eps_actual": null,
+    "revenue_estimate": 35156580173,
+    "revenue_actual": null,
+    "source": "finnhub"
+  },
+  {
+    "symbol": "CCL",
+    "date": "2026-06-22",
+    "hour": "bmo",
+    "eps_estimate": 0.3444,
+    "eps_actual": null,
+    "revenue_estimate": 6752367837,
+    "revenue_actual": null,
+    "source": "finnhub"
+  }
+]

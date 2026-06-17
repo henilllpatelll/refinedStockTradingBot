@@ -35,12 +35,21 @@ SWING_WATCHLIST_PATH: str = "config/swing_watchlist.json"
 CONFIRMED_SETUPS_PATH: str = "config/confirmed_setups.json"
 EARNINGS_CALENDAR_PATH: str = "config/earnings_calendar.json"
 SECTOR_RANKINGS_PATH: str = "config/sector_rankings.json"
+SECTOR_MAP_PATH: str = "config/sector_map.json"
+NEWS_CATALYSTS_PATH: str = "config/news_catalysts.json"
+POSITION_STATE_PATH: str = "config/position_state.json"
 
 # ---------------------------------------------------------------------------
 # Alpha Vantage (Tier-1 fallback)
 # ---------------------------------------------------------------------------
 ALPHA_VANTAGE_API_KEY: str = os.getenv("ALPHA_VANTAGE_API_KEY", "demo")
 ALPHA_VANTAGE_BASE_URL: str = "https://www.alphavantage.co/query"
+
+# ---------------------------------------------------------------------------
+# Finnhub fundamentals/events provider
+# ---------------------------------------------------------------------------
+FINNHUB_API_KEY: str = os.getenv("FINNHUB_API_KEY", "")
+FINNHUB_BASE_URL: str = "https://finnhub.io/api/v1"
 
 # ---------------------------------------------------------------------------
 # Baseline calculation parameters (Tier-2, 3:45 PM)

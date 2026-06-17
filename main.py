@@ -4,16 +4,23 @@ import asyncio
 import logging
 import sys
 import threading
-from datetime import datetime, time
+from datetime import datetime, time, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from agents.earnings_calendar import run_earnings_calendar_fetch
 from agents.premarket_news import run_news_rest_scan
 from agents.sector_ranker import run_sector_ranking
+from agents.sector_ranker import run_sector_map_build
 from config.rejection_tracker import rejection_tracker
 from config.settings import LOG_LEVEL
-from execution.position_manager import eod_close_check, run_trade_updates
+from execution.position_manager import (
+    audit_untracked_alpaca_positions,
+    eod_close_check,
+    fetch_daily_exit_data_for_open_positions,
+    load_position_state,
+    run_trade_updates,
+)
 from execution.strategy_analytics import send_strategy_daily_summary
 from execution.swing_entry import run_swing_entry
 from strategies.eod_scanner import run_eod_scan
@@ -23,6 +30,7 @@ from strategies.tier2_baseline_calc import run_baseline_calc
 from strategies.watchlist_pruner import run_watchlist_pruner
 
 _ET = ZoneInfo("America/New_York")
+ENTRY_CUTOFF = time(9, 45)
 
 
 async def _wait_until(target: time, logger: logging.Logger) -> None:
@@ -33,6 +41,28 @@ async def _wait_until(target: time, logger: logging.Logger) -> None:
     seconds = (target_dt - now).total_seconds()
     logger.info("Main | waiting %.1f min until %s ET", seconds / 60, target)
     await asyncio.sleep(seconds)
+
+
+def _stage_status(target: time, now: datetime, cutoff: time | None = None) -> str:
+    target_dt = datetime.combine(now.date(), target, tzinfo=now.tzinfo)
+    if now < target_dt:
+        return "pending"
+    if cutoff is not None:
+        cutoff_dt = datetime.combine(now.date(), cutoff, tzinfo=now.tzinfo)
+        if now > cutoff_dt:
+            return "missed"
+    return "due"
+
+
+async def _wait_for_stage(target: time, logger: logging.Logger, cutoff: time | None = None) -> bool:
+    now = datetime.now(tz=_ET)
+    status = _stage_status(target, now, cutoff)
+    if status == "missed":
+        logger.warning("Main | missed %s ET stage; skipping", target)
+        return False
+    if status == "pending":
+        await _wait_until(target, logger)
+    return True
 
 
 def _is_stale(path: Path) -> bool:
@@ -63,6 +93,7 @@ async def _weekend_prep(logger: logging.Logger) -> None:
     await asyncio.to_thread(run_universe_sweep)
     await asyncio.to_thread(run_earnings_calendar_fetch)
     await asyncio.to_thread(run_sector_ranking)
+    await asyncio.to_thread(run_sector_map_build)
     logger.info("Main | Saturday prep complete")
 
 
@@ -73,27 +104,44 @@ async def _sunday_prune(logger: logging.Logger) -> None:
 
 
 async def _weekday_pipeline(logger: logging.Logger) -> None:
-    await _wait_until(time(7, 0), logger)
-    await run_news_rest_scan()
-    await run_premarket_filter()
-
-    await _wait_until(time(9, 30), logger)
-    await run_swing_entry()
-
     trade_updates = asyncio.create_task(run_trade_updates(), name="trade-updates")
     try:
-        await _wait_until(time(15, 45), logger)
-        await run_baseline_calc()
-        await run_eod_scan()
+        if await _wait_for_stage(time(7, 0), logger):
+            await run_news_rest_scan()
+            await run_premarket_filter()
 
-        await _wait_until(time(15, 50), logger)
-        await eod_close_check({})
+        if await _wait_for_stage(time(9, 30), logger, cutoff=ENTRY_CUTOFF):
+            await run_swing_entry()
 
-        await _wait_until(time(16, 5), logger)
-        await send_strategy_daily_summary()
+        if await _wait_for_stage(time(15, 45), logger):
+            await run_baseline_calc()
+            await run_eod_scan()
+
+        if await _wait_for_stage(time(15, 50), logger):
+            await eod_close_check(await fetch_daily_exit_data_for_open_positions())
+
+        if await _wait_for_stage(time(16, 5), logger):
+            await send_strategy_daily_summary()
     finally:
         trade_updates.cancel()
         await asyncio.gather(trade_updates, return_exceptions=True)
+
+
+async def _run_daily_cycle(now: datetime, logger: logging.Logger) -> None:
+    load_position_state()
+    audit_untracked_alpaca_positions()
+    if now.weekday() == 5:
+        await _weekend_prep(logger)
+    elif now.weekday() == 6:
+        await _sunday_prune(logger)
+    else:
+        await _weekday_pipeline(logger)
+
+
+def _seconds_until_next_day(now: datetime) -> float:
+    tomorrow = (now + timedelta(days=1)).date()
+    next_run = datetime.combine(tomorrow, time(0, 5), tzinfo=now.tzinfo)
+    return max(1.0, (next_run - now).total_seconds())
 
 
 async def _main() -> None:
@@ -105,13 +153,14 @@ async def _main() -> None:
     wake_thread.start()
 
     try:
-        now = datetime.now(tz=_ET)
-        if now.weekday() == 5:
-            await _weekend_prep(logger)
-        elif now.weekday() == 6:
-            await _sunday_prune(logger)
-        else:
-            await _weekday_pipeline(logger)
+        while True:
+            now = datetime.now(tz=_ET)
+            await _run_daily_cycle(now, logger)
+            report_path = rejection_tracker.save_report()
+            logger.info("Main | rejection report saved -> %s", report_path)
+            sleep_seconds = _seconds_until_next_day(datetime.now(tz=_ET))
+            logger.info("Main | daily cycle complete; sleeping %.1f hours", sleep_seconds / 3600)
+            await asyncio.sleep(sleep_seconds)
     finally:
         stop_wake.set()
         wake_thread.join(timeout=3)
