@@ -13,7 +13,7 @@ from execution.position_manager import (
     save_position_state,
     should_daily_close_exit,
 )
-from execution.swing_entry import position_budget_for_signal_count
+from execution.swing_entry import position_budget_for_signal_count, _validate_entry_price
 from execution import swing_entry
 from strategies.tier1_universe_sweep import parse_finviz_number
 
@@ -41,13 +41,39 @@ async def test_entry_orders_use_latest_price_when_available(monkeypatch):
     monkeypatch.setattr(swing_entry, "fetch_latest_prices", fake_prices)
     monkeypatch.setattr(swing_entry, "submit_swing_entry", fake_submit)
 
+    # close=10.5 → live price 11.0 is 4.8% above EOD, within the 8% chase threshold
     result = await swing_entry.place_entry_orders(
-        [{"symbol": "ABCD", "strategy_id": "S1", "close": 10.0, "signal_count_for_symbol": 1}]
+        [{"symbol": "ABCD", "strategy_id": "S1", "close": 10.5, "details": {}, "signal_count_for_symbol": 1}]
     )
 
     assert result[0]["entry_order_id"] == "order-1"
     assert submitted[0][1] == 45
     assert submitted[0][2] == 11.0
+
+
+@pytest.mark.parametrize("strategy_id,details,eod_close,live_price,expected", [
+    # Chase filter: live price >8% above EOD close
+    ("S1", {}, 10.0, 11.0, False),
+    # S1: price below breakout level
+    ("S1", {"prior_swing_high": 12.0}, 11.0, 11.5, False),
+    # S1: price above breakout level and within chase threshold
+    ("S1", {"prior_swing_high": 10.0}, 11.0, 11.5, True),
+    # S2: price below 52w high
+    ("S2", {"high_52w": 12.0}, 11.0, 11.5, False),
+    # S4: price below earnings day low
+    ("S4", {"earnings_day_low": 12.0}, 11.0, 11.5, False),
+    # S5: price >3% from EMA20
+    ("S5", {"ema20": 10.0}, 11.0, 11.5, False),
+    # S5: price within 3% of EMA20
+    ("S5", {"ema20": 11.3}, 11.0, 11.5, True),
+    # S9: price fell >3% below EOD close
+    ("S9", {}, 12.0, 11.5, False),
+    # S13: price below previous close
+    ("S13", {"previous_close": 12.0}, 11.0, 11.5, False),
+])
+def test_validate_entry_price(strategy_id, details, eod_close, live_price, expected):
+    setup = {"symbol": "TEST", "strategy_id": strategy_id, "details": details, "close": eod_close}
+    assert _validate_entry_price(setup, live_price) is expected
 
 
 def test_strategy_exit_rules_are_plan_values():

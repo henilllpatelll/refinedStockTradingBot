@@ -1,3 +1,19 @@
 During premarket is it only current news?
 how often is premarket_catalyst_watchlist being tracked
 does premarket have these entry signals: CVD>0, uptick, price>VWAP, price>EMA9, EMA9>EMA20, L2 bid depth ≥ ask depth
+
+
+
+
+
+
+
+From PowerShell on your laptop:
+
+  ssh -i C:\Users\Henil\projects\refinedStockTradingBot\ssh-key-2026-06-17.key ubuntu@147.224.182.196
+
+  Then once in, activate the venv and watch logs:
+
+  source refinedStockTradingBot/venv/bin/activate
+  cd refinedStockTradingBot
+  tail -f logs/bot.log
