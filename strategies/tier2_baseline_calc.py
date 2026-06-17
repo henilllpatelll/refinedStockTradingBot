@@ -23,15 +23,17 @@ from alpaca.data.enums import Adjustment
 from config.settings import (
     ALPACA_API_KEY,
     ALPACA_SECRET_KEY,
+    SWING_UNIVERSE_PATH,
     VOLUME_SMA_PERIOD,
 )
 from config.rejection_tracker import rejection_tracker
+from utils.indicators import atr, ema_last, fifty_two_week_high
 
-_UNIVERSE_PATH  = Path(__file__).parent.parent / "config" / "low_float_universe.json"
+_UNIVERSE_PATH  = Path(SWING_UNIVERSE_PATH)
 _BASELINES_PATH = Path(__file__).parent.parent / "config" / "active_baselines.json"
 
-# 35 calendar days reliably spans 20 trading days even across holiday clusters.
-_LOOKBACK_CAL_DAYS = 35
+# 420 calendar days spans roughly 252 trading days plus holiday slack.
+_LOOKBACK_CAL_DAYS = 420
 # Limit concurrent Alpaca bar requests to stay within free-tier rate limits.
 _MAX_CONCURRENT = 10
 
@@ -55,7 +57,7 @@ async def _fetch_bars(
                 timeframe=TimeFrame.Day,
                 start=datetime.combine(start_date, datetime.min.time()),
                 end=datetime.combine(end_date, datetime.min.time()),
-                limit=VOLUME_SMA_PERIOD + 5,
+                limit=280,
                 adjustment=Adjustment.RAW,
             )
             raw = await asyncio.to_thread(client.get_stock_bars, request)
@@ -66,7 +68,10 @@ async def _fetch_bars(
             # alpaca-py returns a MultiIndex (symbol, timestamp) — drop symbol level.
             if isinstance(df.index, pd.MultiIndex):
                 level_vals = df.index.get_level_values(0)
-                df = df.loc[symbol] if symbol in level_vals else df.droplevel(0)
+                if symbol not in level_vals:
+                    logger.warning(f"Tier-2 | {symbol} missing from MultiIndex — skipping")
+                    return symbol, None
+                df = df.loc[symbol]
             return symbol, df.sort_index()
         except Exception as exc:
             logger.error(f"Tier-2 | bar fetch failed for {symbol}: {exc}")
@@ -94,11 +99,19 @@ def _compute_baseline(df: pd.DataFrame) -> Optional[dict]:
         if "vwap" in df.columns
         else None
     )
+    atr_14 = atr(df, 14)
+    ema20 = ema_last(df["close"], 20)
+    ema50 = ema_last(df["close"], 50)
+    high_52w = fifty_two_week_high(df)
 
     return {
         "volume_sma_20":  round(volume_sma, 2),
         "previous_close": round(previous_close, 4),
         "vwap_last":      round(last_vwap, 4) if last_vwap is not None else None,
+        "atr_14":         round(atr_14, 4) if atr_14 is not None else None,
+        "ema20":          round(ema20, 4) if ema20 is not None else None,
+        "ema50":          round(ema50, 4) if ema50 is not None else None,
+        "high_52w":       round(high_52w, 4) if high_52w is not None else None,
         "bars_used":      len(window),
     }
 
@@ -107,10 +120,6 @@ def _compute_baseline(df: pd.DataFrame) -> Optional[dict]:
 
 async def run_baseline_calc() -> dict[str, dict]:
     """Fetch bars, compute baselines, persist JSON. Returns baselines dict."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s  %(levelname)-8s  %(name)s  %(message)s",
-    )
     logger = logging.getLogger("tier2_baseline_calc")
 
     if not _UNIVERSE_PATH.exists():

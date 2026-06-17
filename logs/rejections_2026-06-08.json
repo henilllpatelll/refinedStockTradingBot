@@ -1,0 +1,2714 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "16:44:34 ET",
+  "summary": {
+    "tier2_no_baseline": 2,
+    "news_blocked": 0,
+    "rvol_too_low": 106,
+    "no_baseline_data": 2,
+    "reached_watchlist": 82,
+    "above_threshold_not_top_n": 104,
+    "indicator_filtered": 71,
+    "gap_too_low": 0,
+    "cvd_never_positive": 83,
+    "traded": 18
+  },
+  "traded": [
+    "APM",
+    "ARQQ",
+    "ASTI",
+    "ASYS",
+    "CDTG",
+    "EGG",
+    "ELAB",
+    "FOFO",
+    "HTCO",
+    "KZIA",
+    "LBGJ",
+    "LTRN",
+    "NCI",
+    "NEXR",
+    "OCC",
+    "SDOT",
+    "SKLZ",
+    "UK"
+  ],
+  "symbols": {
+    "AMAN": [
+      {
+        "time": "2026-06-08 03:45:02",
+        "stage": "tier2",
+        "reason": "insufficient_bars",
+        "bars_found": 13,
+        "bars_needed": 20
+      },
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "EXYN": [
+      {
+        "time": "2026-06-08 03:45:02",
+        "stage": "tier2",
+        "reason": "insufficient_bars",
+        "bars_found": 15,
+        "bars_needed": 20
+      },
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "VNRX": [
+      {
+        "time": "2026-06-08 04:00:35",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 04:02:30",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.4400\u22641.5728)"
+      }
+    ],
+    "ODYS": [
+      {
+        "time": "2026-06-08 04:00:41",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 07:52:23",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (4.0100\u22644.0164)"
+      },
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 373.663,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.542,
+        "threshold": 1.0
+      }
+    ],
+    "RMSG": [
+      {
+        "time": "2026-06-08 06:10:08",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 06:10:50",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.0400\u22641.1216)"
+      }
+    ],
+    "SUGP": [
+      {
+        "time": "2026-06-08 06:10:26",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 06:12:00",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (0.7554\u22640.7582)"
+      }
+    ],
+    "EGG": [
+      {
+        "time": "2026-06-08 06:13:14",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 06:13:14",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (5.7000\u22645.7153)"
+      }
+    ],
+    "INDP": [
+      {
+        "time": "2026-06-08 06:14:04",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 06:27:55",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (3.2300\u22643.2313)"
+      },
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2718.034,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:02:42",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.995,
+        "threshold": 1.0
+      }
+    ],
+    "ELAB": [
+      {
+        "time": "2026-06-08 07:36:14",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 07:40:28",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.7550\u22641.7599)"
+      },
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1271.715,
+        "top_n": 50
+      }
+    ],
+    "INDO": [
+      {
+        "time": "2026-06-08 07:51:48",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 07:52:59",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.7200\u22642.8207)"
+      },
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2678.416,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 12:26:40",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "OCC": [
+      {
+        "time": "2026-06-08 08:10:30",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 08:10:30",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (14.2003\u226414.2518)"
+      }
+    ],
+    "BCDA": [
+      {
+        "time": "2026-06-08 08:11:00",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:22:33",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (0.9622\u22640.9626)"
+      },
+      {
+        "time": "2026-06-08 13:28:58",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "FOFO": [
+      {
+        "time": "2026-06-08 08:11:12",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 08:18:31",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (4.5200\u22644.5954)"
+      },
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1701.477,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 12:43:58",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "DAIC": [
+      {
+        "time": "2026-06-08 08:11:13",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 08:22:19",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.0779\u22642.1543)"
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11.77,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:49:13",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.993,
+        "threshold": 1.0
+      }
+    ],
+    "CMND": [
+      {
+        "time": "2026-06-08 08:11:26",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 08:15:33",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (3.2000\u22643.2447)"
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9.386,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:45:25",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.991,
+        "threshold": 1.0
+      }
+    ],
+    "HYPD": [
+      {
+        "time": "2026-06-08 08:18:29",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "TOYO": [
+      {
+        "time": "2026-06-08 08:41:46",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 08:57:17",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (15.9000\u226415.9443)"
+      }
+    ],
+    "MTVA": [
+      {
+        "time": "2026-06-08 08:42:05",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:04:31",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.2200\u22642.2621)"
+      },
+      {
+        "time": "2026-06-08 09:33:13",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6.02,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:52:17",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "HQ": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2648.78,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:55:08",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:55:36",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (10.6664\u226410.6865)"
+      },
+      {
+        "time": "2026-06-08 12:02:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "ASYS": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2646.237,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:43:26",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:43:56",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (19.1342\u226419.2451)"
+      },
+      {
+        "time": "2026-06-08 12:25:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "MASK": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2644.192,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:34:29",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.972,
+        "threshold": 1.0
+      }
+    ],
+    "ELMT": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2641.07,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:19:23",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:22:53",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (17.8841\u226417.9994)"
+      },
+      {
+        "time": "2026-06-08 11:13:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      }
+    ],
+    "BIAF": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2615.217,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:32:06",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 11:51:18",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.6500\u22641.6548)"
+      },
+      {
+        "time": "2026-06-08 15:28:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "ARQQ": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2602.395,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:38",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:05:26",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (12.6450\u226412.7137)"
+      },
+      {
+        "time": "2026-06-08 11:19:46",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      }
+    ],
+    "INR": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2515.235,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:52:34",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 15:59:04",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 15:59:10",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (13.5600\u226413.6990)"
+      }
+    ],
+    "PSIG": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2453.211,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:39:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.98,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 10:35:08",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:49:07",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (9.5100\u22649.5754)"
+      }
+    ],
+    "DOMH": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2369.72,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:33:43",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.969,
+        "threshold": 1.0
+      }
+    ],
+    "AGPU": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2287.909,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:54:24",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:54:24",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (7.5707\u22647.6006)"
+      },
+      {
+        "time": "2026-06-08 10:24:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "NA": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2229.817,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:42:31",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:43:02",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.0650\u22642.1250)"
+      },
+      {
+        "time": "2026-06-08 12:51:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "SHIM": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2220.371,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:51:00",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.648,
+        "threshold": 1.0
+      }
+    ],
+    "KZIA": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2211.537,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 11:09:05",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 09:39:09",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:42:35",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (11.9000\u226411.9130)"
+      }
+    ],
+    "VIVO": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2202.422,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:32:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:52:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "KITT": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2120.463,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:27",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:35:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "RBNE": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2080.945,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:32:04",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:36:52",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (1.0050\u22641.0059)"
+      },
+      {
+        "time": "2026-06-08 12:46:30",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "FABC": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2056.501,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:57:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "NCI": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2000.574,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:14:24",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.997,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 15:19:23",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 15:27:11",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (10.9900\u226411.0217)"
+      }
+    ],
+    "SDOT": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1960.617,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:35:58",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (15.6300\u226415.6991)"
+      },
+      {
+        "time": "2026-06-08 15:38:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "FATN": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1951.052,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:49:31",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 10:18:27",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:24:59",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (6.4204\u22646.4322)"
+      }
+    ],
+    "MSS": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1912.778,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:33:26",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "RFIL": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1896.04,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:57:25",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:57:37",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (16.8300\u226417.1976)"
+      },
+      {
+        "time": "2026-06-08 10:59:10",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "ASTI": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1809.01,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:28",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:29",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (6.5500\u22646.7070)"
+      },
+      {
+        "time": "2026-06-08 15:18:36",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "QNTM": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1803.662,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:42:52",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.995,
+        "threshold": 1.0
+      }
+    ],
+    "LTRN": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1764.25,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:18:00",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 11:19:28",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (4.0401\u22644.0420)"
+      }
+    ],
+    "JFB": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1734.168,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:28",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:32:28",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 10:49:26",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (5.6100\u22645.6117)"
+      }
+    ],
+    "QCLS": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1723.344,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:58:39",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:37:48",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.997,
+        "threshold": 1.0
+      }
+    ],
+    "HMR": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1701.165,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:55:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.996,
+        "threshold": 1.0
+      }
+    ],
+    "CLRB": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1694.584,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:43:53",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      }
+    ],
+    "WCT": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1683.644,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:34:44",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.96,
+        "threshold": 1.0
+      }
+    ],
+    "MBRX": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1676.397,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:30",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:32:10",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.3754\u22642.3876)"
+      },
+      {
+        "time": "2026-06-08 11:27:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "SKLZ": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1627.144,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:22",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:50:10",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (9.1565\u22649.2117)"
+      },
+      {
+        "time": "2026-06-08 10:42:53",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      }
+    ],
+    "PPSI": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1528.673,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:54:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.995,
+        "threshold": 1.0
+      }
+    ],
+    "TWAV": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1512.031,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:26",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:34:21",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (1.5700\u22641.5957)"
+      },
+      {
+        "time": "2026-06-08 10:18:59",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.997,
+        "threshold": 1.0
+      }
+    ],
+    "TRT": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1462.012,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:03:28",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "HCHL": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1429.055,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 13:25:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 10:12:14",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:12:15",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (4.1016\u22644.1339)"
+      }
+    ],
+    "REA": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1417.918,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:49:29",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.992,
+        "threshold": 1.0
+      }
+    ],
+    "BIRD": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1346.39,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:59:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      }
+    ],
+    "PLYX": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1312.822,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:07:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.995,
+        "threshold": 1.0
+      }
+    ],
+    "OPTX": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1278.907,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:47:27",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.993,
+        "threshold": 1.0
+      }
+    ],
+    "HTCO": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1262.776,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:22",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:32",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (3.0000\u22643.0112)"
+      },
+      {
+        "time": "2026-06-08 15:49:53",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "QTTB": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1169.117,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:08:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.997,
+        "threshold": 1.0
+      }
+    ],
+    "ANNA": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1075.674,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:26",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:43:12",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (3.0200\u22643.0423)"
+      },
+      {
+        "time": "2026-06-08 10:51:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "BNKK": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1027.899,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:55:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "MTEK": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 907.794,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:47:57",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      }
+    ],
+    "MSAI": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 812.911,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:39:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "XOS": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 794.081,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:49:29",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "SKYQ": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 746.599,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:22",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:29",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.7100\u22642.0521)"
+      }
+    ],
+    "NAMM": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 741.085,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:41:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.995,
+        "threshold": 1.0
+      }
+    ],
+    "BNZI": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 730.333,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:35:30",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "PLCE": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 668.644,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:38:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.988,
+        "threshold": 1.0
+      }
+    ],
+    "BNRG": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 640.2,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:44:39",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.99,
+        "threshold": 1.0
+      }
+    ],
+    "GXAI": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 608.654,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:40:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "CTNT": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 606.293,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:35:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.982,
+        "threshold": 1.0
+      }
+    ],
+    "NCT": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 598.814,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:39:19",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      }
+    ],
+    "DXST": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 547.107,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:33:28",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.927,
+        "threshold": 1.0
+      }
+    ],
+    "BJDX": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 427.896,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.974,
+        "threshold": 1.0
+      }
+    ],
+    "LESL": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 302.987,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.349,
+        "threshold": 1.0
+      }
+    ],
+    "AUUD": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 292.997,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:34:44",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.989,
+        "threshold": 1.0
+      }
+    ],
+    "AEMD": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 283.755,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:36:00",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.991,
+        "threshold": 1.0
+      }
+    ],
+    "ARTL": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 224.399,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:37:17",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.983,
+        "threshold": 1.0
+      }
+    ],
+    "PRFX": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 186.521,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:32:57",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.957,
+        "threshold": 1.0
+      }
+    ],
+    "ABTS": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 148.491,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.799,
+        "threshold": 1.0
+      }
+    ],
+    "VCIG": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 143.366,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:33:28",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.936,
+        "threshold": 1.0
+      }
+    ],
+    "RPGL": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 140.519,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:32:42",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.924,
+        "threshold": 1.0
+      }
+    ],
+    "ONCO": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 122.509,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.523,
+        "threshold": 1.0
+      }
+    ],
+    "GOVX": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 104.856,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:33:58",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.971,
+        "threshold": 1.0
+      }
+    ],
+    "AEHL": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 104.84,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.73,
+        "threshold": 1.0
+      }
+    ],
+    "CODX": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 93.473,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.753,
+        "threshold": 1.0
+      }
+    ],
+    "HCWB": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 51.473,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "SBFM": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16.056,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.398,
+        "threshold": 1.0
+      }
+    ],
+    "EZGO": [
+      {
+        "time": "2026-06-08 09:30:10",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2.591,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:30:40",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.63,
+        "threshold": 1.0
+      }
+    ],
+    "SPHL": [
+      {
+        "time": "2026-06-08 09:30:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 11:52:51",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "NEXR": [
+      {
+        "time": "2026-06-08 09:30:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:30:21",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (1.7903\u22641.8346)"
+      }
+    ],
+    "FOXX": [
+      {
+        "time": "2026-06-08 09:30:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:30:38",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (5.1154\u22645.1168)"
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4.193,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:35:45",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "STEM": [
+      {
+        "time": "2026-06-08 09:30:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:35:51",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (7.6100\u22647.8034)"
+      },
+      {
+        "time": "2026-06-08 13:47:32",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "SUPX": [
+      {
+        "time": "2026-06-08 09:30:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:30:21",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (9.0850\u22649.1943)"
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 8.761,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 13:26:26",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "BGDE": [
+      {
+        "time": "2026-06-08 09:30:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3.887,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:37:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.992,
+        "threshold": 1.0
+      }
+    ],
+    "SHMD": [
+      {
+        "time": "2026-06-08 09:30:22",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:36:13",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (5.0400\u22645.2313)"
+      },
+      {
+        "time": "2026-06-08 14:40:41",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "BGMS": [
+      {
+        "time": "2026-06-08 09:30:22",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:30:24",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.6850\u22641.7147)"
+      },
+      {
+        "time": "2026-06-08 14:48:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "AIB": [
+      {
+        "time": "2026-06-08 09:30:22",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:30:24",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.6950\u22641.7055)"
+      }
+    ],
+    "FGMC": [
+      {
+        "time": "2026-06-08 09:30:23",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:45:09",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2.232,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 12:25:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 12:13:07",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (10.5656\u226410.5700)"
+      }
+    ],
+    "BESS": [
+      {
+        "time": "2026-06-08 09:30:23",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:32:01",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (3.4512\u22643.5201)"
+      },
+      {
+        "time": "2026-06-08 12:14:58",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "UK": [
+      {
+        "time": "2026-06-08 09:30:24",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11.938,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:39:44",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.6904\u22642.7071)"
+      },
+      {
+        "time": "2026-06-08 12:24:38",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "LBGJ": [
+      {
+        "time": "2026-06-08 09:30:24",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11.4,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:06:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.996,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 14:11:42",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (1.2310\u22641.2407)"
+      }
+    ],
+    "DRCT": [
+      {
+        "time": "2026-06-08 09:30:25",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:49:13",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2.143,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:57:49",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.9300\u22642.9405)"
+      },
+      {
+        "time": "2026-06-08 10:58:24",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "MCRB": [
+      {
+        "time": "2026-06-08 09:30:25",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:59:45",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (6.6273\u22646.6664)"
+      }
+    ],
+    "APM": [
+      {
+        "time": "2026-06-08 09:30:26",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:32:01",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.1000\u22641.1412)"
+      }
+    ],
+    "CETX": [
+      {
+        "time": "2026-06-08 09:30:27",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:32:12",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 8.58,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:03:28",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "LRHC": [
+      {
+        "time": "2026-06-08 09:30:27",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:51:59",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (0.9737\u22640.9771)"
+      },
+      {
+        "time": "2026-06-08 10:36:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.236,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 13:15:45",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "SPPL": [
+      {
+        "time": "2026-06-08 09:30:30",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2.361,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:13:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.99,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 15:46:28",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (3.7298\u22643.7311)"
+      }
+    ],
+    "ELOG": [
+      {
+        "time": "2026-06-08 09:30:31",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 11:00:54",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.1900\u22641.2459)"
+      }
+    ],
+    "PTLE": [
+      {
+        "time": "2026-06-08 09:30:31",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:38:24",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (5.3441\u22645.3771)"
+      },
+      {
+        "time": "2026-06-08 15:54:43",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "TJGC": [
+      {
+        "time": "2026-06-08 09:30:32",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3.931,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:35:30",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.989,
+        "threshold": 1.0
+      }
+    ],
+    "CDTG": [
+      {
+        "time": "2026-06-08 09:30:35",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:21:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.357,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:32:25",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (3.0300\u22643.3255)"
+      }
+    ],
+    "VEEE": [
+      {
+        "time": "2026-06-08 09:30:36",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:33:32",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (5.7700\u22645.8576)"
+      },
+      {
+        "time": "2026-06-08 09:42:07",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2.428,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:19:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "CALC": [
+      {
+        "time": "2026-06-08 09:30:37",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:38:14",
+        "stage": "track_b_indicator",
+        "reason": "ema9\u2264ema20",
+        "detail": "ema9\u2264ema20 (1.0165\u22641.0225)"
+      }
+    ],
+    "ZEPP": [
+      {
+        "time": "2026-06-08 09:30:37",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6.06,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:48:01",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (6.1500\u22646.2874)"
+      }
+    ],
+    "ACCL": [
+      {
+        "time": "2026-06-08 09:30:38",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:33:13",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6.245,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:57:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.992,
+        "threshold": 1.0
+      }
+    ],
+    "EDSA": [
+      {
+        "time": "2026-06-08 09:30:42",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:33",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (5.7650\u22645.7807)"
+      },
+      {
+        "time": "2026-06-08 13:57:27",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "ROLR": [
+      {
+        "time": "2026-06-08 09:30:43",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7.459,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:51:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.996,
+        "threshold": 1.0
+      }
+    ],
+    "PYPD": [
+      {
+        "time": "2026-06-08 09:30:45",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:46:38",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (4.6000\u22644.6782)"
+      },
+      {
+        "time": "2026-06-08 10:12:07",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.398,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:55:52",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      }
+    ],
+    "ENGS": [
+      {
+        "time": "2026-06-08 09:30:50",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 10.209,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 10:13:56",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.6250\u22641.6389)"
+      }
+    ],
+    "KRRO": [
+      {
+        "time": "2026-06-08 09:30:51",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4.865,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:43:23",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.987,
+        "threshold": 1.0
+      }
+    ],
+    "RGNT": [
+      {
+        "time": "2026-06-08 09:30:59",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:33:50",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.3427\u22641.3765)"
+      }
+    ],
+    "FRMM": [
+      {
+        "time": "2026-06-08 09:31:01",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3.89,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 11:09:51",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 11:07:38",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (5.2800\u22645.2860)"
+      }
+    ],
+    "EPSM": [
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 14.253,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:34:29",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:59:24",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.998,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 14:31:20",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.1900\u22641.2669)"
+      }
+    ],
+    "SMJF": [
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 10.715,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:35:23",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 11:01:41",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (5.3150\u22645.3198)"
+      },
+      {
+        "time": "2026-06-08 13:15:45",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "WYY": [
+      {
+        "time": "2026-06-08 09:31:11",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3.617,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 09:34:59",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.97,
+        "threshold": 1.0
+      }
+    ],
+    "TOP": [
+      {
+        "time": "2026-06-08 09:31:34",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 10:00:54",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (0.9910\u22640.9939)"
+      },
+      {
+        "time": "2026-06-08 12:34:48",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.0,
+        "threshold": 1.0
+      }
+    ],
+    "VIVS": [
+      {
+        "time": "2026-06-08 09:34:39",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-08 09:35:15",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4.055,
+        "top_n": 50
+      },
+      {
+        "time": "2026-06-08 11:35:17",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.999,
+        "threshold": 1.0
+      },
+      {
+        "time": "2026-06-08 11:14:34",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.1800\u22641.2011)"
+      }
+    ]
+  }
+}

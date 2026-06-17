@@ -1,9 +1,9 @@
 """
-Pre-market news filter.
+Pre-market news REST poll.
 
-Tier-3 (~3:50 AM ET): REST scan of the last 12 hours of news for all universe
-                       symbols via the Alpaca news API; runs every article through
-                       evaluate_news() to pre-block bad tickers before open.
+At 7:00 AM ET, scan recent Alpaca news for the swing universe and feed articles
+through the catalyst classifier. Blocking headlines populate config.blocked_tickers;
+positive catalysts populate config.greenlighted_tickers.
 """
 
 import asyncio
@@ -19,9 +19,10 @@ from config.settings import (
     ALPACA_API_KEY,
     ALPACA_NEWS_URL,
     ALPACA_SECRET_KEY,
+    SWING_UNIVERSE_PATH,
 )
 
-_UNIVERSE_PATH   = Path(__file__).parent.parent / "config" / "low_float_universe.json"
+_UNIVERSE_PATH   = Path(SWING_UNIVERSE_PATH)
 _LOOKBACK_HOURS  = 12
 _log             = logging.getLogger(__name__)
 
@@ -34,7 +35,7 @@ def _load_universe() -> list[str]:
 
 
 async def run_news_rest_scan() -> None:
-    """Fetch recent news for universe symbols and pre-block any bad tickers."""
+    """Fetch recent news for universe symbols and mark them as catalysts."""
     symbols = _load_universe()
     if not symbols:
         _log.warning("PremarketNews | universe empty — skipping REST scan")

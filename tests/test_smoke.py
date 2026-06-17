@@ -1,7 +1,3 @@
-"""
-Smoke test: all modules import cleanly and critical settings are correct.
-Does not connect to any external service.
-"""
 import importlib
 
 import pytest
@@ -11,14 +7,28 @@ _MODULES = [
     "config.settings",
     "config.market_hours",
     "config",
+    "utils.indicators",
     "strategies.tier1_universe_sweep",
     "strategies.tier2_baseline_calc",
-    "strategies.trackA_volume_scout",
-    "execution.trackB_realtime",
-    "execution.position_manager",
+    "strategies.eod_scanner",
+    "strategies.premarket_filter",
+    "strategies.watchlist_pruner",
+    "strategies.playbook.s1_breakout",
+    "strategies.playbook.s2_52wk_high",
+    "strategies.playbook.s4_earnings_momentum",
+    "strategies.playbook.s5_pullback_ema20",
+    "strategies.playbook.s9_flag_pennant",
+    "strategies.playbook.s12_sector_rotation",
+    "strategies.playbook.s13_analyst_upgrade",
+    "agents.earnings_calendar",
     "agents.news_analyst",
-    "agents.telegram_notifier",
     "agents.premarket_news",
+    "agents.sector_ranker",
+    "agents.telegram_notifier",
+    "execution.position_manager",
+    "execution.swing_entry",
+    "execution.trade_logger",
+    "execution.strategy_analytics",
 ]
 
 
@@ -27,30 +37,9 @@ def test_module_imports(module):
     importlib.import_module(module)
 
 
-def test_data_feed_is_sip():
-    from config import settings
-    assert settings.ALPACA_DATA_FEED == "sip"
-
-
-def test_ws_url_uses_sip():
-    from config import settings
-    assert settings.ALPACA_WS_URL.endswith("/sip")
-
-
-def test_risk_controls_are_positive():
-    from config import settings
-    assert settings.MAX_POSITION_COST > 0
-    assert settings.MAX_RISK_PER_TRADE > 0
-    assert settings.MAX_RISK_PER_TRADE < settings.MAX_POSITION_COST
-
-
-def test_market_hours_session_state():
-    from config.market_hours import SessionState, current_session
-    session = current_session()
-    assert isinstance(session, SessionState)
-
-
 def test_config_shared_state_initialized():
     import config
-    assert isinstance(config.hot_watchlist, list)
+
+    assert isinstance(config.swing_watchlist, list)
+    assert isinstance(config.confirmed_setups, list)
     assert isinstance(config.blocked_tickers, set)

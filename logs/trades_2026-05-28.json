@@ -1,0 +1,85 @@
+{
+  "date": "2026-05-28",
+  "generated_at": "17:05:57 ET",
+  "summary": {
+    "total_trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "total_pnl": 0
+  },
+  "trades": [],
+  "open_at_shutdown": [
+    {
+      "symbol": "ASTC",
+      "submitted_time": "2026-05-28 09:30:10",
+      "shares_requested": 23,
+      "entry_limit_px": 21.59,
+      "cvd_at_signal": 97.0,
+      "gap_pct": 55.97,
+      "volume_at_signal": 98
+    },
+    {
+      "symbol": "TOPP",
+      "submitted_time": "2026-05-28 09:30:26",
+      "shares_requested": 303,
+      "entry_limit_px": 1.7,
+      "cvd_at_signal": 100.0,
+      "gap_pct": 7.14,
+      "volume_at_signal": 400
+    },
+    {
+      "symbol": "ATPC",
+      "submitted_time": "2026-05-28 09:31:09",
+      "shares_requested": 82,
+      "entry_limit_px": 6.09,
+      "cvd_at_signal": 19.0,
+      "gap_pct": 112.06,
+      "volume_at_signal": 580
+    },
+    {
+      "symbol": "ALAR",
+      "submitted_time": "2026-05-28 09:40:01",
+      "shares_requested": 54,
+      "entry_limit_px": 9.19,
+      "cvd_at_signal": 15101.0,
+      "gap_pct": 19.21,
+      "volume_at_signal": 58215
+    },
+    {
+      "symbol": "MASK",
+      "submitted_time": "2026-05-28 09:55:11",
+      "shares_requested": 195,
+      "entry_limit_px": 2.6,
+      "cvd_at_signal": 5.0,
+      "gap_pct": 85.14,
+      "volume_at_signal": 6
+    },
+    {
+      "symbol": "FOFO",
+      "submitted_time": "2026-05-28 10:14:13",
+      "shares_requested": 238,
+      "entry_limit_px": 2.15,
+      "cvd_at_signal": 355.0,
+      "gap_pct": 8.25,
+      "volume_at_signal": 44321
+    },
+    {
+      "symbol": "JFB",
+      "submitted_time": "2026-05-28 10:48:37",
+      "shares_requested": 78,
+      "entry_limit_px": 6.41,
+      "cvd_at_signal": 119.0,
+      "gap_pct": 22.78,
+      "volume_at_signal": 1363968
+    },
+    {
+      "symbol": "DAIO",
+      "submitted_time": "2026-05-28 12:55:28",
+      "shares_requested": 124,
+      "entry_limit_px": 4.07,
+      "cvd_at_signal": 100.0,
+      "gap_pct": 26.02,
+      "volume_at_signal": 107
+    }
+  ]
+}

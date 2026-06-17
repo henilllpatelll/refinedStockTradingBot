@@ -1,0 +1,1846 @@
+{
+  "date": "2026-06-09",
+  "generated_at": "15:51:00 ET",
+  "summary": {
+    "tier2_no_baseline": 0,
+    "news_blocked": 0,
+    "rvol_too_low": 140,
+    "no_baseline_data": 4,
+    "reached_watchlist": 50,
+    "above_threshold_not_top_n": 18,
+    "indicator_filtered": 19,
+    "gap_too_low": 0,
+    "cvd_never_positive": 33,
+    "traded": 4
+  },
+  "traded": [
+    "AZI",
+    "BNAI",
+    "EPSM",
+    "RGNT"
+  ],
+  "symbols": {
+    "RGNT": [
+      {
+        "time": "2026-06-09 05:42:11",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 05:46:27",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (6.2601\u22646.2824)"
+      }
+    ],
+    "MTEN": [
+      {
+        "time": "2026-06-09 05:42:11",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 05:42:12",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (3.5000\u22643.5823)"
+      }
+    ],
+    "EPSM": [
+      {
+        "time": "2026-06-09 05:42:11",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 05:42:12",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.8700\u22642.1549)"
+      }
+    ],
+    "NPT": [
+      {
+        "time": "2026-06-09 05:42:17",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 05:42:23",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (3.1800\u22643.3981)"
+      },
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.28,
+        "threshold": 1.0
+      }
+    ],
+    "BYAH": [
+      {
+        "time": "2026-06-09 05:42:23",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 05:43:14",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.5200\u22641.5709)"
+      }
+    ],
+    "MTVA": [
+      {
+        "time": "2026-06-09 05:42:36",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 07:00:29",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.7300\u22641.7416)"
+      },
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.08,
+        "threshold": 1.0
+      }
+    ],
+    "GLXG": [
+      {
+        "time": "2026-06-09 05:46:38",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 05:47:17",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (0.8731\u22640.9272)"
+      },
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.754,
+        "threshold": 1.0
+      }
+    ],
+    "BNAI": [
+      {
+        "time": "2026-06-09 06:22:05",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 06:31:16",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (23.2400\u226423.3145)"
+      }
+    ],
+    "LE": [
+      {
+        "time": "2026-06-09 06:47:17",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 06:47:17",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (10.4900\u226410.4994)"
+      }
+    ],
+    "OPTH": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "SMJF": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.246,
+        "threshold": 1.0
+      }
+    ],
+    "FOXX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.08,
+        "threshold": 1.0
+      }
+    ],
+    "WNW": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.056,
+        "threshold": 1.0
+      }
+    ],
+    "SNTG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.867,
+        "threshold": 1.0
+      }
+    ],
+    "CDLX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.269,
+        "threshold": 1.0
+      }
+    ],
+    "KITT": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.393,
+        "threshold": 1.0
+      }
+    ],
+    "AGPU": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.738,
+        "threshold": 1.0
+      }
+    ],
+    "MDWD": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.715,
+        "threshold": 1.0
+      }
+    ],
+    "LNKS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.178,
+        "threshold": 1.0
+      }
+    ],
+    "FRMM": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.855,
+        "threshold": 1.0
+      }
+    ],
+    "NAMM": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.237,
+        "threshold": 1.0
+      }
+    ],
+    "LESL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.671,
+        "threshold": 1.0
+      }
+    ],
+    "HCWB": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.023,
+        "threshold": 1.0
+      }
+    ],
+    "ORKT": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.629,
+        "threshold": 1.0
+      }
+    ],
+    "TAOX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.439,
+        "threshold": 1.0
+      }
+    ],
+    "PECE": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "VCIG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.124,
+        "threshold": 1.0
+      }
+    ],
+    "ANY": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.068,
+        "threshold": 1.0
+      }
+    ],
+    "SBFM": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.006,
+        "threshold": 1.0
+      }
+    ],
+    "RBNE": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.829,
+        "threshold": 1.0
+      }
+    ],
+    "GECC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.602,
+        "threshold": 1.0
+      }
+    ],
+    "ELAB": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.542,
+        "threshold": 1.0
+      }
+    ],
+    "CHR": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.885,
+        "threshold": 1.0
+      }
+    ],
+    "TAOP": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.456,
+        "threshold": 1.0
+      }
+    ],
+    "GRAN": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.304,
+        "threshold": 1.0
+      }
+    ],
+    "TWAV": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.094,
+        "threshold": 1.0
+      }
+    ],
+    "KRRO": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.716,
+        "threshold": 1.0
+      }
+    ],
+    "SUPX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.576,
+        "threshold": 1.0
+      }
+    ],
+    "VSA": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.758,
+        "threshold": 1.0
+      }
+    ],
+    "VIVO": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.785,
+        "threshold": 1.0
+      }
+    ],
+    "PPSI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.737,
+        "threshold": 1.0
+      }
+    ],
+    "AMAN": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "AEHL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.021,
+        "threshold": 1.0
+      }
+    ],
+    "MTEK": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.4,
+        "threshold": 1.0
+      }
+    ],
+    "FATN": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.344,
+        "threshold": 1.0
+      }
+    ],
+    "BGMS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.204,
+        "threshold": 1.0
+      }
+    ],
+    "SHIM": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.646,
+        "threshold": 1.0
+      }
+    ],
+    "PMAX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.613,
+        "threshold": 1.0
+      }
+    ],
+    "PSTV": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.654,
+        "threshold": 1.0
+      }
+    ],
+    "BNKK": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.665,
+        "threshold": 1.0
+      }
+    ],
+    "ATER": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.677,
+        "threshold": 1.0
+      }
+    ],
+    "ARTL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.051,
+        "threshold": 1.0
+      }
+    ],
+    "PODC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.814,
+        "threshold": 1.0
+      }
+    ],
+    "CLRB": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.762,
+        "threshold": 1.0
+      }
+    ],
+    "DXST": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.238,
+        "threshold": 1.0
+      }
+    ],
+    "INM": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.012,
+        "threshold": 1.0
+      }
+    ],
+    "JL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.255,
+        "threshold": 1.0
+      }
+    ],
+    "LNZA": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.805,
+        "threshold": 1.0
+      }
+    ],
+    "SSTI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.467,
+        "threshold": 1.0
+      }
+    ],
+    "CLIK": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.172,
+        "threshold": 1.0
+      }
+    ],
+    "ASYS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.832,
+        "threshold": 1.0
+      }
+    ],
+    "INR": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.758,
+        "threshold": 1.0
+      }
+    ],
+    "ELOG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.496,
+        "threshold": 1.0
+      }
+    ],
+    "ASBP": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.24,
+        "threshold": 1.0
+      }
+    ],
+    "CMND": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.028,
+        "threshold": 1.0
+      }
+    ],
+    "KZIA": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.356,
+        "threshold": 1.0
+      }
+    ],
+    "GDTC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.133,
+        "threshold": 1.0
+      }
+    ],
+    "LTRN": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.809,
+        "threshold": 1.0
+      }
+    ],
+    "HQ": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.492,
+        "threshold": 1.0
+      }
+    ],
+    "GOVX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.034,
+        "threshold": 1.0
+      }
+    ],
+    "LRHC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.256,
+        "threshold": 1.0
+      }
+    ],
+    "XOS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.105,
+        "threshold": 1.0
+      }
+    ],
+    "LYEL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.838,
+        "threshold": 1.0
+      }
+    ],
+    "SLE": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.027,
+        "threshold": 1.0
+      }
+    ],
+    "SDST": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.74,
+        "threshold": 1.0
+      }
+    ],
+    "QTTB": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.327,
+        "threshold": 1.0
+      }
+    ],
+    "NCT": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.117,
+        "threshold": 1.0
+      }
+    ],
+    "FOFO": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.318,
+        "threshold": 1.0
+      }
+    ],
+    "PAPL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.448,
+        "threshold": 1.0
+      }
+    ],
+    "MLGO": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.09,
+        "threshold": 1.0
+      }
+    ],
+    "MSAI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.191,
+        "threshold": 1.0
+      }
+    ],
+    "GXAI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.141,
+        "threshold": 1.0
+      }
+    ],
+    "ELMT": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.645,
+        "threshold": 1.0
+      }
+    ],
+    "ROLR": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.785,
+        "threshold": 1.0
+      }
+    ],
+    "SKYQ": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.924,
+        "threshold": 1.0
+      }
+    ],
+    "OPAD": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.443,
+        "threshold": 1.0
+      }
+    ],
+    "BNZI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.267,
+        "threshold": 1.0
+      }
+    ],
+    "CETX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.177,
+        "threshold": 1.0
+      }
+    ],
+    "RFIL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.701,
+        "threshold": 1.0
+      }
+    ],
+    "BIAF": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.584,
+        "threshold": 1.0
+      }
+    ],
+    "ECOR": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.682,
+        "threshold": 1.0
+      }
+    ],
+    "HCHL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.218,
+        "threshold": 1.0
+      }
+    ],
+    "BIVI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.564,
+        "threshold": 1.0
+      }
+    ],
+    "SPHL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.177,
+        "threshold": 1.0
+      }
+    ],
+    "IQST": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.557,
+        "threshold": 1.0
+      }
+    ],
+    "WCT": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.078,
+        "threshold": 1.0
+      }
+    ],
+    "PLCE": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.365,
+        "threshold": 1.0
+      }
+    ],
+    "MSW": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.077,
+        "threshold": 1.0
+      }
+    ],
+    "JFB": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.783,
+        "threshold": 1.0
+      }
+    ],
+    "TJGC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.158,
+        "threshold": 1.0
+      }
+    ],
+    "NCI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.177,
+        "threshold": 1.0
+      }
+    ],
+    "HMR": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.233,
+        "threshold": 1.0
+      }
+    ],
+    "EDSA": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.837,
+        "threshold": 1.0
+      }
+    ],
+    "SDHC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.609,
+        "threshold": 1.0
+      }
+    ],
+    "ATPC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.243,
+        "threshold": 1.0
+      }
+    ],
+    "FENG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.415,
+        "threshold": 1.0
+      }
+    ],
+    "WW": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.415,
+        "threshold": 1.0
+      }
+    ],
+    "SKLZ": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.272,
+        "threshold": 1.0
+      }
+    ],
+    "ALAR": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.403,
+        "threshold": 1.0
+      }
+    ],
+    "UBXG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.027,
+        "threshold": 1.0
+      }
+    ],
+    "KIDZ": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.011,
+        "threshold": 1.0
+      }
+    ],
+    "KUST": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.308,
+        "threshold": 1.0
+      }
+    ],
+    "EZGO": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.095,
+        "threshold": 1.0
+      }
+    ],
+    "MBRX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.546,
+        "threshold": 1.0
+      }
+    ],
+    "INDP": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.622,
+        "threshold": 1.0
+      }
+    ],
+    "TBH": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.184,
+        "threshold": 1.0
+      }
+    ],
+    "IVF": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.143,
+        "threshold": 1.0
+      }
+    ],
+    "PSIG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.936,
+        "threshold": 1.0
+      }
+    ],
+    "ANNA": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.948,
+        "threshold": 1.0
+      }
+    ],
+    "AEMD": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.077,
+        "threshold": 1.0
+      }
+    ],
+    "PN": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.601,
+        "threshold": 1.0
+      }
+    ],
+    "ENGS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.433,
+        "threshold": 1.0
+      }
+    ],
+    "VNCE": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.945,
+        "threshold": 1.0
+      }
+    ],
+    "CODX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.019,
+        "threshold": 1.0
+      }
+    ],
+    "FCHL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.653,
+        "threshold": 1.0
+      }
+    ],
+    "QNTM": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.594,
+        "threshold": 1.0
+      }
+    ],
+    "RPGL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.723,
+        "threshold": 1.0
+      }
+    ],
+    "AUUD": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.042,
+        "threshold": 1.0
+      }
+    ],
+    "ONCO": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.029,
+        "threshold": 1.0
+      }
+    ],
+    "BIRD": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.643,
+        "threshold": 1.0
+      }
+    ],
+    "MASK": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.045,
+        "threshold": 1.0
+      }
+    ],
+    "CURR": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.885,
+        "threshold": 1.0
+      }
+    ],
+    "LZMH": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.236,
+        "threshold": 1.0
+      }
+    ],
+    "WAI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.627,
+        "threshold": 1.0
+      }
+    ],
+    "FABC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.68,
+        "threshold": 1.0
+      }
+    ],
+    "ABTS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.167,
+        "threshold": 1.0
+      }
+    ],
+    "ASTI": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.799,
+        "threshold": 1.0
+      }
+    ],
+    "QCLS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.419,
+        "threshold": 1.0
+      }
+    ],
+    "EXYN": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "OPTX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.845,
+        "threshold": 1.0
+      }
+    ],
+    "INBS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.186,
+        "threshold": 1.0
+      }
+    ],
+    "TRT": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.66,
+        "threshold": 1.0
+      }
+    ],
+    "WXM": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.08,
+        "threshold": 1.0
+      }
+    ],
+    "STEM": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.809,
+        "threshold": 1.0
+      }
+    ],
+    "EGG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.322,
+        "threshold": 1.0
+      }
+    ],
+    "PRFX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.08,
+        "threshold": 1.0
+      }
+    ],
+    "CISS": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.222,
+        "threshold": 1.0
+      }
+    ],
+    "FEMY": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.033,
+        "threshold": 1.0
+      }
+    ],
+    "BJDX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.035,
+        "threshold": 1.0
+      }
+    ],
+    "IBG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.79,
+        "threshold": 1.0
+      }
+    ],
+    "SUNE": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.373,
+        "top_n": 50
+      }
+    ],
+    "CDTG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.354,
+        "top_n": 50
+      }
+    ],
+    "NTRP": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.326,
+        "top_n": 50
+      }
+    ],
+    "TOP": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.306,
+        "top_n": 50
+      }
+    ],
+    "MWG": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.278,
+        "top_n": 50
+      }
+    ],
+    "EXOD": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.206,
+        "top_n": 50
+      }
+    ],
+    "HYPD": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.204,
+        "top_n": 50
+      }
+    ],
+    "RTB": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.173,
+        "top_n": 50
+      }
+    ],
+    "TOYO": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.163,
+        "top_n": 50
+      }
+    ],
+    "CVKD": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.145,
+        "top_n": 50
+      }
+    ],
+    "ALOT": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.132,
+        "top_n": 50
+      }
+    ],
+    "INDO": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.124,
+        "top_n": 50
+      }
+    ],
+    "VNRX": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.061,
+        "top_n": 50
+      }
+    ],
+    "NA": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.06,
+        "top_n": 50
+      }
+    ],
+    "ARQQ": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.046,
+        "top_n": 50
+      }
+    ],
+    "NXTC": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.041,
+        "top_n": 50
+      }
+    ],
+    "AIB": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.039,
+        "top_n": 50
+      }
+    ],
+    "ACCL": [
+      {
+        "time": "2026-06-09 15:50:22",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1.019,
+        "top_n": 50
+      }
+    ],
+    "AZI": [
+      {
+        "time": "2026-06-09 15:50:31",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:34",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.8600\u22641.8707)"
+      }
+    ],
+    "JZXN": [
+      {
+        "time": "2026-06-09 15:50:32",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:48",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.2601\u22642.5850)"
+      }
+    ],
+    "CLWT": [
+      {
+        "time": "2026-06-09 15:50:32",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:50",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.3100\u22641.4577)"
+      }
+    ],
+    "BTCT": [
+      {
+        "time": "2026-06-09 15:50:32",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "DAIC": [
+      {
+        "time": "2026-06-09 15:50:33",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "ZEPP": [
+      {
+        "time": "2026-06-09 15:50:33",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "OCG": [
+      {
+        "time": "2026-06-09 15:50:33",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:54",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.9700\u22642.0996)"
+      }
+    ],
+    "BESS": [
+      {
+        "time": "2026-06-09 15:50:34",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "IPW": [
+      {
+        "time": "2026-06-09 15:50:35",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "HTCO": [
+      {
+        "time": "2026-06-09 15:50:35",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:58",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (4.3460\u22644.3814)"
+      }
+    ],
+    "CTNT": [
+      {
+        "time": "2026-06-09 15:50:36",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:52",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.8850\u22642.0920)"
+      }
+    ],
+    "AHMA": [
+      {
+        "time": "2026-06-09 15:50:36",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "XWEL": [
+      {
+        "time": "2026-06-09 15:50:37",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "SHMD": [
+      {
+        "time": "2026-06-09 15:50:38",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:53",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (4.9700\u22645.0855)"
+      }
+    ],
+    "OCC": [
+      {
+        "time": "2026-06-09 15:50:38",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:54",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (20.5858\u226420.6525)"
+      }
+    ],
+    "ZNB": [
+      {
+        "time": "2026-06-09 15:50:38",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:54",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.2100\u22641.4905)"
+      }
+    ],
+    "APM": [
+      {
+        "time": "2026-06-09 15:50:40",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "BARK": [
+      {
+        "time": "2026-06-09 15:50:42",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "SPPL": [
+      {
+        "time": "2026-06-09 15:50:44",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "FDSB": [
+      {
+        "time": "2026-06-09 15:50:47",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "CRMT": [
+      {
+        "time": "2026-06-09 15:50:54",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "CHSN": [
+      {
+        "time": "2026-06-09 15:50:55",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "BNRG": [
+      {
+        "time": "2026-06-09 15:50:58",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "JTAI": [
+      {
+        "time": "2026-06-09 15:50:58",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-06-09 15:50:58",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (7.7400\u22648.2351)"
+      }
+    ]
+  }
+}

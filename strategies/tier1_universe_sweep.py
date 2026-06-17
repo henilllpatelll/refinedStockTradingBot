@@ -21,15 +21,16 @@ from config.settings import (
     ALPHA_VANTAGE_BASE_URL,
     FINVIZ_SCREENER_BASE_URL,
     MAX_UNIVERSE_SIZE,
+    MIN_AVG_DAILY_VOLUME,
+    MIN_SWING_PRICE,
+    SWING_UNIVERSE_PATH,
 )
 
-_UNIVERSE_PATH = Path(__file__).parent.parent / "config" / "low_float_universe.json"
+_UNIVERSE_PATH = Path(SWING_UNIVERSE_PATH)
 
 # ── screening thresholds ────────────────────────────────────────────────────
-_MAX_MARKET_CAP = 2_000_000_000   # $2 B
-_MIN_PRICE      = 1.00
-_MAX_PRICE      = 20.00
-_MAX_FLOAT      = 20_000_000      # 20 M shares
+_MIN_PRICE      = MIN_SWING_PRICE
+_MIN_AVG_VOLUME = MIN_AVG_DAILY_VOLUME
 
 # ── network constants ───────────────────────────────────────────────────────
 _FINVIZ_HEADERS = {
@@ -125,43 +126,44 @@ def _parse_screener_page(html: str) -> list[dict]:
     if not results_table or not col:
         raise ValueError("Finviz layout changed: header row not found")
 
-    for required in ("Ticker", "Market Cap", "Price"):
+    for required in ("Ticker", "Price", "Volume"):
         if required not in col:
             raise ValueError(f"Finviz layout changed: '{required}' column absent")
 
     ticker_idx = col["Ticker"]
-    mc_idx     = col["Market Cap"]
     price_idx  = col["Price"]
+    volume_idx = col["Volume"]
 
     rows: list[dict] = []
     for tr in results_table.find_all("tr"):
         tds = tr.find_all("td")
-        if len(tds) <= max(ticker_idx, mc_idx, price_idx):
+        if len(tds) <= max(ticker_idx, price_idx, volume_idx):
             continue
 
         ticker = tds[ticker_idx].get_text(strip=True)
         if not re.match(r"^[A-Z]{1,5}$", ticker):
             continue
 
-        market_cap = parse_finviz_number(tds[mc_idx].get_text(strip=True))
         try:
             price = float(tds[price_idx].get_text(strip=True).replace(",", ""))
         except ValueError:
             price = None
+        volume = parse_finviz_number(tds[volume_idx].get_text(strip=True))
 
-        rows.append({"ticker": ticker, "market_cap": market_cap, "price": price})
+        rows.append({"ticker": ticker, "price": price, "volume": volume})
     return rows
 
 
 def _apply_filters(rows: list[dict]) -> list[str]:
     passed: list[str] = []
     for row in rows:
-        mc, price = row["market_cap"], row["price"]
-        if mc is None or price is None:
+        price = row["price"]
+        volume = row.get("volume")
+        if price is None or volume is None:
             continue
-        if mc > _MAX_MARKET_CAP:
+        if price < _MIN_PRICE:
             continue
-        if not (_MIN_PRICE <= price <= _MAX_PRICE):
+        if volume < _MIN_AVG_VOLUME:
             continue
         passed.append(row["ticker"])
         if len(passed) >= MAX_UNIVERSE_SIZE:
@@ -234,12 +236,7 @@ def _alpha_vantage_fallback() -> list[str]:
             except (ValueError, TypeError):
                 mid_price = 0
 
-            if mc == 0 or mc > _MAX_MARKET_CAP:
-                continue
-            # SharesOutstanding is a conservative proxy for float in the fallback path
-            if shares > _MAX_FLOAT:
-                continue
-            if mid_price and not (_MIN_PRICE <= mid_price <= _MAX_PRICE):
+            if mid_price and mid_price < _MIN_PRICE:
                 continue
 
             passed.append(symbol)
@@ -257,10 +254,6 @@ def _alpha_vantage_fallback() -> list[str]:
 
 def run_universe_sweep() -> list[str]:
     """Scrape universe, apply filters, persist to JSON. Returns ticker list."""
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(asctime)s  %(levelname)-8s  %(name)s  %(message)s",
-    )
     log = logging.getLogger(__name__)
 
     tickers: list[str] = []

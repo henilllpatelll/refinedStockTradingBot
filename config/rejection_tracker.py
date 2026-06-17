@@ -1,9 +1,4 @@
-"""
-Daily rejection tracker — records why each symbol was not traded.
-
-Writes logs/rejections_YYYY-MM-DD.json at session end.
-Call save_report() from main.py after all tasks complete.
-"""
+from __future__ import annotations
 
 import json
 import os
@@ -13,62 +8,39 @@ from datetime import datetime
 from zoneinfo import ZoneInfo
 
 _ET = ZoneInfo("America/New_York")
+SWING_STAGES = ("universe", "baseline", "eod_scan", "premarket", "entry", "position_manager", "news")
 
 
 class _RejectionTracker:
     def __init__(self) -> None:
         self._data: dict[str, list[dict]] = defaultdict(list)
-        self._seen: set[tuple[str, str]] = set()       # (symbol, stage) dedup
-        self._best_rvol: dict[str, float] = {}          # highest RVOL seen per symbol
-        self._rvol_idx: dict[str, int] = {}             # cached index of RVOL record
-        self._reached_watchlist: set[str] = set()
+        self._seen: set[tuple[str, str]] = set()
+        self._watchlisted: set[str] = set()
+        self._confirmed: set[str] = set()
         self._traded: set[str] = set()
         self._lock = threading.Lock()
 
     def record(self, symbol: str, stage: str, reason: str, **details) -> None:
-        """Record a rejection reason — silently deduplicates per (symbol, stage)."""
         key = (symbol, stage)
         with self._lock:
             if key in self._seen:
                 return
             self._seen.add(key)
-            entry: dict = {
+            entry = {
                 "time": datetime.now(_ET).strftime("%Y-%m-%d %H:%M:%S"),
                 "stage": stage,
                 "reason": reason,
             }
-            entry.update({k: v for k, v in details.items() if v is not None})
+            entry.update({key: value for key, value in details.items() if value is not None})
             self._data[symbol].append(entry)
-
-    def record_rvol(self, symbol: str, rvol: float, threshold: float) -> None:
-        """Update best RVOL seen for a sub-threshold symbol (O(1), lock-free fast path)."""
-        prev = self._best_rvol.get(symbol, -1.0)
-        if rvol <= prev:
-            return
-        with self._lock:
-            prev = self._best_rvol.get(symbol, -1.0)
-            if rvol <= prev:
-                return
-            self._best_rvol[symbol] = rvol
-            idx = self._rvol_idx.get(symbol)
-            now = datetime.now(_ET).strftime("%Y-%m-%d %H:%M:%S")
-            if idx is not None and idx < len(self._data[symbol]):
-                self._data[symbol][idx]["best_rvol"] = round(rvol, 3)
-                self._data[symbol][idx]["time"] = now
-            else:
-                new_entry = {
-                    "time": now,
-                    "stage": "track_a",
-                    "reason": "rvol_below_threshold",
-                    "best_rvol": round(rvol, 3),
-                    "threshold": threshold,
-                }
-                self._data[symbol].append(new_entry)
-                self._rvol_idx[symbol] = len(self._data[symbol]) - 1
 
     def record_watchlist_entry(self, symbol: str) -> None:
         with self._lock:
-            self._reached_watchlist.add(symbol)
+            self._watchlisted.add(symbol)
+
+    def record_confirmed(self, symbol: str) -> None:
+        with self._lock:
+            self._confirmed.add(symbol)
 
     def record_traded(self, symbol: str) -> None:
         with self._lock:
@@ -76,50 +48,34 @@ class _RejectionTracker:
 
     def get_report(self) -> dict:
         with self._lock:
-            symbols = {k: list(v) for k, v in self._data.items()}
+            symbols = {symbol: list(entries) for symbol, entries in self._data.items()}
             summary = {
-                "tier2_no_baseline": sum(
-                    1 for v in symbols.values()
-                    if any(e["stage"] == "tier2" for e in v)
-                ),
+                "universe_rejected": self._count_stage(symbols, "universe"),
+                "baseline_rejected": self._count_stage(symbols, "baseline"),
+                "eod_scan_rejected": self._count_stage(symbols, "eod_scan"),
+                "premarket_rejected": self._count_stage(symbols, "premarket"),
+                "entry_rejected": self._count_stage(symbols, "entry"),
                 "news_blocked": sum(
-                    1 for v in symbols.values()
-                    if any(e["stage"].startswith("news") for e in v)
+                    1
+                    for entries in symbols.values()
+                    if any(entry["stage"] == "news" and "block" in entry["reason"] for entry in entries)
                 ),
-                "rvol_too_low": sum(
-                    1 for v in symbols.values()
-                    if any(e["stage"] == "track_a" and e.get("reason") == "rvol_below_threshold" for e in v)
-                ),
-                "no_snapshot_data": sum(
-                    1 for v in symbols.values()
-                    if any(e["stage"] == "track_a" and e.get("reason") == "no_snapshot_data" for e in v)
-                ),
-                "reached_watchlist": len(self._reached_watchlist),
-                "above_threshold_not_top_n": sum(
-                    1 for v in symbols.values()
-                    if any(e["stage"] == "track_a" and e.get("reason") == "above_threshold_not_top_n" for e in v)
-                ),
-                "indicator_filtered": sum(
-                    1 for v in symbols.values()
-                    if any(e["stage"] == "track_b_indicator" for e in v)
-                ),
-                "gap_too_low": sum(
-                    1 for v in symbols.values()
-                    if any(e["stage"] == "track_b" and e.get("reason") == "gap_below_threshold" for e in v)
-                ),
-                "cvd_never_positive": sum(
-                    1 for v in symbols.values()
-                    if any(e["stage"] == "track_b" and e.get("reason") == "cvd_nonpositive" for e in v)
-                ),
+                "watchlisted": len(self._watchlisted),
+                "confirmed": len(self._confirmed),
                 "traded": len(self._traded),
             }
+            traded = sorted(self._traded)
         return {
             "date": datetime.now(_ET).strftime("%Y-%m-%d"),
             "generated_at": datetime.now(_ET).strftime("%H:%M:%S ET"),
             "summary": summary,
-            "traded": sorted(self._traded),
+            "traded": traded,
             "symbols": symbols,
         }
+
+    @staticmethod
+    def _count_stage(symbols: dict[str, list[dict]], stage: str) -> int:
+        return sum(1 for entries in symbols.values() if any(entry["stage"] == stage for entry in entries))
 
     def save_report(self) -> str:
         report = self.get_report()

@@ -1,0 +1,6843 @@
+{
+  "date": "2026-05-28",
+  "generated_at": "17:05:57 ET",
+  "summary": {
+    "tier2_no_baseline": 0,
+    "news_blocked": 0,
+    "rvol_too_low": 387,
+    "no_baseline_data": 11,
+    "reached_watchlist": 27,
+    "above_threshold_not_top_n": 420,
+    "indicator_filtered": 15,
+    "gap_too_low": 0,
+    "cvd_never_positive": 28,
+    "traded": 0
+  },
+  "traded": [],
+  "symbols": {
+    "BLIN": [
+      {
+        "time": "2026-05-28 08:51:42",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 142852.058,
+        "top_n": 10
+      }
+    ],
+    "JFB": [
+      {
+        "time": "2026-05-28 08:54:09",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 08:54:15",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (5.7100\u22646.6173)"
+      },
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12771.136,
+        "top_n": 10
+      }
+    ],
+    "AMBR": [
+      {
+        "time": "2026-05-28 09:03:27",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 29894.315,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:16:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "HUHU": [
+      {
+        "time": "2026-05-28 09:07:38",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 81559.378,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:22:48",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "SWAG": [
+      {
+        "time": "2026-05-28 09:29:27",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 31043.666,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:30:44",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "APURU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "REA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "FXACU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "EXYN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "SAGU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "DUKR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "CNXU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "PECEU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "AMAN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "AMSS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "VECA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "no_baseline_data"
+      }
+    ],
+    "LCCC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 259908.231,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:25:36",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 11:48:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.777,
+        "threshold": 2.0
+      }
+    ],
+    "LGL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 251385.939,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:54:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "LIQT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 246587.598,
+        "top_n": 10
+      }
+    ],
+    "UBCP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 205682.124,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:59:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "PBHC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 159452.074,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:22",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:52:31",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (13.7600\u226413.7968)"
+      },
+      {
+        "time": "2026-05-28 11:39:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "WCT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 156480.975,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 14:21:21",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 14:52:00",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.3900\u22641.4723)"
+      }
+    ],
+    "CDT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 153755.337,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:54:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "JL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 134285.678,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:13",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "MDWD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 132251.422,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:57",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.975,
+        "threshold": 2.0
+      }
+    ],
+    "NCT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 126313.829,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:09",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:09",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (5.3600\u22645.9947)"
+      }
+    ],
+    "MNTS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 120689.441,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:26:23",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "BJDX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 111333.583,
+        "top_n": 10
+      }
+    ],
+    "ASTI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 109700.946,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:13:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "VHC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 108558.872,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:39:17",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 11:22:12",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "TVGN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 106483.701,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.987,
+        "threshold": 2.0
+      }
+    ],
+    "ATPC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 104118.224,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:09",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:09",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (6.0333\u22646.0368)"
+      }
+    ],
+    "WSBK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 101964.649,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:49:27",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 15:59:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.57,
+        "threshold": 2.0
+      }
+    ],
+    "NXPL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 98691.866,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.838,
+        "threshold": 2.0
+      }
+    ],
+    "ALOT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 88960.103,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:51",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.949,
+        "threshold": 2.0
+      }
+    ],
+    "ULBI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 87598.31,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:16:53",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "LNKS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 87209.863,
+        "top_n": 10
+      }
+    ],
+    "AIRI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 85269.569,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:40:45",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.964,
+        "threshold": 2.0
+      }
+    ],
+    "CHR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 85156.907,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:25:31",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "VCIG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 79922.245,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:13:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "USEA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 76263.087,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:34:00",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "YI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 75527.716,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:28:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "EVAX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 71071.389,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.879,
+        "threshold": 2.0
+      }
+    ],
+    "LPA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 70814.563,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:48:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "SONM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 67983.09,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:29:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "ECOR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 67837.161,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:30:56",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "OCC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 67393.38,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:11:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "NCPL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 66661.062,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:49:27",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "BBLG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 63907.851,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:46:46",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "EVI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 63823.717,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:51:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "ISPC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 63436.339,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:46:38",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.983,
+        "threshold": 2.0
+      }
+    ],
+    "COLA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 62589.193,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:37:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "IHT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 62521.537,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:34:03",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "HMR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 61694.514,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:48:41",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "VHI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 60864.405,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.972,
+        "threshold": 2.0
+      }
+    ],
+    "BON": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 60829.071,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:05:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "CTRM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 60193.568,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:41",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.99,
+        "threshold": 2.0
+      }
+    ],
+    "NL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 59907.957,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:51",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.98,
+        "threshold": 2.0
+      }
+    ],
+    "LCFY": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 59421.761,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:18:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "LSTA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 58930.144,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:28:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "PSIG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 58669.728,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.994,
+        "threshold": 2.0
+      }
+    ],
+    "PLYX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 58351.987,
+        "top_n": 10
+      }
+    ],
+    "XRTX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 58080.951,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:33:56",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.994,
+        "threshold": 2.0
+      }
+    ],
+    "PAMT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 58035.577,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.898,
+        "threshold": 2.0
+      }
+    ],
+    "OESX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 58017.08,
+        "top_n": 10
+      }
+    ],
+    "EHLD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 54809.842,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:39:59",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "NXTC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 54574.717,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:59:43",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "FONR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 54071.294,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:11:54",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 11:14:26",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (19.0100\u226419.0561)"
+      }
+    ],
+    "CEV": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 53973.489,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:36:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "BENF": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 53227.11,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:37:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "PYPD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 53203.886,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:48:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "HSCS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 53133.973,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:29:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "JTAI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 50714.996,
+        "top_n": 10
+      }
+    ],
+    "POAS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 50618.904,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:43:57",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "AFYA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 50290.812,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.757,
+        "threshold": 2.0
+      }
+    ],
+    "PODC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 49993.141,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:53",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.99,
+        "threshold": 2.0
+      }
+    ],
+    "SHIM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 49735.548,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:46:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "MBRX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 49016.823,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:04:03",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.988,
+        "threshold": 2.0
+      }
+    ],
+    "APVO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 48342.869,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:20:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "BTTC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 48239.437,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:36:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "QXL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 47350.03,
+        "top_n": 10
+      }
+    ],
+    "AIMD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 45340.121,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:40:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.982,
+        "threshold": 2.0
+      }
+    ],
+    "NSYS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 44967.221,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:36:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.334,
+        "threshold": 2.0
+      }
+    ],
+    "HTCR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 44874.787,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:13:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "IMNN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 44856.813,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:04:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "NDRA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 44200.489,
+        "top_n": 10
+      }
+    ],
+    "PPSI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 43643.376,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:59:13",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "VNRX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 42857.132,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:23:28",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "OKUR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 42378.697,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:46:26",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "AGPU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 42327.581,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:48:10",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "PARK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 41268.011,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:49:30",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "SNSE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 40645.015,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:53:34",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "MAMO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 40158.705,
+        "top_n": 10
+      }
+    ],
+    "DMA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 40112.776,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:34:42",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.994,
+        "threshold": 2.0
+      }
+    ],
+    "VGAS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 39870.502,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:26:49",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 10:27:30",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.6900\u22641.8949)"
+      }
+    ],
+    "VIVO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 39677.874,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:19:23",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "CNEY": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 39469.327,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:55:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.981,
+        "threshold": 2.0
+      }
+    ],
+    "POCI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 38854.637,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 14:34:59",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "IDAI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 38498.612,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.952,
+        "threshold": 2.0
+      }
+    ],
+    "TVRD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 38168.689,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:59:12",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.986,
+        "threshold": 2.0
+      }
+    ],
+    "MTEN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 37815.408,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:07:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.986,
+        "threshold": 2.0
+      }
+    ],
+    "KRRO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 37813.731,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:28:19",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "CXH": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 37237.177,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:00:13",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.989,
+        "threshold": 2.0
+      }
+    ],
+    "GLOO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 36622.391,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 14:46:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "NYC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 35789.431,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:14:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.681,
+        "threshold": 2.0
+      }
+    ],
+    "TPCS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 35733.503,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:10:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.652,
+        "threshold": 2.0
+      }
+    ],
+    "BOSC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 35387.548,
+        "top_n": 10
+      }
+    ],
+    "FINW": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 35339.034,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:49:17",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "PGZ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 35216.246,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:44:05",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.982,
+        "threshold": 2.0
+      }
+    ],
+    "FGMC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 35019.943,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:06:36",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "BARK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 34798.379,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.939,
+        "threshold": 2.0
+      }
+    ],
+    "OPHC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 34688.595,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.464,
+        "threshold": 2.0
+      }
+    ],
+    "SOS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 34512.573,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.928,
+        "threshold": 2.0
+      }
+    ],
+    "CIIT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 34271.426,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:49:42",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.99,
+        "threshold": 2.0
+      }
+    ],
+    "KITT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 34234.005,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:36:44",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "RENX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 33426.693,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:38:12",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.972,
+        "threshold": 2.0
+      }
+    ],
+    "FLD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 32447.231,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.98,
+        "threshold": 2.0
+      }
+    ],
+    "LNZA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 32398.071,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:31:23",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "PAVS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 32359.775,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:03:17",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.994,
+        "threshold": 2.0
+      }
+    ],
+    "SUPX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 32357.472,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:40:30",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "NRT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 32078.14,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:40:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "WAVE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 31978.133,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:03:48",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.987,
+        "threshold": 2.0
+      }
+    ],
+    "INAB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 31026.633,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 14:05:36",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "DETX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 31007.951,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:06:12",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "GENC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 30952.597,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:06:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "OPXS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 30831.062,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:22:27",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "NCNA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 30527.369,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:16:19",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "LEE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 30444.191,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:10:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "SRBK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 29711.598,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.819,
+        "threshold": 2.0
+      }
+    ],
+    "UUU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 29604.472,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:41",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "BALY": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 29417.868,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:51",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.913,
+        "threshold": 2.0
+      }
+    ],
+    "BOLT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 29246.42,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:38:43",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.981,
+        "threshold": 2.0
+      }
+    ],
+    "RYOJ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 29196.229,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:39",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.922,
+        "threshold": 2.0
+      }
+    ],
+    "QNTM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 29113.909,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:43:19",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.97,
+        "threshold": 2.0
+      }
+    ],
+    "SDHC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 28980.374,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.35,
+        "threshold": 2.0
+      }
+    ],
+    "LYEL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 28813.878,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:41:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "HSPT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 28731.092,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:33:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.678,
+        "threshold": 2.0
+      }
+    ],
+    "WW": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 28715.848,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:31:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "CGO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 28324.262,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:07:13",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "EDSA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 28320.243,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:23",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.963,
+        "threshold": 2.0
+      }
+    ],
+    "NCI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 28047.655,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.946,
+        "threshold": 2.0
+      }
+    ],
+    "STEM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 27608.344,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:07:53",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.988,
+        "threshold": 2.0
+      }
+    ],
+    "RDHL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 27316.11,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.72,
+        "threshold": 2.0
+      }
+    ],
+    "MTEK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 27289.656,
+        "top_n": 10
+      }
+    ],
+    "ENGS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 27257.384,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:48:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "BNAI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 27187.456,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:59:43",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "LONA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 27134.386,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.933,
+        "threshold": 2.0
+      }
+    ],
+    "BIVI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 27115.652,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:00:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "HTCO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 26657.167,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:52:32",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.99,
+        "threshold": 2.0
+      }
+    ],
+    "NTWK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 26595.268,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.68,
+        "threshold": 2.0
+      }
+    ],
+    "CVU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 26476.174,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "VATE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 26471.361,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:45:52",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.97,
+        "threshold": 2.0
+      }
+    ],
+    "PLRZ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 25864.473,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:46:46",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "KZIA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 25848.783,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:24:05",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.409,
+        "threshold": 2.0
+      }
+    ],
+    "TOYO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 25752.415,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:45:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "SNTI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 25698.129,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:47:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.98,
+        "threshold": 2.0
+      }
+    ],
+    "ARQQ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 25343.108,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:03:38",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "FGBI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 25212.252,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:51:46",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "XWEL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 25024.99,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:53:05",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "WTF": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24858.757,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:42:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.55,
+        "threshold": 2.0
+      }
+    ],
+    "ORKT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24809.453,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:39:13",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "SHMD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24752.231,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.967,
+        "threshold": 2.0
+      }
+    ],
+    "RTB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24737.42,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:44:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "SVRN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24625.198,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:22:12",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "DRMA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24622.63,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:23:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "CRVO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24511.895,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:41:47",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.98,
+        "threshold": 2.0
+      }
+    ],
+    "TLF": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24406.201,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:46:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.68,
+        "threshold": 2.0
+      }
+    ],
+    "HQ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24310.74,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:44:57",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "OPTX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24252.112,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:42:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.986,
+        "threshold": 2.0
+      }
+    ],
+    "CCM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24063.273,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:14:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.288,
+        "threshold": 2.0
+      }
+    ],
+    "SPCB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24035.177,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:44:39",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "FTLF": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 24011.529,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.85,
+        "threshold": 2.0
+      }
+    ],
+    "CMDB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 23999.179,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:02:32",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "INR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 23997.372,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:51:31",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.989,
+        "threshold": 2.0
+      }
+    ],
+    "RMBI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 23944.671,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:45:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "LVO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 23827.939,
+        "top_n": 10
+      }
+    ],
+    "IPST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 23811.183,
+        "top_n": 10
+      }
+    ],
+    "PRT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 23204.33,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:15:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "ACET": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 22639.677,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:43:03",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.972,
+        "threshold": 2.0
+      }
+    ],
+    "SCLX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 22362.784,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:03:48",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "EXOD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 22331.726,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:19:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "DTST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 22294.506,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.942,
+        "threshold": 2.0
+      }
+    ],
+    "TKLF": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 22250.047,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:41",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.966,
+        "threshold": 2.0
+      }
+    ],
+    "SAMG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 22028.127,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:06:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.613,
+        "threshold": 2.0
+      }
+    ],
+    "HTOO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21951.441,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:30:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "DAIO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21791.236,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:49:12",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.75,
+        "threshold": 2.0
+      },
+      {
+        "time": "2026-05-28 12:55:27",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 13:04:16",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (3.9150\u22643.9407)"
+      }
+    ],
+    "JVA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21743.048,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:51:00",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.978,
+        "threshold": 2.0
+      }
+    ],
+    "TRT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21523.585,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:52:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "BLRX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21285.976,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:52:17",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "SSTI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21226.578,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:42:48",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.976,
+        "threshold": 2.0
+      }
+    ],
+    "JDZG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21194.387,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.941,
+        "threshold": 2.0
+      }
+    ],
+    "SPE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21136.8,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:41",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "COCP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21011.701,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:55:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "CVKD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 21006.432,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:50:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "ZEPP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20968.513,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.684,
+        "threshold": 2.0
+      }
+    ],
+    "ELWT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20675.401,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:39:13",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.932,
+        "threshold": 2.0
+      }
+    ],
+    "STI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20575.767,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.948,
+        "threshold": 2.0
+      }
+    ],
+    "AMCI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20550.55,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:38:58",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.949,
+        "threshold": 2.0
+      }
+    ],
+    "SUNE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20485.056,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:47:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "RFIL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20484.215,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:42:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.973,
+        "threshold": 2.0
+      }
+    ],
+    "SPKL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20441.758,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:30:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "PXLW": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20397.109,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.966,
+        "threshold": 2.0
+      }
+    ],
+    "BIRD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20383.897,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:11:28",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "NRXS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20366.412,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:50:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "BANX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20353.425,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.855,
+        "threshold": 2.0
+      }
+    ],
+    "VS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20239.639,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:41:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.965,
+        "threshold": 2.0
+      }
+    ],
+    "BCTX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20149.76,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:08:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "ALAR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20105.727,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:10",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:30",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (8.8850\u22649.1239)"
+      }
+    ],
+    "PMTS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20015.111,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.854,
+        "threshold": 2.0
+      }
+    ],
+    "MIND": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19936.391,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:16:19",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.989,
+        "threshold": 2.0
+      }
+    ],
+    "LPCN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19857.791,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:13:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "KLRS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19831.071,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.401,
+        "threshold": 2.0
+      }
+    ],
+    "HYPD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19734.561,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:56:39",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "ARTL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19722.587,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:38:27",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "BESS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19619.578,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.802,
+        "threshold": 2.0
+      }
+    ],
+    "ROC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19569.879,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:47:43",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "GXAI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19494.343,
+        "top_n": 10
+      }
+    ],
+    "WFCF": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 19377.352,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:38:10",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.197,
+        "threshold": 2.0
+      }
+    ],
+    "WYY": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18966.571,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:40:45",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.967,
+        "threshold": 2.0
+      }
+    ],
+    "IQST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18871.523,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:48:26",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "ATOS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18791.62,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:30:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "SUNS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18673.464,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.915,
+        "threshold": 2.0
+      }
+    ],
+    "IPM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18637.339,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:59:13",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.331,
+        "threshold": 2.0
+      }
+    ],
+    "INDO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18579.526,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 14:27:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "NEPH": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18542.869,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.882,
+        "threshold": 2.0
+      }
+    ],
+    "REVB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18484.259,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.947,
+        "threshold": 2.0
+      }
+    ],
+    "RAIN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18430.169,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.976,
+        "threshold": 2.0
+      }
+    ],
+    "KUST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18408.06,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:54:05",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.156,
+        "threshold": 2.0
+      }
+    ],
+    "MRBK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18286.233,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.758,
+        "threshold": 2.0
+      }
+    ],
+    "ACNT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18145.914,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:58:41",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "CARL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18096.91,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.881,
+        "threshold": 2.0
+      }
+    ],
+    "ELMT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 18079.404,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.873,
+        "threshold": 2.0
+      }
+    ],
+    "LE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 17760.543,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.977,
+        "threshold": 2.0
+      }
+    ],
+    "DWTX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 17744.758,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.984,
+        "threshold": 2.0
+      }
+    ],
+    "PSTV": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 17738.314,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:15:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "AGMH": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 17702.552,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:05:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "FSEA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 17533.859,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:51",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.883,
+        "threshold": 2.0
+      }
+    ],
+    "ICU": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 17530.894,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.984,
+        "threshold": 2.0
+      }
+    ],
+    "ACXP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 17384.521,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:26:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "POLA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 17330.852,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.917,
+        "threshold": 2.0
+      }
+    ],
+    "FRGT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16967.368,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:56:23",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.982,
+        "threshold": 2.0
+      }
+    ],
+    "FGNX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16821.414,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.932,
+        "threshold": 2.0
+      }
+    ],
+    "SUGP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16777.356,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:53:10",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      }
+    ],
+    "NTHI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16718.611,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:46:54",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "SXTP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16643.376,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:34:42",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "ALGS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16620.888,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:51:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "CELZ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16610.093,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.04,
+        "threshold": 2.0
+      }
+    ],
+    "CRMT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16449.75,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.69,
+        "threshold": 2.0
+      }
+    ],
+    "LAKE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16432.237,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.987,
+        "threshold": 2.0
+      }
+    ],
+    "TACT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 16241.858,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.906,
+        "threshold": 2.0
+      }
+    ],
+    "JILL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15909.114,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.422,
+        "threshold": 2.0
+      }
+    ],
+    "CMMB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15857.312,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.955,
+        "threshold": 2.0
+      }
+    ],
+    "SYNX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15673.034,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:47:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "LUCY": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15587.025,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:25",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.958,
+        "threshold": 2.0
+      }
+    ],
+    "RVSN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15498.931,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:44:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.983,
+        "threshold": 2.0
+      }
+    ],
+    "CHRN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15420.993,
+        "top_n": 10
+      }
+    ],
+    "PCSA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15241.298,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:35:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "REBN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15214.351,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:40:45",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.969,
+        "threshold": 2.0
+      }
+    ],
+    "SNWV": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 15001.623,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.574,
+        "threshold": 2.0
+      }
+    ],
+    "SDST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 14946.241,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.835,
+        "threshold": 2.0
+      }
+    ],
+    "DOMH": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 14743.51,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:02:34",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "BNKK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 14656.863,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:00:44",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.994,
+        "threshold": 2.0
+      }
+    ],
+    "RBNE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 14454.325,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:59:27",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "BIAF": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 14268.431,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:09:10",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "PASG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 14224.964,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:32:55",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "BGDE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 14100.778,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:54",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.985,
+        "threshold": 2.0
+      }
+    ],
+    "WKHS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13981.299,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:13:00",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "FOFO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13888.973,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:11",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:13",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.8900\u22641.9315)"
+      }
+    ],
+    "AEYE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13865.047,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.825,
+        "threshold": 2.0
+      }
+    ],
+    "QCLS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13764.164,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.986,
+        "threshold": 2.0
+      }
+    ],
+    "MVO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13743.563,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:55:56",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "MSGM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13732.166,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:21:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.54,
+        "threshold": 2.0
+      }
+    ],
+    "BDSX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13731.597,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:46:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "AQMS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13557.043,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:27:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "WETO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13540.624,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:49:58",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.994,
+        "threshold": 2.0
+      }
+    ],
+    "ROLR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13393.03,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:41",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.969,
+        "threshold": 2.0
+      }
+    ],
+    "AIRG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13363.786,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:31:28",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "APT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13346.705,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:45:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.983,
+        "threshold": 2.0
+      }
+    ],
+    "WSHP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13175.428,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:58:26",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "KPRX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13134.584,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:20:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.133,
+        "threshold": 2.0
+      }
+    ],
+    "ULH": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13120.201,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.665,
+        "threshold": 2.0
+      }
+    ],
+    "MTVA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 13003.214,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:23",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.919,
+        "threshold": 2.0
+      }
+    ],
+    "FABC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12937.203,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.884,
+        "threshold": 2.0
+      }
+    ],
+    "CODA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12934.328,
+        "top_n": 10
+      }
+    ],
+    "TZOO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12927.768,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.653,
+        "threshold": 2.0
+      }
+    ],
+    "SKIL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12799.305,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.911,
+        "threshold": 2.0
+      }
+    ],
+    "VNCE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12706.543,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.228,
+        "threshold": 2.0
+      }
+    ],
+    "BCG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12615.102,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:29:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.658,
+        "threshold": 2.0
+      }
+    ],
+    "SER": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12553.679,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.973,
+        "threshold": 2.0
+      }
+    ],
+    "INBS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12447.158,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:10:58",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "ANNA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12196.295,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:57:10",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "RDGT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12134.363,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:41:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.985,
+        "threshold": 2.0
+      }
+    ],
+    "MDV": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 12061.041,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.855,
+        "threshold": 2.0
+      }
+    ],
+    "ALZN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11977.693,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:36",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.96,
+        "threshold": 2.0
+      }
+    ],
+    "BODI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11870.455,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:51:46",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "FGI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11859.168,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:41:01",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.967,
+        "threshold": 2.0
+      }
+    ],
+    "PDC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11661.955,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:47:12",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.596,
+        "threshold": 2.0
+      }
+    ],
+    "PLCE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11568.988,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:51:31",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.984,
+        "threshold": 2.0
+      }
+    ],
+    "AUST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11509.196,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.943,
+        "threshold": 2.0
+      }
+    ],
+    "GP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11396.75,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.978,
+        "threshold": 2.0
+      }
+    ],
+    "UCAR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11392.491,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:23",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.95,
+        "threshold": 2.0
+      }
+    ],
+    "PXS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11390.977,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:56:39",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "NDLS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11374.651,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:46:54",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.995,
+        "threshold": 2.0
+      }
+    ],
+    "MSW": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11364.791,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:44:05",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.972,
+        "threshold": 2.0
+      }
+    ],
+    "LTRN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 11257.945,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:39",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.974,
+        "threshold": 2.0
+      }
+    ],
+    "ANY": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 10856.655,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:36",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.869,
+        "threshold": 2.0
+      }
+    ],
+    "CODX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 10595.127,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:48:03",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "CDIO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 10222.812,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:40",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.939,
+        "threshold": 2.0
+      }
+    ],
+    "QTI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 10136.103,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.868,
+        "threshold": 2.0
+      }
+    ],
+    "SNOA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 10046.79,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:54:05",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "EFOI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 10042.681,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:56:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.986,
+        "threshold": 2.0
+      }
+    ],
+    "ELAB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9893.544,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:40",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.988,
+        "threshold": 2.0
+      }
+    ],
+    "GECC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9839.915,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:21:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "BTOG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9742.263,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:52:32",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "ADIL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9735.306,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:54",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.991,
+        "threshold": 2.0
+      }
+    ],
+    "BTBD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9544.548,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 14:38:03",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.243,
+        "threshold": 2.0
+      }
+    ],
+    "CURR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9537.773,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.66,
+        "threshold": 2.0
+      }
+    ],
+    "YDDL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9529.019,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:55:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "CVV": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9504.039,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:55:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.991,
+        "threshold": 2.0
+      }
+    ],
+    "DFSC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 9276.067,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:44:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.968,
+        "threshold": 2.0
+      }
+    ],
+    "SNES": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 8871.751,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:32:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.471,
+        "threshold": 2.0
+      }
+    ],
+    "TPST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 8697.101,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:20:24",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.992,
+        "threshold": 2.0
+      }
+    ],
+    "MYSE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 8460.722,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:37",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.966,
+        "threshold": 2.0
+      }
+    ],
+    "NEXR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 8397.218,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:41:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.958,
+        "threshold": 2.0
+      }
+    ],
+    "SEAT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 8110.558,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.768,
+        "threshold": 2.0
+      }
+    ],
+    "AIOS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7788.705,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:46:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.409,
+        "threshold": 2.0
+      }
+    ],
+    "AMS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7567.585,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:31:39",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "SKLZ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7506.394,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.979,
+        "threshold": 2.0
+      }
+    ],
+    "NAMM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7344.265,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:50:47",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "BIYA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7259.704,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.84,
+        "threshold": 2.0
+      }
+    ],
+    "LUD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7192.432,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:33:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.36,
+        "threshold": 2.0
+      }
+    ],
+    "JAGX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7136.079,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:53:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "NA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7040.791,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:47:40",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.997,
+        "threshold": 2.0
+      }
+    ],
+    "BRN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 7029.873,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.026,
+        "threshold": 2.0
+      }
+    ],
+    "PHGE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6974.553,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.932,
+        "threshold": 2.0
+      }
+    ],
+    "GRDX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6957.924,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:32:14",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.936,
+        "threshold": 2.0
+      }
+    ],
+    "FBLG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6866.101,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.869,
+        "threshold": 2.0
+      }
+    ],
+    "FRMM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6773.761,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.722,
+        "threshold": 2.0
+      }
+    ],
+    "TRUG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6660.391,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 15:59:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.395,
+        "threshold": 2.0
+      }
+    ],
+    "MIMI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6590.404,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:09",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:10",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264ema9",
+        "detail": "price\u2264ema9 (4.3000\u22644.3669)"
+      }
+    ],
+    "CVM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 6571.457,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.978,
+        "threshold": 2.0
+      }
+    ],
+    "MBAI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 5736.008,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:42:17",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.981,
+        "threshold": 2.0
+      }
+    ],
+    "JRSH": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 5709.929,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.932,
+        "threshold": 2.0
+      }
+    ],
+    "HOUR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 5582.697,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.853,
+        "threshold": 2.0
+      }
+    ],
+    "SLMT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 5416.322,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.942,
+        "threshold": 2.0
+      }
+    ],
+    "AKTX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 5347.631,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:32:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "PBM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4658.759,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:43:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.974,
+        "threshold": 2.0
+      }
+    ],
+    "GOVX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4475.427,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.835,
+        "threshold": 2.0
+      }
+    ],
+    "YMAT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4205.835,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.831,
+        "threshold": 2.0
+      }
+    ],
+    "PCLA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4182.359,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:20",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.905,
+        "threshold": 2.0
+      }
+    ],
+    "MOBX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4138.231,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.883,
+        "threshold": 2.0
+      }
+    ],
+    "ENVB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4056.616,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.816,
+        "threshold": 2.0
+      }
+    ],
+    "LINK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 4020.575,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.726,
+        "threshold": 2.0
+      }
+    ],
+    "TWAV": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3992.809,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:35:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.722,
+        "threshold": 2.0
+      }
+    ],
+    "MLGO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3880.093,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.74,
+        "threshold": 2.0
+      }
+    ],
+    "APUS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3805.053,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.665,
+        "threshold": 2.0
+      }
+    ],
+    "ZDAI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3719.349,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:38:12",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.547,
+        "threshold": 2.0
+      }
+    ],
+    "FATN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3619.571,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:15:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 2.0,
+        "threshold": 2.0
+      }
+    ],
+    "CUPR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3463.767,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:49:19",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "AIRE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3343.772,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.861,
+        "threshold": 2.0
+      }
+    ],
+    "ATER": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3249.571,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:42:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.898,
+        "threshold": 2.0
+      }
+    ],
+    "SKYQ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3081.016,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:18:22",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "PAPL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3010.262,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:40:15",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.916,
+        "threshold": 2.0
+      }
+    ],
+    "MASK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2916.181,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:55:10",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:55:10",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.5502\u22642.5528)"
+      }
+    ],
+    "LESL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2864.625,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:34:07",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.471,
+        "threshold": 2.0
+      }
+    ],
+    "STFS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2837.73,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:19:53",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "HCTI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2807.482,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:51",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.898,
+        "threshold": 2.0
+      }
+    ],
+    "IPW": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2805.245,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.909,
+        "threshold": 2.0
+      }
+    ],
+    "CTNT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2719.157,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:36:09",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.747,
+        "threshold": 2.0
+      }
+    ],
+    "VSA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2583.893,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.86,
+        "threshold": 2.0
+      }
+    ],
+    "PPBT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2425.539,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.783,
+        "threshold": 2.0
+      }
+    ],
+    "ORGN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2386.613,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.773,
+        "threshold": 2.0
+      }
+    ],
+    "UONE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2297.946,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:06",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.942,
+        "threshold": 2.0
+      }
+    ],
+    "HCWB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2245.914,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "CLIK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2180.737,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.71,
+        "threshold": 2.0
+      }
+    ],
+    "AMST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2174.216,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.321,
+        "threshold": 2.0
+      }
+    ],
+    "DKI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 2108.947,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 13:25:52",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "SST": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1923.83,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.359,
+        "threshold": 2.0
+      }
+    ],
+    "XOS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1895.74,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.986,
+        "threshold": 2.0
+      }
+    ],
+    "PIII": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1844.249,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.785,
+        "threshold": 2.0
+      }
+    ],
+    "AHMA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1818.686,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.605,
+        "threshold": 2.0
+      }
+    ],
+    "LNAI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1723.019,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.186,
+        "threshold": 2.0
+      }
+    ],
+    "EZRA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1716.962,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.766,
+        "threshold": 2.0
+      }
+    ],
+    "CLNN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1659.825,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.579,
+        "threshold": 2.0
+      }
+    ],
+    "ONCO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1651.937,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.819,
+        "threshold": 2.0
+      }
+    ],
+    "AUUD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1613.926,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:37:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.945,
+        "threshold": 2.0
+      }
+    ],
+    "ASBP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1569.682,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.528,
+        "threshold": 2.0
+      }
+    ],
+    "VEEE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1385.233,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:49",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.775,
+        "threshold": 2.0
+      }
+    ],
+    "CISS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1366.435,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.767,
+        "threshold": 2.0
+      }
+    ],
+    "PPCB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1339.476,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:18",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.838,
+        "threshold": 2.0
+      }
+    ],
+    "INM": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1335.667,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.769,
+        "threshold": 2.0
+      }
+    ],
+    "SAGT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1200.456,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.954,
+        "threshold": 2.0
+      }
+    ],
+    "LRHC": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1146.92,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:50",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.993,
+        "threshold": 2.0
+      }
+    ],
+    "CLRB": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1133.934,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.733,
+        "threshold": 2.0
+      }
+    ],
+    "BNRG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1090.687,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:33:21",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.877,
+        "threshold": 2.0
+      }
+    ],
+    "SLE": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1088.709,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.439,
+        "threshold": 2.0
+      }
+    ],
+    "PETZ": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 1060.697,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.578,
+        "threshold": 2.0
+      }
+    ],
+    "SMX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 998.827,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.973,
+        "threshold": 2.0
+      }
+    ],
+    "SPPL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 984.278,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.317,
+        "threshold": 2.0
+      }
+    ],
+    "ATRA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 945.931,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.128,
+        "threshold": 2.0
+      }
+    ],
+    "OCG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 780.574,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.798,
+        "threshold": 2.0
+      }
+    ],
+    "ODYS": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 669.482,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.766,
+        "threshold": 2.0
+      }
+    ],
+    "WNW": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 632.378,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.825,
+        "threshold": 2.0
+      }
+    ],
+    "JZXN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 626.387,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.394,
+        "threshold": 2.0
+      }
+    ],
+    "WTO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 529.794,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.536,
+        "threshold": 2.0
+      }
+    ],
+    "AEHL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 514.001,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.493,
+        "threshold": 2.0
+      }
+    ],
+    "SKK": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 454.855,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.254,
+        "threshold": 2.0
+      }
+    ],
+    "CMND": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 410.018,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:33",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.749,
+        "threshold": 2.0
+      }
+    ],
+    "CNSP": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 409.311,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.16,
+        "threshold": 2.0
+      }
+    ],
+    "PN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 341.264,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.322,
+        "threshold": 2.0
+      }
+    ],
+    "UBXG": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 285.911,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.079,
+        "threshold": 2.0
+      }
+    ],
+    "HCAI": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 285.217,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:35",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.807,
+        "threshold": 2.0
+      }
+    ],
+    "ERNA": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 255.133,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.273,
+        "threshold": 2.0
+      }
+    ],
+    "FCHL": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 234.825,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:04",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.855,
+        "threshold": 2.0
+      }
+    ],
+    "PMAX": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 217.718,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.337,
+        "threshold": 2.0
+      }
+    ],
+    "SOBR": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 158.965,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.204,
+        "threshold": 2.0
+      }
+    ],
+    "SDOT": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 157.668,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.336,
+        "threshold": 2.0
+      }
+    ],
+    "LZMH": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 125.41,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.229,
+        "threshold": 2.0
+      }
+    ],
+    "INHD": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 72.323,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:30:47",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.506,
+        "threshold": 2.0
+      }
+    ],
+    "CHSN": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 55.656,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:30:32",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.725,
+        "threshold": 2.0
+      }
+    ],
+    "EZGO": [
+      {
+        "time": "2026-05-28 09:30:01",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 20.225,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:30:16",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.211,
+        "threshold": 2.0
+      }
+    ],
+    "AEMD": [
+      {
+        "time": "2026-05-28 09:30:09",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:30:12",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (2.6100\u22642.6465)"
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 105.416,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:35:13",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "ASTC": [
+      {
+        "time": "2026-05-28 09:30:09",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:30:09",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (21.5000\u226421.5331)"
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 705.226,
+        "top_n": 10
+      }
+    ],
+    "IMRN": [
+      {
+        "time": "2026-05-28 09:30:09",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 834.141,
+        "top_n": 10
+      }
+    ],
+    "FGL": [
+      {
+        "time": "2026-05-28 09:30:11",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 94.831,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 10:59:58",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "IFBD": [
+      {
+        "time": "2026-05-28 09:30:13",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 381.188,
+        "top_n": 10
+      }
+    ],
+    "TOPP": [
+      {
+        "time": "2026-05-28 09:30:26",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 79.233,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 09:32:02",
+        "stage": "track_b_indicator",
+        "reason": "price\u2264vwap",
+        "detail": "price\u2264vwap (1.6300\u22641.6315)"
+      }
+    ],
+    "BGLC": [
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 168.242,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:23:29",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.996,
+        "threshold": 2.0
+      }
+    ],
+    "WFF": [
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 113.169,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 11:03:02",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.999,
+        "threshold": 2.0
+      }
+    ],
+    "NCEL": [
+      {
+        "time": "2026-05-28 09:31:02",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 85.448,
+        "top_n": 10
+      },
+      {
+        "time": "2026-05-28 12:31:11",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 1.998,
+        "threshold": 2.0
+      }
+    ],
+    "CHAR": [
+      {
+        "time": "2026-05-28 09:32:55",
+        "stage": "track_b",
+        "reason": "cvd_nonpositive",
+        "cvd": 0
+      },
+      {
+        "time": "2026-05-28 11:31:08",
+        "stage": "track_a",
+        "reason": "rvol_below_threshold",
+        "best_rvol": 0.144,
+        "threshold": 2.0
+      },
+      {
+        "time": "2026-05-28 14:22:12",
+        "stage": "track_a",
+        "reason": "above_threshold_not_top_n",
+        "rvol": 3.069,
+        "top_n": 10
+      }
+    ]
+  }
+}

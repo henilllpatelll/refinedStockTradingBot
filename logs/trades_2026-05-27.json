@@ -1,0 +1,94 @@
+{
+  "date": "2026-05-27",
+  "generated_at": "15:31:15 ET",
+  "summary": {
+    "total_trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "total_pnl": 0
+  },
+  "trades": [],
+  "open_at_shutdown": [
+    {
+      "symbol": "MNTS",
+      "submitted_time": "2026-05-27 09:30:13",
+      "shares_requested": 24,
+      "entry_limit_px": 20.37,
+      "cvd_at_signal": 484.0,
+      "gap_pct": 31.27,
+      "volume_at_signal": 4542
+    },
+    {
+      "symbol": "AEMD",
+      "submitted_time": "2026-05-27 09:30:13",
+      "shares_requested": 168,
+      "entry_limit_px": 3.01,
+      "cvd_at_signal": 22.0,
+      "gap_pct": 21.02,
+      "volume_at_signal": 24
+    },
+    {
+      "symbol": "CPSH",
+      "submitted_time": "2026-05-27 09:30:13",
+      "shares_requested": 37,
+      "entry_limit_px": 13.3,
+      "cvd_at_signal": 98.0,
+      "gap_pct": 19.16,
+      "volume_at_signal": 524
+    },
+    {
+      "symbol": "VCIG",
+      "submitted_time": "2026-05-27 09:30:19",
+      "shares_requested": 145,
+      "entry_limit_px": 3.49,
+      "cvd_at_signal": 19837.0,
+      "gap_pct": 18.62,
+      "volume_at_signal": 20723
+    },
+    {
+      "symbol": "FGL",
+      "submitted_time": "2026-05-27 09:30:29",
+      "shares_requested": 181,
+      "entry_limit_px": 2.8,
+      "cvd_at_signal": 7243.0,
+      "gap_pct": 46.28,
+      "volume_at_signal": 50227
+    },
+    {
+      "symbol": "QTTB",
+      "submitted_time": "2026-05-27 09:31:13",
+      "shares_requested": 48,
+      "entry_limit_px": 10.31,
+      "cvd_at_signal": 77.0,
+      "gap_pct": 44.71,
+      "volume_at_signal": 127
+    },
+    {
+      "symbol": "VTIX",
+      "submitted_time": "2026-05-27 09:31:13",
+      "shares_requested": 144,
+      "entry_limit_px": 3.52,
+      "cvd_at_signal": 100.0,
+      "gap_pct": 15.67,
+      "volume_at_signal": 105
+    },
+    {
+      "symbol": "IPWR",
+      "submitted_time": "2026-05-27 09:31:14",
+      "shares_requested": 58,
+      "entry_limit_px": 8.53,
+      "cvd_at_signal": 2.0,
+      "gap_pct": 22.54,
+      "volume_at_signal": 49
+    },
+    {
+      "symbol": "TOPP",
+      "submitted_time": "2026-05-27 11:00:28",
+      "shares_requested": 409,
+      "entry_limit_px": 1.27,
+      "cvd_at_signal": 5.0,
+      "gap_pct": 15.09,
+      "volume_at_signal": 10
+    }
+  ]
+}
