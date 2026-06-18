@@ -36,18 +36,24 @@ def reset_shared_state():
 
 @pytest.mark.asyncio
 async def test_eod_scan_fetches_daily_bars_when_no_bars_are_supplied(monkeypatch):
+    # "HIGH" outperforms "LAGGARD" so it gets RS rating 99 (>= RS_MIN_PERCENTILE=70)
     async def fake_fetch_daily_bars(symbols):
-        assert symbols == ["HIGH"]
-        closes = [20 + i * 0.2 for i in range(60)]
-        return {"HIGH": _bars(closes, volumes=[100_000] * 59 + [180_000])}
+        assert set(symbols) == {"HIGH", "LAGGARD"}
+        closes_high = [20 + i * 0.2 for i in range(60)]
+        closes_lag = [10 + i * 0.01 for i in range(60)]   # flat — low RS
+        return {
+            "HIGH": _bars(closes_high, volumes=[100_000] * 59 + [180_000]),
+            "LAGGARD": _bars(closes_lag, volumes=[100_000] * 60),
+        }
 
-    monkeypatch.setattr(eod_scanner, "load_universe", lambda: ["HIGH"])
+    monkeypatch.setattr(eod_scanner, "load_universe", lambda: ["HIGH", "LAGGARD"])
     monkeypatch.setattr(eod_scanner, "fetch_daily_bars", fake_fetch_daily_bars)
     monkeypatch.setattr(eod_scanner, "save_watchlist", lambda watchlist: Path("unused.json"))
 
     watchlist = await eod_scanner.run_eod_scan()
 
-    assert [setup["strategy_id"] for setup in watchlist] == ["S2"]
+    strategy_ids = [setup["strategy_id"] for setup in watchlist if setup["symbol"] == "HIGH"]
+    assert "S2" in strategy_ids
 
 
 def test_context_builder_uses_persisted_catalysts_and_sector_map(tmp_path):
