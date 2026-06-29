@@ -1,8 +1,9 @@
 from __future__ import annotations
 
+import asyncio
 import json
 import logging
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -18,11 +19,14 @@ _BLOCK_KEYWORDS = {
     "secondary_offering": ("secondary offering", "registered direct", "share offering", "public offering"),
     "bankruptcy": ("bankruptcy", "chapter 11", "going concern"),
     "delisted": ("delisting", "delisted", "nasdaq notice"),
+    "dividend_cut": ("dividend cut", "suspends dividend", "eliminates dividend"),
+    "management_departure": ("ceo resigns", "ceo fired", "ceo departs", "cfo resigns"),
+    "customer_loss": ("loses contract", "contract terminated", "major customer"),
 }
 
 _CATALYST_KEYWORDS = {
     "earnings_beat": ("beats", "beat eps", "raises guidance", "guidance raise"),
-    "analyst_upgrade": ("upgrade", "price target raised", "pt raise", "initiated at buy"),
+    "analyst_upgrade": ("initiated at buy", "pt raise", "price target raised", "reiterates buy", "upgrades to buy", "raised to buy", "raised to outperform", "raised to overweight"),
     "insider_buy": ("insider buy", "form 4", "open market purchase"),
     "fda_approval": ("fda approval", "approved by the fda", "clearance"),
     "contract_win": ("contract", "partnership", "award", "wins government"),
@@ -31,6 +35,8 @@ _CATALYST_KEYWORDS = {
 }
 
 _MACRO_KEYWORDS = ("fed", "fomc", "cpi", "ppi", "pce", "nfp", "unemployment", "gdp", "pmi", "tariff")
+
+_block_expiry: dict[str, datetime] = {}
 
 
 def _text(payload: dict) -> str:
@@ -52,7 +58,12 @@ def classify_news(payload: dict) -> dict:
     is_macro = any(keyword in text for keyword in _MACRO_KEYWORDS)
 
     if catalyst_type is None and is_macro:
-        catalyst_type = "macro_positive"
+        if any(kw in text for kw in ("rate cut", "fed cuts", "easing", "dovish", "pause rate")):
+            catalyst_type = "macro_positive"
+        elif any(kw in text for kw in ("rate hike", "rate rise", "hawkish", "tightening", "raises rates")):
+            catalyst_type = "macro_headwind"
+        else:
+            catalyst_type = "macro_event"
     if catalyst_type is None:
         catalyst_type = "technical_breakout"
 
@@ -150,6 +161,29 @@ async def run_structured_upgrade_scan(days: int = 2) -> list[dict]:
     return records
 
 
+def expire_stale_blocks(max_age_hours: int = 24) -> None:
+    """Remove blocks older than max_age_hours from the in-memory set."""
+    now = datetime.now(_ET)
+    expired = [sym for sym, exp in _block_expiry.items() if now > exp]
+    for sym in expired:
+        _block_expiry.pop(sym, None)
+    if expired:
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                asyncio.create_task(_expire_blocks_async(expired))
+            else:
+                loop.run_until_complete(_expire_blocks_async(expired))
+        except Exception:
+            pass
+
+
+async def _expire_blocks_async(symbols: list[str]) -> None:
+    async with config._blocked_lock:
+        for sym in symbols:
+            config.blocked_tickers.discard(sym)
+
+
 async def evaluate_news(payload: dict) -> dict:
     result = classify_news(payload)
     symbols = result["symbols"]
@@ -157,6 +191,9 @@ async def evaluate_news(payload: dict) -> dict:
     if result["block_signal"]:
         async with config._blocked_lock:
             config.blocked_tickers.update(symbols)
+        expiry = datetime.now(_ET) + timedelta(hours=24)
+        for sym in symbols:
+            _block_expiry[sym] = expiry
         _log.warning("NewsAnalyst | BLOCK %s reason=%s", symbols, result["block_signal"])
         return result
 
@@ -164,7 +201,7 @@ async def evaluate_news(payload: dict) -> dict:
         async with config._macro_lock:
             config.macro_alerts.append(result)
 
-    if result["greenlight"]:
+    if result["greenlight"] and result["catalyst_type"] not in ("macro_event", "macro_headwind", "technical_breakout"):
         async with config._greenlight_lock:
             config.greenlighted_tickers.update(symbols)
         record_catalyst(result, CATALYSTS_PATH)

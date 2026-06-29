@@ -62,10 +62,7 @@ EMA_SLOW_PERIOD: int = 50
 # ---------------------------------------------------------------------------
 # Swing sizing and exits
 # ---------------------------------------------------------------------------
-SIGNAL_SIZE_1_STRATEGY: float = 500.0
-SIGNAL_SIZE_2_STRATEGIES: float = 750.0
-SIGNAL_SIZE_3_PLUS_STRATEGIES: float = 1000.0
-MAX_SWING_HOLD_DAYS: int = 14
+MAX_SWING_HOLD_DAYS: int = 20
 
 # ---------------------------------------------------------------------------
 # Legacy Track-A/Track-B constants retained for compatibility during migration
@@ -112,3 +109,30 @@ ALPACA_NEWS_URL: str = f"{ALPACA_DATA_URL}/v1beta1/news"
 # Logging
 # ---------------------------------------------------------------------------
 LOG_LEVEL: str = os.getenv("LOG_LEVEL", "INFO")
+
+# ---------------------------------------------------------------------------
+# Portfolio-level risk controls
+# ---------------------------------------------------------------------------
+MAX_CONCURRENT_POSITIONS: int = 5       # max open positions at any time
+MAX_SECTOR_POSITIONS: int = 2           # max positions in same sector
+MAX_DAILY_LOSS: float = 100.0           # halt entries if day's realized loss exceeds this
+
+# ---------------------------------------------------------------------------
+# Macro event freeze window
+# ---------------------------------------------------------------------------
+MACRO_FREEZE_MINUTES_BEFORE: int = 30  # freeze entries N min before known macro event
+MACRO_FREEZE_MINUTES_AFTER: int = 15   # freeze entries N min after known macro event
+
+# ---------------------------------------------------------------------------
+# Market regime filter
+# ---------------------------------------------------------------------------
+RS_MIN_PERCENTILE: int = 70          # minimum RS percentile vs. universe for any signal
+STALE_POSITION_DAYS: int = 5         # trading days with no progress before time stop fires
+STALE_PROGRESS_PCT: float = 0.02     # position must have peaked >2% above entry to avoid time stop
+
+# ---------------------------------------------------------------------------
+# Analytics outputs
+# ---------------------------------------------------------------------------
+EQUITY_CURVE_PATH: str = "logs/equity_curve.csv"
+BACKTEST_DATA_PATH: str = "backtest/data"
+BACKTEST_RESULTS_PATH: str = "backtest/results"

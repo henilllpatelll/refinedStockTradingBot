@@ -39,21 +39,29 @@ async def test_eod_scan_fetches_daily_bars_when_no_bars_are_supplied(monkeypatch
     # "HIGH" outperforms "LAGGARD" so it gets RS rating 99 (>= RS_MIN_PERCENTILE=70)
     async def fake_fetch_daily_bars(symbols):
         assert set(symbols) == {"HIGH", "LAGGARD"}
-        closes_high = [20 + i * 0.2 for i in range(60)]
+        closes_high = [20 + i * 0.08 for i in range(220)] + [38.0, 38.1, 38.05, 38.2, 38.15, 38.25, 39.1]
         closes_lag = [10 + i * 0.01 for i in range(60)]   # flat — low RS
         return {
-            "HIGH": _bars(closes_high, volumes=[100_000] * 59 + [180_000]),
+            "HIGH": _bars(closes_high, volumes=[100_000] * 220 + [70_000] * 6 + [180_000]),
             "LAGGARD": _bars(closes_lag, volumes=[100_000] * 60),
         }
 
     monkeypatch.setattr(eod_scanner, "load_universe", lambda: ["HIGH", "LAGGARD"])
     monkeypatch.setattr(eod_scanner, "fetch_daily_bars", fake_fetch_daily_bars)
+    monkeypatch.setattr(
+        eod_scanner,
+        "build_context_by_symbol",
+        lambda bars: {
+            "HIGH": {"rs_rating": 99, "sector_rank": 1, "sector_rs": 0.03, "stock_rs": 0.12, "theme": "AI infrastructure"},
+            "LAGGARD": {"rs_rating": 0, "sector_rank": 9, "sector_rs": -0.01, "stock_rs": 0.0},
+        },
+    )
     monkeypatch.setattr(eod_scanner, "save_watchlist", lambda watchlist: Path("unused.json"))
 
     watchlist = await eod_scanner.run_eod_scan()
 
     strategy_ids = [setup["strategy_id"] for setup in watchlist if setup["symbol"] == "HIGH"]
-    assert "S2" in strategy_ids
+    assert strategy_ids == ["ISR"]
 
 
 def test_context_builder_uses_persisted_catalysts_and_sector_map(tmp_path):
@@ -115,7 +123,7 @@ async def test_premarket_filter_fetches_gaps_and_uses_persisted_news(monkeypatch
     monkeypatch.setattr(
         premarket_filter,
         "load_watchlist",
-        lambda: [{"symbol": "UPGD", "strategy_id": "S13", "close": 10.0}],
+        lambda: [{"symbol": "UPGD", "strategy_id": "ISR", "close": 10.0}],
     )
 
     async def fake_fetch_gaps(symbols):

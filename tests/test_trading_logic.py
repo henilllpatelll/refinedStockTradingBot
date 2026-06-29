@@ -1,8 +1,10 @@
 import pytest
 
+from execution import swing_entry
 from execution.position_manager import (
     STRATEGY_EXIT_RULES,
     PositionState,
+    _extract_key_level,
     apply_price_exit_rules,
     build_daily_exit_data,
     calculate_atr_stop,
@@ -12,18 +14,10 @@ from execution.position_manager import (
     reconcile_pending_entry_orders,
     save_position_state,
     should_daily_close_exit,
+    should_technical_exit,
 )
-from execution.swing_entry import position_budget_for_signal_count, _validate_entry_price
-from execution import swing_entry
+from execution.swing_entry import _confirm_entry_timing, _validate_entry_price
 from strategies.tier1_universe_sweep import parse_finviz_number
-
-
-@pytest.mark.parametrize(
-    "signal_count,expected",
-    [(1, 500.0), (2, 750.0), (3, 1000.0), (7, 1000.0)],
-)
-def test_position_budget_for_signal_count(signal_count, expected):
-    assert position_budget_for_signal_count(signal_count) == expected
 
 
 @pytest.mark.asyncio
@@ -40,46 +34,64 @@ async def test_entry_orders_use_latest_price_when_available(monkeypatch):
 
     monkeypatch.setattr(swing_entry, "fetch_latest_prices", fake_prices)
     monkeypatch.setattr(swing_entry, "submit_swing_entry", fake_submit)
+    monkeypatch.setattr("execution.portfolio_exposure.should_disable_entries", lambda: False)
+    monkeypatch.setattr("execution.portfolio_exposure.can_add_position", lambda symbol, sector_map: (True, ""))
 
-    # close=10.5 → live price 11.0 is 4.8% above EOD, within the 8% chase threshold
     result = await swing_entry.place_entry_orders(
-        [{"symbol": "ABCD", "strategy_id": "S1", "close": 10.5, "details": {}, "signal_count_for_symbol": 1}]
+        [{"symbol": "ABCD", "strategy_id": "ISR", "close": 10.5, "details": {}, "atr_14": 1.0}]
     )
 
     assert result[0]["entry_order_id"] == "order-1"
-    assert submitted[0][1] == 45
+    assert submitted[0][1] == 26
     assert submitted[0][2] == 11.0
 
 
-@pytest.mark.parametrize("strategy_id,details,eod_close,live_price,expected", [
-    # Chase filter: live price >8% above EOD close
-    ("S1", {}, 10.0, 11.0, False),
-    # S1: price below breakout level
-    ("S1", {"prior_swing_high": 12.0}, 11.0, 11.5, False),
-    # S1: price above breakout level and within chase threshold
-    ("S1", {"prior_swing_high": 10.0}, 11.0, 11.5, True),
-    # S2: price below 52w high
-    ("S2", {"high_52w": 12.0}, 11.0, 11.5, False),
-    # S4: price below earnings day low
-    ("S4", {"earnings_day_low": 12.0}, 11.0, 11.5, False),
-    # S5: price >3% from EMA20
-    ("S5", {"ema20": 10.0}, 11.0, 11.5, False),
-    # S5: price within 3% of EMA20
-    ("S5", {"ema20": 11.3}, 11.0, 11.5, True),
-    # S9: price fell >3% below EOD close
-    ("S9", {}, 12.0, 11.5, False),
-    # S13: price below previous close
-    ("S13", {"previous_close": 12.0}, 11.0, 11.5, False),
-])
-def test_validate_entry_price(strategy_id, details, eod_close, live_price, expected):
+@pytest.mark.parametrize(
+    "strategy_id,details,eod_close,live_price,expected",
+    [
+        ("ISR", {}, 10.0, 11.0, False),
+        ("ISR", {"support_level": 12.0}, 11.0, 11.5, False),
+        ("ISR", {"support_level": 11.0}, 11.0, 11.5, True),
+        ("LEGACY", {}, 11.0, 11.5, False),
+    ],
+)
+def test_validate_entry_price_only_supports_isr(strategy_id, details, eod_close, live_price, expected):
     setup = {"symbol": "TEST", "strategy_id": strategy_id, "details": details, "close": eod_close}
     assert _validate_entry_price(setup, live_price) is expected
 
 
-def test_strategy_exit_rules_are_plan_values():
-    assert STRATEGY_EXIT_RULES["S1"].t1_target_pct == 0.03
-    assert STRATEGY_EXIT_RULES["S4"].trail_stop_pct == 0.04
-    assert STRATEGY_EXIT_RULES["S12"].t1_target_pct == 0.05
+_ENTRY_BAR = {"open": 11.0, "high": 12.0, "low": 10.8, "close": 11.8, "volume": 500_000, "vwap": 11.2}
+
+
+def test_confirm_entry_timing_requires_vwap_hold_and_65m_range_break():
+    setup = {
+        "symbol": "TEST",
+        "strategy_id": "ISR",
+        "details": {"setup_type": "tight_consolidation_breakout", "range_high": 11.6},
+        "close": 11.0,
+    }
+
+    assert _confirm_entry_timing(setup, _ENTRY_BAR) is True
+    assert _confirm_entry_timing(setup, {**_ENTRY_BAR, "close": 11.1}) is False
+    assert _confirm_entry_timing(setup, {**_ENTRY_BAR, "close": 11.7, "vwap": 11.9}) is False
+
+
+def test_confirm_entry_timing_rejects_late_fade_after_first_hour():
+    setup = {"symbol": "TEST", "strategy_id": "ISR", "details": {"setup_type": "pullback_reversal"}, "close": 11.0}
+
+    assert _confirm_entry_timing(setup, {**_ENTRY_BAR, "close": 10.9, "vwap": 11.0}) is False
+
+
+def test_confirm_entry_timing_rejects_old_strategy_ids():
+    setup = {"symbol": "TEST", "strategy_id": "LEGACY", "details": {}, "close": 11.0}
+
+    assert _confirm_entry_timing(setup, _ENTRY_BAR) is False
+
+
+def test_strategy_exit_rules_only_include_routine_values():
+    assert set(STRATEGY_EXIT_RULES) == {"ISR"}
+    assert STRATEGY_EXIT_RULES["ISR"].t1_target_pct == 0.10
+    assert STRATEGY_EXIT_RULES["ISR"].trail_stop_pct == 0.07
 
 
 def test_atr_stop_is_one_and_half_atr_below_entry():
@@ -88,25 +100,48 @@ def test_atr_stop_is_one_and_half_atr_below_entry():
 
 def test_daily_close_exit_triggers_below_ema20():
     position = PositionState(
-        symbol="ABCD",
-        strategy_id="S1",
-        catalyst_type="technical_breakout",
-        entry_price=20.0,
-        shares=25,
-        atr_at_entry=1.0,
+        symbol="ABCD", strategy_id="ISR", catalyst_type="technical_breakout",
+        entry_price=20.0, shares=25, atr_at_entry=1.0,
     )
-
     assert should_daily_close_exit(position, daily_close=18.5, ema20=19.0) is True
     assert should_daily_close_exit(position, daily_close=19.5, ema20=19.0) is False
+
+
+@pytest.mark.parametrize(
+    "strategy_id,details,expected",
+    [
+        ("ISR", {"support_level": 15.0}, 15.0),
+        ("ISR", {}, None),
+        ("LEGACY", {"prior_swing_high": 15.0}, None),
+    ],
+)
+def test_extract_key_level_only_supports_isr_support(strategy_id, details, expected):
+    setup = {"strategy_id": strategy_id, "details": details}
+    assert _extract_key_level(setup) == expected
+
+
+def test_should_technical_exit_triggers_below_key_level():
+    position = PositionState(
+        symbol="X", strategy_id="ISR", catalyst_type="technical_breakout",
+        entry_price=20.0, shares=10, atr_at_entry=1.0, key_level=18.0,
+    )
+    assert should_technical_exit(position, daily_close=17.9) is True
+    assert should_technical_exit(position, daily_close=18.1) is False
+
+
+def test_should_technical_exit_skips_when_no_key_level():
+    position = PositionState(
+        symbol="X", strategy_id="ISR", catalyst_type="technical_breakout",
+        entry_price=20.0, shares=10, atr_at_entry=1.0,
+    )
+    assert should_technical_exit(position, daily_close=1.0) is False
 
 
 def test_build_daily_exit_data_computes_latest_close_and_ema20():
     import pandas as pd
 
     bars = pd.DataFrame({"close": [20 + i for i in range(25)]})
-
     data = build_daily_exit_data({"ABCD": bars})
-
     assert data["ABCD"]["close"] == 44.0
     assert data["ABCD"]["ema20"] is not None
 
@@ -133,11 +168,12 @@ async def test_reconcile_pending_entry_orders_registers_filled_order(monkeypatch
     open_positions.clear()
     pending_entry_orders["order-1"] = {
         "symbol": "ABCD",
-        "strategy_id": "S1",
+        "strategy_id": "ISR",
         "catalyst_type": "technical_breakout",
         "shares": 25,
         "limit_price": 10.5,
         "atr_14": 1.0,
+        "details": {},
     }
     monkeypatch.setattr("execution.position_manager._client", lambda: FakeClient())
     monkeypatch.setattr("execution.position_manager.send_entry_alert", fake_entry_alert)
@@ -146,9 +182,9 @@ async def test_reconcile_pending_entry_orders_registers_filled_order(monkeypatch
 
     filled = await reconcile_pending_entry_orders()
 
-    assert filled == [("ABCD", "S1")]
-    assert open_positions[("ABCD", "S1")].entry_price == 10.5
-    assert open_positions[("ABCD", "S1")].protective_stop_order_id == "stop-1"
+    assert filled == [("ABCD", "ISR")]
+    assert open_positions[("ABCD", "ISR")].entry_price == 10.5
+    assert open_positions[("ABCD", "ISR")].protective_stop_order_id == "stop-1"
     assert "order-1" not in pending_entry_orders
 
 
@@ -157,8 +193,9 @@ async def test_apply_price_exit_rules_takes_t1_and_closes_trailing_runner(monkey
     submitted = []
     records = []
 
-    async def fake_exit_order(symbol, shares, reason):
-        submitted.append((symbol, shares, reason))
+    async def fake_exit_order(symbol, shares, reason_or_price=None, reason=None):
+        actual_reason = reason if reason is not None else reason_or_price
+        submitted.append((symbol, shares, actual_reason))
         return f"exit-{len(submitted)}"
 
     async def fake_exit_alert(*args, **kwargs):
@@ -173,23 +210,20 @@ async def test_apply_price_exit_rules_takes_t1_and_closes_trailing_runner(monkey
 
     open_positions.clear()
     position = PositionState(
-        symbol="ABCD",
-        strategy_id="S1",
-        catalyst_type="technical_breakout",
-        entry_price=100.0,
-        shares=10,
-        atr_at_entry=5.0,
+        symbol="ABCD", strategy_id="ISR", catalyst_type="technical_breakout",
+        entry_price=100.0, shares=10, atr_at_entry=5.0,
         protective_stop_order_id="initial-stop",
     )
-    open_positions[("ABCD", "S1")] = position
+    open_positions[("ABCD", "ISR")] = position
     monkeypatch.setattr("execution.position_manager.submit_exit_order", fake_exit_order)
+    monkeypatch.setattr("execution.position_manager.submit_limit_exit_order", fake_exit_order)
     monkeypatch.setattr("execution.position_manager.cancel_order", fake_cancel)
     monkeypatch.setattr("execution.position_manager.submit_protective_stop", fake_stop)
     monkeypatch.setattr("execution.position_manager.send_exit_alert", fake_exit_alert)
     monkeypatch.setattr("execution.position_manager.append_trade_record", lambda record: records.append(record))
     monkeypatch.setattr("execution.position_manager.save_position_state", lambda: None)
 
-    actions = await apply_price_exit_rules(position, 103.0)
+    actions = await apply_price_exit_rules(position, 110.1)
 
     assert actions == ["T1_TARGET"]
     assert position.t1_filled is True
@@ -197,27 +231,36 @@ async def test_apply_price_exit_rules_takes_t1_and_closes_trailing_runner(monkey
     assert submitted[-1] == ("ABCD", 5, "T1_TARGET")
     assert position.protective_stop_order_id == "stop-5-100.0"
 
-    actions = await apply_price_exit_rules(position, 100.30)
+    actions = await apply_price_exit_rules(position, 102.20)
 
     assert actions == ["TRAILING_STOP"]
-    assert ("ABCD", "S1") not in open_positions
+    assert ("ABCD", "ISR") not in open_positions
     assert submitted[-1] == ("ABCD", 5, "TRAILING_STOP")
-    assert records[-1]["pnl"] == pytest.approx(16.5)
+    assert records[-1]["pnl"] == pytest.approx(61.5)
+
+
+def test_apply_price_exit_uses_measured_move_override():
+    position = PositionState(
+        symbol="FLAG", strategy_id="ISR", catalyst_type="technical_breakout",
+        entry_price=100.0, shares=10, atr_at_entry=1.0,
+        t1_target_pct_override=0.08,
+    )
+    rule = STRATEGY_EXIT_RULES["ISR"]
+    assert rule.t1_target_pct == 0.10
+    t1_pct = position.t1_target_pct_override if position.t1_target_pct_override is not None else rule.t1_target_pct
+    assert t1_pct == 0.08
+    assert position.entry_price * (1 + t1_pct) == 108.0
 
 
 def test_position_state_round_trips_to_disk(tmp_path):
     pending_entry_orders.clear()
     open_positions.clear()
-    open_positions[("ABCD", "S1")] = PositionState(
-        symbol="ABCD",
-        strategy_id="S1",
-        catalyst_type="technical_breakout",
-        entry_price=10.0,
-        shares=20,
-        atr_at_entry=1.0,
+    open_positions[("ABCD", "ISR")] = PositionState(
+        symbol="ABCD", strategy_id="ISR", catalyst_type="technical_breakout",
+        entry_price=10.0, shares=20, atr_at_entry=1.0,
         protective_stop_order_id="stop-1",
     )
-    pending_entry_orders["order-1"] = {"symbol": "EFGH", "strategy_id": "S2", "shares": 10}
+    pending_entry_orders["order-1"] = {"symbol": "EFGH", "strategy_id": "ISR", "shares": 10}
     path = tmp_path / "position_state.json"
 
     save_position_state(path)
@@ -225,7 +268,7 @@ def test_position_state_round_trips_to_disk(tmp_path):
     pending_entry_orders.clear()
     load_position_state(path)
 
-    assert open_positions[("ABCD", "S1")].protective_stop_order_id == "stop-1"
+    assert open_positions[("ABCD", "ISR")].protective_stop_order_id == "stop-1"
     assert pending_entry_orders["order-1"]["symbol"] == "EFGH"
 
 

@@ -3,40 +3,23 @@ from __future__ import annotations
 import json
 import logging
 from pathlib import Path
-from typing import Callable
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import pandas as pd
 
 from agents.news_analyst import latest_catalysts_by_symbol
 from config.settings import (
     NEWS_CATALYSTS_PATH,
+    RS_MIN_PERCENTILE,
     SECTOR_MAP_PATH,
     SECTOR_RANKINGS_PATH,
     SWING_UNIVERSE_PATH,
     SWING_WATCHLIST_PATH,
 )
-from strategies.playbook import (
-    s1_breakout,
-    s2_52wk_high,
-    s4_earnings_momentum,
-    s5_pullback_ema20,
-    s9_flag_pennant,
-    s12_sector_rotation,
-    s13_analyst_upgrade,
-)
+from strategies.swing_routine import check_signal as check_swing_routine
 from utils.market_data import fetch_daily_bars
 
 _log = logging.getLogger(__name__)
-_PLAYBOOK: tuple[Callable[[str, pd.DataFrame, dict], dict | None], ...] = (
-    s1_breakout.check_signal,
-    s2_52wk_high.check_signal,
-    s4_earnings_momentum.check_signal,
-    s5_pullback_ema20.check_signal,
-    s9_flag_pennant.check_signal,
-    s12_sector_rotation.check_signal,
-    s13_analyst_upgrade.check_signal,
-)
 
 
 def _load_json(path: str | Path, default):
@@ -58,7 +41,35 @@ def _age_days(value: str | None) -> int | None:
     except ValueError:
         return None
     now = datetime.now(detected_at.tzinfo) if detected_at.tzinfo else datetime.now()
-    return max(0, (now.date() - detected_at.date()).days)
+    start = detected_at.date()
+    end = now.date()
+    if end < start:
+        return 0
+    trading_days = 0
+    current = start
+    while current < end:
+        if current.weekday() < 5:
+            trading_days += 1
+        current = current + timedelta(days=1)
+    return trading_days
+
+
+def _compute_rs_ratings(bars_by_symbol: dict[str, pd.DataFrame]) -> dict[str, int]:
+    returns: dict[str, float] = {}
+    for symbol, df in bars_by_symbol.items():
+        closes = list(df["close"])
+        if len(closes) < 2:
+            returns[symbol] = 0.0
+            continue
+        period = min(252, len(closes) - 1)
+        base = float(closes[-(period + 1)])
+        end = float(closes[-1])
+        returns[symbol] = (end - base) / base if base > 0 else 0.0
+    if len(returns) < 2:
+        return {sym: 50 for sym in returns}
+    sorted_syms = sorted(returns, key=lambda s: returns[s])
+    n = len(sorted_syms)
+    return {sym: round(i / (n - 1) * 99) for i, sym in enumerate(sorted_syms)}
 
 
 def _relative_strength(df: pd.DataFrame, period: int = 5) -> float | None:
@@ -122,18 +133,23 @@ def build_context_by_symbol(
             }
         )
 
+    rs_ratings = _compute_rs_ratings(bars_by_symbol)
+    for symbol, rating in rs_ratings.items():
+        if symbol in context:
+            context[symbol]["rs_rating"] = int(rating)
+
     return context
 
 
 def evaluate_symbol(symbol: str, bars: pd.DataFrame, context: dict | None = None) -> list[dict]:
     context = context or {}
-    signals: list[dict] = []
-    for check_signal in _PLAYBOOK:
-        signal = check_signal(symbol, bars, context)
-        if signal is not None:
-            signals.append(signal)
-    signal_count = len(signals)
-    return [{**signal, "signal_count_for_symbol": signal_count} for signal in signals]
+    rs_rating = context.get("rs_rating")
+    if rs_rating is not None and int(rs_rating) < RS_MIN_PERCENTILE:
+        return []
+    signal = check_swing_routine(symbol, bars, context)
+    if signal is None:
+        return []
+    return [{**signal, "signal_count_for_symbol": 1}]
 
 
 def build_watchlist(

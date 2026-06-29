@@ -23,6 +23,7 @@ class TradeRecord:
     signal_strength: int
     entry_time: str | None = None
     exit_time: str | None = None
+    slippage_pct: float = 0.0
 
 
 def _record_to_dict(record: TradeRecord | dict) -> dict:
@@ -31,6 +32,10 @@ def _record_to_dict(record: TradeRecord | dict) -> dict:
     data.setdefault("entry_time", now)
     data.setdefault("exit_time", now)
     data["pnl"] = round(float(data.get("pnl", 0.0)), 2)
+    entry = float(data.get("entry_price", 0))
+    limit = float(data.get("limit_price", entry))
+    if entry > 0 and limit > 0:
+        data.setdefault("slippage_pct", round((entry - limit) / limit * 100, 3))
     return data
 
 
@@ -48,3 +53,10 @@ def append_trade_record(record: TradeRecord | dict, path: str | Path = DEFAULT_T
     records.append(_record_to_dict(record))
     target.write_text(json.dumps(records, indent=2))
     return target
+
+
+def today_realized_pnl(path: str | Path = DEFAULT_TRADE_LOG_PATH) -> float:
+    from datetime import date
+    today = date.today().isoformat()
+    records = load_trade_records(path)
+    return round(sum(float(r.get("pnl", 0)) for r in records if str(r.get("exit_time", "")).startswith(today)), 2)

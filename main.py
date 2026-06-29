@@ -9,7 +9,8 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from agents.earnings_calendar import run_earnings_calendar_fetch
-from agents.premarket_news import run_news_rest_scan
+from agents.macro_calendar import is_in_freeze_window, load_macro_events
+from agents.premarket_news import run_intraday_news_rescan, run_news_rest_scan
 from agents.sector_ranker import run_sector_ranking
 from agents.sector_ranker import run_sector_map_build
 from config.rejection_tracker import rejection_tracker
@@ -24,13 +25,16 @@ from execution.position_manager import (
 from execution.strategy_analytics import send_strategy_daily_summary
 from execution.swing_entry import run_swing_entry
 from strategies.eod_scanner import run_eod_scan
+from utils.market_regime import get_market_regime
 from strategies.premarket_filter import run_premarket_filter
 from strategies.tier1_universe_sweep import run_universe_sweep
 from strategies.tier2_baseline_calc import run_baseline_calc
 from strategies.watchlist_pruner import run_watchlist_pruner
 
 _ET = ZoneInfo("America/New_York")
-ENTRY_CUTOFF = time(9, 45)
+_ENTRY_HOURS = [time(10, 35), time(15, 0), time(15, 30)]
+_ENTRY_CUTOFF_OFFSET_MIN = 10
+_RESCAN_HOURS = {time(15, 0)}
 
 
 async def _wait_until(target: time, logger: logging.Logger) -> None:
@@ -110,7 +114,23 @@ async def _weekday_pipeline(logger: logging.Logger) -> None:
             await run_news_rest_scan()
             await run_premarket_filter()
 
-        if await _wait_for_stage(time(9, 30), logger, cutoff=ENTRY_CUTOFF):
+        regime = await get_market_regime()
+        logger.info("Main | market regime: %s", regime)
+
+        for entry_time in _ENTRY_HOURS:
+            cutoff = time(entry_time.hour, entry_time.minute + _ENTRY_CUTOFF_OFFSET_MIN)
+            if not await _wait_for_stage(entry_time, logger, cutoff=cutoff):
+                continue
+            if entry_time in _RESCAN_HOURS:
+                await run_intraday_news_rescan()
+            now_et = datetime.now(tz=_ET)
+            frozen, freeze_reason = is_in_freeze_window(now_et)
+            if frozen:
+                logger.warning("Main | entry window %s frozen — macro event: %s", entry_time, freeze_reason)
+                continue
+            if regime == "DOWNTREND":
+                logger.warning("Main | %s entry suspended — market in DOWNTREND", entry_time)
+                continue
             await run_swing_entry()
 
         if await _wait_for_stage(time(15, 45), logger):
@@ -147,6 +167,7 @@ def _seconds_until_next_day(now: datetime) -> float:
 async def _main() -> None:
     logger = logging.getLogger("main")
     logger.info("=== Swing Trading Bot starting ===")
+    load_macro_events()
 
     stop_wake = threading.Event()
     wake_thread = threading.Thread(target=_wake_lock_worker, args=(stop_wake,), name="wake-lock", daemon=True)

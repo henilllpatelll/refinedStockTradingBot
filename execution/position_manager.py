@@ -13,7 +13,7 @@ from alpaca.trading.enums import OrderSide, TimeInForce
 from alpaca.trading.requests import LimitOrderRequest, MarketOrderRequest, StopOrderRequest
 
 from agents.telegram_notifier import send_entry_alert, send_exit_alert
-from config.settings import ALPACA_API_KEY, ALPACA_SECRET_KEY, MAX_RISK_PER_TRADE, POSITION_STATE_PATH
+from config.settings import ALPACA_API_KEY, ALPACA_SECRET_KEY, MAX_RISK_PER_TRADE, MAX_SWING_HOLD_DAYS, POSITION_STATE_PATH, STALE_POSITION_DAYS, STALE_PROGRESS_PCT
 from execution.trade_logger import append_trade_record
 from utils.market_data import fetch_daily_bars, fetch_latest_prices
 from utils.indicators import ema_last, stop_price_from_atr
@@ -31,13 +31,7 @@ class ExitRule:
 
 
 STRATEGY_EXIT_RULES: dict[str, ExitRule] = {
-    "S1": ExitRule(0.03, 0.025),
-    "S2": ExitRule(0.03, 0.025),
-    "S4": ExitRule(0.06, 0.04),
-    "S5": ExitRule(0.04, 0.03),
-    "S9": ExitRule(0.04, 0.03),
-    "S12": ExitRule(0.05, 0.035),
-    "S13": ExitRule(0.06, 0.04),
+    "ISR": ExitRule(0.10, 0.07),
 }
 
 
@@ -57,6 +51,8 @@ class PositionState:
     realized_pnl: float = 0.0
     protective_stop_order_id: str | None = None
     closed: bool = False
+    key_level: float | None = None
+    t1_target_pct_override: float | None = None
 
     def __post_init__(self) -> None:
         if self.remaining_shares <= 0:
@@ -148,8 +144,26 @@ def audit_untracked_alpaca_positions() -> list[str]:
     return untracked
 
 
+def _extract_key_level(setup: dict) -> float | None:
+    strategy_id = setup.get("strategy_id", "")
+    details = setup.get("details", {})
+    level_map = {
+        "ISR": "support_level",
+    }
+    key = level_map.get(strategy_id)
+    if key and key in details:
+        return float(details[key])
+    return None
+
+
 def should_daily_close_exit(position: PositionState, daily_close: float, ema20: float) -> bool:
     return float(daily_close) < float(ema20)
+
+
+def should_technical_exit(position: PositionState, daily_close: float) -> bool:
+    if position.key_level is None:
+        return False
+    return float(daily_close) < position.key_level
 
 
 def should_emergency_exit(position: PositionState, current_price: float) -> bool:
@@ -185,6 +199,8 @@ def register_filled_entry(
     entry_price: float,
     shares: int,
     atr_at_entry: float,
+    key_level: float | None = None,
+    t1_target_pct_override: float | None = None,
 ) -> PositionState:
     state = PositionState(
         symbol=symbol,
@@ -195,9 +211,10 @@ def register_filled_entry(
         atr_at_entry=float(atr_at_entry),
         entry_time=datetime.now(_ET),
         highest_price_seen=float(entry_price),
+        key_level=key_level,
+        t1_target_pct_override=t1_target_pct_override,
     )
     open_positions[(symbol, strategy_id)] = state
-    save_position_state()
     asyncio.create_task(
         send_entry_alert(symbol, entry_price, shares, entry_price * shares, strategy_id, catalyst_type),
         name=f"tg-entry-{symbol}-{strategy_id}",
@@ -231,7 +248,6 @@ async def submit_swing_entry(setup: dict, shares: int, limit_price: float) -> st
             "limit_price": float(limit_price),
             "submitted_at": datetime.now(_ET).isoformat(),
         }
-        save_position_state()
         return order_id
     except Exception as exc:
         _log.error("SwingEntry | order failed for %s: %s", setup.get("symbol"), exc)
@@ -253,6 +269,25 @@ async def submit_exit_order(symbol: str, shares: int, reason: str) -> str | None
         return str(order.id)
     except Exception as exc:
         _log.error("Exit | order failed for %s reason=%s: %s", symbol, reason, exc)
+        return None
+
+
+async def submit_limit_exit_order(symbol: str, shares: int, limit_price: float, reason: str) -> str | None:
+    if shares <= 0:
+        return None
+    try:
+        request = LimitOrderRequest(
+            symbol=symbol,
+            qty=int(shares),
+            side=OrderSide.SELL,
+            time_in_force=TimeInForce.DAY,
+            limit_price=round(float(limit_price), 2),
+        )
+        order = await asyncio.to_thread(_client().submit_order, request)
+        _log.info("LimitExit | submitted %s qty=%d limit=%.2f reason=%s id=%s", symbol, shares, limit_price, reason, order.id)
+        return str(order.id)
+    except Exception as exc:
+        _log.error("LimitExit | order failed for %s reason=%s: %s", symbol, reason, exc)
         return None
 
 
@@ -288,7 +323,6 @@ async def submit_protective_stop(position: PositionState, stop_price: float) -> 
             stop_price,
             order.id,
         )
-        save_position_state()
         return str(order.id)
     except Exception as exc:
         _log.error("ProtectiveStop | order failed for %s: %s", position.symbol, exc)
@@ -326,7 +360,6 @@ async def reconcile_pending_entry_orders() -> list[tuple[str, str]]:
         status = _order_status(order)
         if status in {"canceled", "expired", "rejected"}:
             pending_entry_orders.pop(order_id, None)
-            save_position_state()
             _log.info("PositionManager | dropping %s order id=%s status=%s", setup.get("symbol"), order_id, status)
             continue
         if status != "filled":
@@ -338,6 +371,22 @@ async def reconcile_pending_entry_orders() -> list[tuple[str, str]]:
             _log.warning("PositionManager | filled order missing qty/price id=%s", order_id)
             continue
 
+        limit_price = float(setup.get("limit_price", entry_price))
+        slippage_pct = (entry_price - limit_price) / limit_price * 100 if limit_price > 0 else 0.0
+        if abs(slippage_pct) > 0.5:
+            _log.warning(
+                "PositionManager | slippage %.2f%% on %s fill (limit=%.4f actual=%.4f)",
+                slippage_pct, setup.get("symbol"), limit_price, entry_price,
+            )
+        requested = int(setup.get("shares", 0))
+        if shares != requested:
+            _log.warning(
+                "PositionManager | partial fill %s: requested=%d filled=%d",
+                setup.get("symbol"), requested, shares,
+            )
+
+        raw_mm = setup.get("details", {}).get("measured_move_pct")
+        t1_override = float(raw_mm) / 100.0 if raw_mm is not None else None
         state = register_filled_entry(
             setup["symbol"],
             setup["strategy_id"],
@@ -345,14 +394,16 @@ async def reconcile_pending_entry_orders() -> list[tuple[str, str]]:
             entry_price,
             shares,
             float(setup.get("atr_14") or 0.0),
+            key_level=_extract_key_level(setup),
+            t1_target_pct_override=t1_override,
         )
         stop_order_id = await submit_protective_stop(state, state.stop_price)
         if stop_order_id:
             state.protective_stop_order_id = stop_order_id
         pending_entry_orders.pop(order_id, None)
-        save_position_state()
         filled.append((state.symbol, state.strategy_id))
         _log.info("PositionManager | registered fill %s %s qty=%d price=%.2f", state.symbol, state.strategy_id, shares, entry_price)
+    save_position_state()
     return filled
 
 
@@ -367,6 +418,7 @@ async def check_emergency_exits() -> list[tuple[str, str]]:
         actions = await apply_price_exit_rules(position, current_price)
         if position.closed and actions:
             closed.append(key)
+    save_position_state()
     return closed
 
 
@@ -382,12 +434,13 @@ async def apply_price_exit_rules(position: PositionState, current_price: float) 
         await close_position(position, current_price, "EMERGENCY_MAX_LOSS")
         return ["EMERGENCY_MAX_LOSS"]
 
-    t1_price = position.entry_price * (1 + rule.t1_target_pct)
+    t1_pct = position.t1_target_pct_override if position.t1_target_pct_override is not None else rule.t1_target_pct
+    t1_price = position.entry_price * (1 + t1_pct)
     if not position.t1_filled and current_price >= t1_price:
         shares = position.t1_shares
         await cancel_order(position.protective_stop_order_id)
         position.protective_stop_order_id = None
-        order_id = await submit_exit_order(position.symbol, shares, "T1_TARGET")
+        order_id = await submit_limit_exit_order(position.symbol, shares, t1_price, "T1_TARGET")
         if order_id:
             position.t1_filled = True
             position.t1_fill_price = current_price
@@ -395,7 +448,6 @@ async def apply_price_exit_rules(position: PositionState, current_price: float) 
             position.realized_pnl += (current_price - position.entry_price) * shares
             if position.remaining_shares > 0:
                 await submit_protective_stop(position, position.entry_price)
-            save_position_state()
             return ["T1_TARGET"]
         return []
 
@@ -455,19 +507,39 @@ async def close_position(position: PositionState, exit_price: float, reason: str
 async def eod_close_check(daily_data_by_symbol: dict[str, dict]) -> list[tuple[str, str]]:
     closed: list[tuple[str, str]] = []
     for key, position in list(open_positions.items()):
+        hold_days = 0
+        if position.entry_time is not None:
+            hold_days = (datetime.now(_ET).date() - position.entry_time.date()).days
+
         daily = daily_data_by_symbol.get(position.symbol, {})
-        close = daily.get("close")
-        ema20 = daily.get("ema20")
-        if close is None or ema20 is None:
+        daily_close = daily.get("close")
+        exit_price = daily_close if daily_close is not None else position.entry_price
+
+        if (hold_days >= STALE_POSITION_DAYS
+                and position.highest_price_seen < position.entry_price * (1 + STALE_PROGRESS_PCT)):
+            await close_position(position, exit_price, "TIME_STOP_STALE")
+            closed.append(key)
             continue
-        if should_daily_close_exit(position, close, ema20):
-            await close_position(position, close, "DAILY_CLOSE_BELOW_EMA20")
+
+        if hold_days >= MAX_SWING_HOLD_DAYS:
+            await close_position(position, exit_price, "MAX_HOLD_DAYS_EXCEEDED")
+            closed.append(key)
+            continue
+
+        if daily_close is None:
+            continue
+        ema20 = daily.get("ema20")
+        if ema20 is not None and should_daily_close_exit(position, daily_close, ema20):
+            await close_position(position, daily_close, "DAILY_CLOSE_BELOW_EMA20")
+            closed.append(key)
+        elif should_technical_exit(position, daily_close):
+            await close_position(position, daily_close, "DAILY_CLOSE_BELOW_KEY_LEVEL")
             closed.append(key)
     return closed
 
 
 async def run_trade_updates(poll_interval_seconds: float = 15.0) -> None:
-    _log.info("PositionManager | trade update stream placeholder active")
+    _log.info("PositionManager | trade update loop started (poll=%.1fs)", poll_interval_seconds)
     while True:
         await reconcile_pending_entry_orders()
         await check_emergency_exits()

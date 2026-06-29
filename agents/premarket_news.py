@@ -76,3 +76,29 @@ async def run_news_rest_scan() -> None:
             return_exceptions=True,
         )
     _log.info("PremarketNews | REST scan complete")
+
+
+async def run_intraday_news_rescan() -> None:
+    """Lightweight news rescan for intraday catalyst updates (2-hour window)."""
+    symbols = _load_universe()
+    if not symbols:
+        return
+    since = (datetime.now(tz=timezone.utc) - timedelta(hours=2)).isoformat()
+    headers = {
+        "APCA-API-KEY-ID": ALPACA_API_KEY,
+        "APCA-API-SECRET-KEY": ALPACA_SECRET_KEY,
+    }
+    params = {"symbols": ",".join(symbols), "start": since, "limit": 20, "sort": "desc"}
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(ALPACA_NEWS_URL, params=params, headers=headers,
+                                   timeout=aiohttp.ClientTimeout(total=10)) as resp:
+                resp.raise_for_status()
+                data = await resp.json()
+    except Exception as exc:
+        _log.warning("PremarketNews | intraday rescan failed: %s", exc)
+        return
+    articles = data.get("news", [])
+    if articles:
+        await asyncio.gather(*[evaluate_news(a) for a in articles], return_exceptions=True)
+    _log.info("PremarketNews | intraday rescan: %d articles", len(articles))

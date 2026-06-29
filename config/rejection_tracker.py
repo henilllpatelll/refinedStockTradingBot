@@ -77,8 +77,32 @@ class _RejectionTracker:
     def _count_stage(symbols: dict[str, list[dict]], stage: str) -> int:
         return sum(1 for entries in symbols.values() if any(entry["stage"] == stage for entry in entries))
 
+    def get_stage_stats(self, stage: str) -> dict:
+        with self._lock:
+            reasons: dict[str, int] = defaultdict(int)
+            for entries in self._data.values():
+                for entry in entries:
+                    if entry["stage"] == stage:
+                        reasons[entry["reason"]] += 1
+            return dict(reasons)
+
+    def analyze_top_rejections(self, top_n: int = 5) -> str:
+        with self._lock:
+            all_reasons: dict[str, int] = defaultdict(int)
+            for entries in self._data.values():
+                for entry in entries:
+                    key = f"{entry['stage']}/{entry['reason']}"
+                    all_reasons[key] += 1
+        sorted_reasons = sorted(all_reasons.items(), key=lambda x: x[1], reverse=True)
+        lines = ["Top rejection reasons:"]
+        for reason, count in sorted_reasons[:top_n]:
+            lines.append(f"  {reason}: {count}")
+        return "\n".join(lines)
+
     def save_report(self) -> str:
         report = self.get_report()
+        report["top_rejections"] = self.get_stage_stats("entry")
+        report["rejection_analysis"] = self.analyze_top_rejections()
         os.makedirs("logs", exist_ok=True)
         path = os.path.join("logs", f"rejections_{report['date']}.json")
         with open(path, "w") as f:

@@ -43,10 +43,10 @@ def test_report_counts_pipeline_stages(tracker):
 
 
 def test_extra_none_details_are_omitted(tracker):
-    tracker.record("ABCD", "entry", "missing_price", price=None, strategy_id="S1")
+    tracker.record("ABCD", "entry", "missing_price", price=None, strategy_id="ISR")
 
     entry = tracker._data["ABCD"][0]
-    assert entry["strategy_id"] == "S1"
+    assert entry["strategy_id"] == "ISR"
     assert "price" not in entry
 
 

@@ -27,6 +27,10 @@ def test_main_runtime_no_longer_calls_structured_finnhub_upgrades():
     assert "run_structured_upgrade_scan" not in main._weekday_pipeline.__code__.co_names
 
 
+def test_entry_windows_match_swing_routine_observe_then_power_hour():
+    assert main._ENTRY_HOURS == [time(10, 35), time(15, 0), time(15, 30)]
+
+
 @pytest.mark.asyncio
 async def test_run_daily_cycle_loads_position_state_before_weekday_pipeline(monkeypatch):
     calls = []

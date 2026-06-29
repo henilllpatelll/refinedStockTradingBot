@@ -26,8 +26,13 @@ def confirm_setup(setup: dict, news_by_symbol: dict[str, dict] | None = None, ga
     if symbol in config.blocked_tickers:
         return None
     gap_pct = float(gap_by_symbol.get(symbol, setup.get("gap_pct", 0.0)))
-    if gap_pct <= -3.0:
+    if gap_pct <= -5.0:
         return None
+    if gap_pct <= -3.0:
+        catalyst_type_check = (news_by_symbol.get(symbol, {}).get("catalyst_type") or setup.get("catalyst_type", ""))
+        strong_catalyst = catalyst_type_check in ("earnings_beat", "contract_win", "fda_approval", "insider_buy")
+        if not strong_catalyst:
+            return None
     news = news_by_symbol.get(symbol, {})
     catalyst_type = news.get("catalyst_type") or setup.get("catalyst_type", "technical_breakout")
     return {**setup, "catalyst_type": catalyst_type, "premarket_gap_pct": gap_pct, "confirmed": True}

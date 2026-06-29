@@ -1,8 +1,9 @@
 from __future__ import annotations
 
 import asyncio
-from datetime import date, datetime, timedelta
+from datetime import date, datetime, time, timedelta
 from typing import Any
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 from alpaca.data.enums import Adjustment
@@ -11,6 +12,8 @@ from alpaca.data.requests import StockBarsRequest, StockSnapshotRequest
 from alpaca.data.timeframe import TimeFrame
 
 from config.settings import ALPACA_API_KEY, ALPACA_SECRET_KEY
+
+_ET = ZoneInfo("America/New_York")
 
 DEFAULT_LOOKBACK_DAYS = 420
 DEFAULT_BAR_LIMIT = 280
@@ -138,6 +141,143 @@ async def fetch_latest_prices(
         if price is not None:
             prices[symbol] = price
     return prices
+
+
+async def fetch_latest_completed_hourly_bars(
+    symbols: list[str],
+    *,
+    client: StockHistoricalDataClient | None = None,
+    max_concurrent: int = DEFAULT_MAX_CONCURRENT,
+) -> dict[str, dict]:
+    """Fetch the most recently completed hourly bar for each symbol.
+
+    Hourly bars align to market open (9:30 ET), so completed bars start at
+    9:30, 10:30, 11:30, … Returns empty dict if no bar has completed yet.
+    """
+    if not symbols:
+        return {}
+
+    now = datetime.now(tz=_ET)
+    today = now.date()
+    market_open = datetime.combine(today, time(9, 30), tzinfo=_ET)
+    minutes_since_open = (now - market_open).total_seconds() / 60
+    completed = int(minutes_since_open // 60)
+    if completed < 1:
+        return {}
+
+    bar_start = market_open + timedelta(hours=completed - 1)
+    bar_end = bar_start + timedelta(hours=1, minutes=1)
+
+    data_client = _client(client)
+    sem = asyncio.Semaphore(max_concurrent)
+
+    async def fetch_one(symbol: str) -> tuple[str, dict | None]:
+        async with sem:
+            try:
+                request = StockBarsRequest(
+                    symbol_or_symbols=symbol,
+                    timeframe=TimeFrame.Hour,
+                    start=bar_start,
+                    end=bar_end,
+                    limit=1,
+                )
+                raw = await asyncio.to_thread(data_client.get_stock_bars, request)
+                df = _normalize_bar_frame(raw.df, symbol)
+                if df.empty:
+                    return symbol, None
+                row = df.iloc[-1]
+                return symbol, {
+                    "open": float(row["open"]),
+                    "high": float(row["high"]),
+                    "low": float(row["low"]),
+                    "close": float(row["close"]),
+                    "volume": float(row["volume"]),
+                    "vwap": float(row["vwap"]) if "vwap" in row and pd.notna(row["vwap"]) else None,
+                }
+            except Exception:
+                return symbol, None
+
+    results = await asyncio.gather(*(fetch_one(s) for s in symbols), return_exceptions=True)
+    bars: dict[str, dict] = {}
+    for result in results:
+        if isinstance(result, Exception):
+            continue
+        symbol, bar = result
+        if bar is not None:
+            bars[symbol] = bar
+    return bars
+
+
+def _aggregate_intraday_bar(df: pd.DataFrame) -> dict | None:
+    if df.empty:
+        return None
+    volume = float(df["volume"].sum())
+    if volume <= 0:
+        return None
+    vwap = None
+    if "vwap" in df:
+        weighted_vwap = (df["vwap"].fillna(df["close"]) * df["volume"]).sum()
+        vwap = float(weighted_vwap / volume)
+    return {
+        "open": float(df["open"].iloc[0]),
+        "high": float(df["high"].max()),
+        "low": float(df["low"].min()),
+        "close": float(df["close"].iloc[-1]),
+        "volume": volume,
+        "vwap": vwap,
+        "range_high": float(df["high"].iloc[:-1].max()) if len(df) > 1 else float(df["high"].iloc[-1]),
+    }
+
+
+async def fetch_latest_completed_65min_bars(
+    symbols: list[str],
+    *,
+    client: StockHistoricalDataClient | None = None,
+    max_concurrent: int = DEFAULT_MAX_CONCURRENT,
+) -> dict[str, dict]:
+    """Fetch and aggregate the most recently completed 65-minute bar for each symbol."""
+    if not symbols:
+        return {}
+
+    now = datetime.now(tz=_ET)
+    today = now.date()
+    market_open = datetime.combine(today, time(9, 30), tzinfo=_ET)
+    minutes_since_open = (now - market_open).total_seconds() / 60
+    completed = int(minutes_since_open // 65)
+    if completed < 1:
+        return {}
+
+    bar_start = market_open + timedelta(minutes=65 * (completed - 1))
+    bar_end = bar_start + timedelta(minutes=65)
+
+    data_client = _client(client)
+    sem = asyncio.Semaphore(max_concurrent)
+
+    async def fetch_one(symbol: str) -> tuple[str, dict | None]:
+        async with sem:
+            try:
+                request = StockBarsRequest(
+                    symbol_or_symbols=symbol,
+                    timeframe=TimeFrame.Minute,
+                    start=bar_start,
+                    end=bar_end,
+                    limit=65,
+                )
+                raw = await asyncio.to_thread(data_client.get_stock_bars, request)
+                df = _normalize_bar_frame(raw.df, symbol)
+                return symbol, _aggregate_intraday_bar(df)
+            except Exception:
+                return symbol, None
+
+    results = await asyncio.gather(*(fetch_one(s) for s in symbols), return_exceptions=True)
+    bars: dict[str, dict] = {}
+    for result in results:
+        if isinstance(result, Exception):
+            continue
+        symbol, bar = result
+        if bar is not None:
+            bars[symbol] = bar
+    return bars
 
 
 async def fetch_weekly_returns(symbols: list[str]) -> dict[str, float]:
